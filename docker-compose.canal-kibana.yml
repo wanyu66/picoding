@@ -1,0 +1,89 @@
+name: paicoding-observability
+
+services:
+  canal:
+    image: canal/canal-server:v1.1.7
+    container_name: paicoding-canal
+    restart: unless-stopped
+    environment:
+      canal.auto.scan: "false"
+      canal.destinations: paicoding
+      canal.instance.master.address: host.docker.internal:${PAICODING_DB_PORT:-3306}
+      canal.instance.dbUsername: ${CANAL_DB_USERNAME:-canal}
+      canal.instance.dbPassword: ${CANAL_DB_PASSWORD:?Set CANAL_DB_PASSWORD in .env}
+      canal.instance.connectionCharset: UTF-8
+      canal.instance.tsdb.enable: "true"
+      canal.instance.gtidon: "false"
+      canal.instance.slaveId: "1234"
+      canal.instance.filter.regex: ${CANAL_FILTER_REGEX:-pai_coding\..*}
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - "127.0.0.1:${CANAL_PORT:-11111}:11111"
+    healthcheck:
+      test: ["CMD-SHELL", "nc -z 127.0.0.1 11111"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+
+  canal-index-init:
+    image: docker.elastic.co/kibana/kibana:8.10.0-1
+    container_name: paicoding-canal-index-init
+    restart: "no"
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - "status=$$(curl -sS -o /dev/null -w '%{http_code}' http://host.docker.internal:9200/paicoding_article_canal_v1); if [ \"$$status\" = \"200\" ]; then echo 'Canal index already exists'; else curl -fsS -X PUT -H 'Content-Type: application/json' --data-binary @/config/paicoding-article-index.json http://host.docker.internal:9200/paicoding_article_canal_v1; fi"
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    volumes:
+      - ./docker/canal-adapter/paicoding-article-index.json:/config/paicoding-article-index.json:ro
+
+  canal-adapter:
+    build:
+      context: ./docker/canal-adapter
+    image: paicoding/canal-adapter:1.1.7
+    container_name: paicoding-canal-adapter
+    restart: unless-stopped
+    depends_on:
+      canal:
+        condition: service_healthy
+      canal-index-init:
+        condition: service_completed_successfully
+    environment:
+      CANAL_DB_USERNAME: ${CANAL_DB_USERNAME:-canal}
+      CANAL_DB_PASSWORD: ${CANAL_DB_PASSWORD:?Set CANAL_DB_PASSWORD in .env}
+      PAICODING_DB_PORT: ${PAICODING_DB_PORT:-3306}
+      CANAL_ES_HOSTS: ${CANAL_ES_HOSTS:-http://host.docker.internal:9200}
+      JAVA_OPTS: ${CANAL_ADAPTER_JAVA_OPTS:--Xms256m -Xmx512m}
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - "127.0.0.1:${CANAL_ADAPTER_PORT:-8081}:8081"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8081/destinations >/dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 60s
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.10.0-1
+    container_name: paicoding-kibana
+    restart: unless-stopped
+    environment:
+      SERVER_NAME: paicoding-kibana
+      SERVER_HOST: 0.0.0.0
+      ELASTICSEARCH_HOSTS: ${KIBANA_ELASTICSEARCH_HOSTS:-http://host.docker.internal:9200}
+      XPACK_SECURITY_ENABLED: "false"
+      TELEMETRY_ENABLED: "false"
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - "127.0.0.1:${KIBANA_PORT:-5601}:5601"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:5601/api/status >/dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 60s

@@ -1,0 +1,29 @@
+dataSourceKey: defaultDS
+destination: paicoding
+groupId: g1
+esMapping:
+  _index: paicoding_article_canal_v1
+  _id: articleId
+  sql: >-
+    SELECT
+      a.id AS articleId,
+      a.user_id AS authorId,
+      a.article_type AS articleType,
+      a.title AS title,
+      a.short_title AS shortTitle,
+      a.url_slug AS urlSlug,
+      a.picture AS picture,
+      a.summary AS summary,
+      a.category_id AS categoryId,
+      a.source AS source,
+      a.source_url AS sourceUrl,
+      a.offical_stat AS officalStat,
+      a.topping_stat AS toppingStat,
+      a.cream_stat AS creamStat,
+      a.status AS status,
+      a.deleted AS deleted,
+      a.create_time AS createTime,
+      a.update_time AS updateTime
+    FROM article a
+  commitBatch: 1000
+

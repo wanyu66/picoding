@@ -1,0 +1,41 @@
+log:
+  path: logs
+
+observability:
+  request-io:
+    enabled: true
+env:
+  name: dev
+
+spring:
+  thymeleaf:
+    mode: HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    cache: false # 禁用Thymeleaf模板缓存以支持热部署
+
+short-link:
+  whitelist: localhost, 127.0.0.1:8080,paicoding.com # 允许创建短链接的域名，示例: 域名,域名+端口
+
+chat:
+  websocket:
+    allowed-origin-patterns: ${PAICODING_CHAT_WS_ALLOWED_ORIGINS:}
+    max-connections-per-user: ${PAICODING_CHAT_WS_MAX_CONNECTIONS:3}
+    auth-max-age-seconds: ${PAICODING_CHAT_WS_AUTH_MAX_AGE_SECONDS:1800}
+    send-time-limit-ms: ${PAICODING_CHAT_WS_SEND_TIME_LIMIT_MS:10000}
+    send-buffer-bytes: ${PAICODING_CHAT_WS_SEND_BUFFER_BYTES:524288}
+    message-size-bytes: ${PAICODING_CHAT_WS_MESSAGE_SIZE_BYTES:65536}
+    outbound-queue-capacity: ${PAICODING_CHAT_WS_OUTBOUND_QUEUE_CAPACITY:256}
+    replay-max-events: ${PAICODING_CHAT_WS_REPLAY_MAX_EVENTS:200}
+    generation-buffer-bytes: ${PAICODING_CHAT_WS_GENERATION_BUFFER_BYTES:524288}
+    replay-ttl-seconds: ${PAICODING_CHAT_WS_REPLAY_TTL_SECONDS:900}
+    model-timeout-ms: ${PAICODING_CHAT_WS_MODEL_TIMEOUT_MS:120000}
+    broker-relay:
+      enabled: ${PAICODING_CHAT_WS_BROKER_RELAY_ENABLED:false}
+      host: ${PAICODING_CHAT_WS_BROKER_HOST:127.0.0.1}
+      port: ${PAICODING_CHAT_WS_BROKER_PORT:61613}
+      client-login: ${PAICODING_CHAT_WS_BROKER_LOGIN:guest}
+      client-passcode: ${PAICODING_CHAT_WS_BROKER_PASSCODE:guest}
+      system-login: ${PAICODING_CHAT_WS_BROKER_LOGIN:guest}
+      system-passcode: ${PAICODING_CHAT_WS_BROKER_PASSCODE:guest}

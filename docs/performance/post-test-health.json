@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-09-16T07:14:45.024Z",
+  "results": [
+    {
+      "path": "/article/api/list/data/category/0?page=1&size=10",
+      "http": 200,
+      "status": {
+        "code": 0,
+        "msg": "OK"
+      }
+    },
+    {
+      "path": "/article/api/data/detail/102",
+      "http": 200,
+      "status": {
+        "code": 0,
+        "msg": "OK"
+      }
+    },
+    {
+      "path": "/search/api/list?key=Java&page=1&size=10",
+      "http": 200,
+      "status": {
+        "code": 0,
+        "msg": "OK"
+      },
+      "searchState": "ES_UNAVAILABLE"
+    },
+    {
+      "path": "/search/api/status",
+      "http": 200,
+      "status": {
+        "code": 0,
+        "msg": "OK"
+      },
+      "searchState": "ES_UNAVAILABLE"
+    }
+  ]
+}

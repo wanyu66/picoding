@@ -1,0 +1,84 @@
+spring:
+  datasource: #单数据源
+    url: jdbc:mysql://localhost:3306/${database.name}?useUnicode=true&allowPublicKeyRetrieval=true&autoReconnect=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    # fixme 注意：本地启动时，数据库用户名 + 密码，更新这里的配置
+    username: root
+    password: ${PAICODING_DB_PASSWORD:}
+  dynamic: # 动态数据源
+   # primary: master # 这个表示默认的数据源，如果是注释状态，则表明使用上面的单数据源模式
+    datasource:
+      master:
+        # 数据库名，从配置 database.name 中获取
+        url: jdbc:mysql://localhost:3306/${database.name}?useUnicode=true&allowPublicKeyRetrieval=true&autoReconnect=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+        username: root
+        password:
+       # type: com.alibaba.druid.pool.DruidDataSource
+        #DruidDataSource自有属性，下面的配置在IDEA中显示红色不影响项目启动
+        filters: stat
+        initialSize: 0
+        minIdle: 1
+        maxActive: 200
+        maxWait: 10000
+        time-between-eviction-runs-millis: 60000
+        min-evictable-idle-time-millis: 200000
+        testWhileIdle: true
+        testOnBorrow: true
+        validationQuery: select 1
+      slave:
+        # 数据库名，从配置 database.name 中获取
+        url: jdbc:mysql://localhost:3306/${database.name}?useUnicode=true&allowPublicKeyRetrieval=true&autoReconnect=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+        username: root
+        password:
+  redis:
+    host: localhost
+    port: 6379
+    password:
+
+# elasticsearch配置
+elasticsearch:
+  # 是否开启ES？本地启动如果没有安装ES，可以设置为false关闭ES
+  open: ${PAICODING_ES_OPEN:true}
+  # 文章全文搜索索引，避免和其他项目共用索引名
+  article-index: paicoding_article_v1
+  # 稳定读写入口；全量重建只切换该 alias
+  article-alias: paicoding_article
+  rebuild-batch-size: 500
+  rebuild-max-retries: 3
+  consistency-sample-size: 20
+  consistency-check-cron: "0 30 3 * * ?"
+  # search_after 游标只允许有限页数，避免匿名请求放大为无限遍历
+  search-max-page: ${PAICODING_ES_SEARCH_MAX_PAGE:50}
+  search-cache-ttl-seconds: ${PAICODING_ES_SEARCH_CACHE_TTL:120}
+  search-cursor-ttl-seconds: ${PAICODING_ES_SEARCH_CURSOR_TTL:300}
+  search-timeout-ms: ${PAICODING_ES_SEARCH_TIMEOUT_MS:1500}
+  search-connection-request-timeout-ms: ${PAICODING_ES_SEARCH_POOL_TIMEOUT_MS:200}
+  circuit-failure-threshold: ${PAICODING_ES_CIRCUIT_FAILURE_THRESHOLD:5}
+  circuit-open-seconds: ${PAICODING_ES_CIRCUIT_OPEN_SECONDS:30}
+  slow-query-threshold-ms: ${PAICODING_ES_SLOW_QUERY_MS:500}
+  # es集群名称
+  clusterName: elasticsearch
+  # es节点地址
+  hosts: ${PAICODING_ES_HOSTS:127.0.0.1:9200}
+  # es用户名
+  userName: ${PAICODING_ES_USERNAME:}
+  # es密码
+  password: ${PAICODING_ES_PASSWORD:}
+  # es请求方式
+  scheme: ${PAICODING_ES_SCHEME:http}
+  # 连接 Elasticsearch 8.x 时开启 7.x REST API 兼容模式
+  apiCompatibilityMode: ${PAICODING_ES_API_COMPATIBILITY_MODE:true}
+  # 本地 https 自签名证书调试开关，生产环境不要打开
+  insecureTrustAllCertificates: ${PAICODING_ES_INSECURE_TRUST_ALL_CERTIFICATES:true}
+  # es连接超时时间（毫秒）
+  connectTimeOut: 1000
+  # es socket连接超时时间（毫秒）
+  socketTimeOut: ${PAICODING_ES_SOCKET_TIMEOUT_MS:3000}
+  connectionRequestTimeOut: ${PAICODING_ES_CONNECTION_REQUEST_TIMEOUT_MS:500}
+
+
+
+
+#
+#mybatis-plus:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志

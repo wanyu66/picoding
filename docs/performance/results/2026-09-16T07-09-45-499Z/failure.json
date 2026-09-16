@@ -1,0 +1,21 @@
+{
+  "stopped": "2026-09-16T07:11:30.676Z",
+  "error": "Stopping: error rate above 5% in detail",
+  "searchStatusAfter": {
+    "status": {
+      "code": 0,
+      "msg": "OK"
+    },
+    "result": {
+      "state": "ES_UNAVAILABLE",
+      "message": "Elasticsearch request failures were detected; MySQL title fallback is active while retries continue",
+      "indexCoverageComplete": false,
+      "rebuildInProgress": false,
+      "circuitOpen": false,
+      "consecutiveFailures": 13,
+      "circuitOpenUntil": "2026-09-16T07:11:21.503+00:00",
+      "lastFailureTime": "2026-09-16T07:10:51.503+00:00",
+      "lastFailure": "article search index is unavailable"
+    }
+  }
+}

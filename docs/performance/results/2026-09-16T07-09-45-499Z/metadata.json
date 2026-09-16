@@ -1,0 +1,159 @@
+{
+  "started": "2026-09-16T07:09:45.891Z",
+  "base": "http://127.0.0.1:8080/",
+  "seconds": 10,
+  "warmup": 3,
+  "rounds": 3,
+  "levels": [
+    1,
+    8
+  ],
+  "timeoutMs": 10000,
+  "model": "Closed loop, no think time, HTTP/1.1 keep-alive, no retries, full response + JSON/semantic validation; drain included in elapsed time",
+  "latency": "Client-observed elapsed time through full body receipt and validation; successful responses only; nearest-rank percentiles",
+  "host": {
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCpus": 24,
+    "totalMemoryGiB": 15.781120300292969,
+    "platform": "win32",
+    "release": "10.0.26100",
+    "node": "v24.15.0"
+  },
+  "gitHead": "65708a5985d7d637c86025c8933a7a106a9d8f46",
+  "gitStatus": " M paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/ArticleSearchService.java\n M paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/impl/ArticleSearchServiceImpl.java\n M paicoding-service/src/main/resources/mapper/ArticleMapper.xml\n M paicoding-web/src/main/resources-env/dev/application-rabbitmq.yml\n?? docs/performance/\n?? scripts/load-test/\n",
+  "articles": [
+    {
+      "id": "102",
+      "title": "分布式系统的特征、瓶颈以及性能指标介绍"
+    },
+    {
+      "id": "101",
+      "title": "分布式系统的8个谬误"
+    },
+    {
+      "id": "100",
+      "title": "分布式系统的38个知识点"
+    },
+    {
+      "id": "17",
+      "title": "技术派的知识星球，开通啦！附 120 篇技术派的详细教程！"
+    },
+    {
+      "id": "16",
+      "title": "对标大厂的技术派详细方案设计，务必要看"
+    },
+    {
+      "id": "15",
+      "title": "官宣：技术派上线了！⭐️一款好用又强大的开源社区，学编程，就上技术派?"
+    },
+    {
+      "id": "14",
+      "title": "二哥的 Java 进阶之路.pdf 开放下载了，GitHub 星标 7700+，太赞了！"
+    },
+    {
+      "id": "1",
+      "title": "技术派全方位视角解读"
+    }
+  ],
+  "listHasMore": false,
+  "keywords": [
+    "Java",
+    "技术派",
+    "分布式"
+  ],
+  "preflight": [
+    {
+      "scenario": "list",
+      "path": "/article/api/list/data/category/0?page=1&size=10",
+      "bytes": 10772,
+      "ms": 57.8073
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/102",
+      "bytes": 12466,
+      "ms": 22.63149999999999
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/101",
+      "bytes": 21188,
+      "ms": 17.14160000000001
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/100",
+      "bytes": 48742,
+      "ms": 16.728499999999997
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/17",
+      "bytes": 9366,
+      "ms": 20.308999999999997
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/16",
+      "bytes": 40148,
+      "ms": 17.571799999999996
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/15",
+      "bytes": 16230,
+      "ms": 18.428300000000036
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/14",
+      "bytes": 17720,
+      "ms": 20.36990000000003
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/1",
+      "bytes": 5978,
+      "ms": 17.407500000000027
+    },
+    {
+      "scenario": "search",
+      "path": "/search/api/list?key=Java&page=1&size=10",
+      "bytes": 5767,
+      "ms": 32.26389999999998,
+      "state": "ES_UNAVAILABLE"
+    },
+    {
+      "scenario": "search",
+      "path": "/search/api/list?key=%E6%8A%80%E6%9C%AF%E6%B4%BE&page=1&size=10",
+      "bytes": 23255,
+      "ms": 32.72300000000001,
+      "state": "ES_UNAVAILABLE"
+    },
+    {
+      "scenario": "search",
+      "path": "/search/api/list?key=%E5%88%86%E5%B8%83%E5%BC%8F&page=1&size=10",
+      "bytes": 17283,
+      "ms": 25.69380000000001,
+      "state": "ES_UNAVAILABLE"
+    }
+  ],
+  "searchStatusBefore": {
+    "status": {
+      "code": 0,
+      "msg": "OK"
+    },
+    "result": {
+      "state": "ES_UNAVAILABLE",
+      "message": "Elasticsearch circuit breaker is open; MySQL title fallback is active",
+      "indexCoverageComplete": false,
+      "rebuildInProgress": false,
+      "circuitOpen": true,
+      "consecutiveFailures": 11,
+      "circuitOpenUntil": "2026-09-16T07:10:15.815+00:00",
+      "lastFailureTime": "2026-09-16T07:09:45.815+00:00",
+      "lastFailure": "article search index is unavailable"
+    }
+  },
+  "serverRuntime": "Java 17.0.19, PID 3500; verified with jcmd VM.system_properties and Get-Process"
+}

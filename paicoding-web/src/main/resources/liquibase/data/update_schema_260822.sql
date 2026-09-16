@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `activity_rank_event` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `event_id` varchar(128) NOT NULL COMMENT '稳定事件ID',
+  `original_event_id` varchar(128) DEFAULT NULL COMMENT '取消操作关联的原行为事件ID',
+  `cancelled_by_event_id` varchar(128) DEFAULT NULL COMMENT '原行为被哪个取消事件撤销',
+  `user_id` bigint unsigned NOT NULL,
+  `action_type` varchar(32) NOT NULL,
+  `target_id` varchar(128) NOT NULL,
+  `score_delta` int NOT NULL,
+  `event_time` datetime(3) NOT NULL,
+  `day_bucket` char(8) NOT NULL,
+  `month_bucket` char(6) NOT NULL,
+  `redis_applied` tinyint NOT NULL DEFAULT 0,
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uk_activity_rank_event_id` (`event_id`),
+  KEY `idx_activity_rank_active` (`user_id`,`action_type`,`target_id`,`cancelled_by_event_id`),
+  KEY `idx_activity_rank_pending` (`redis_applied`,`id`),
+  KEY `idx_activity_rank_period` (`month_bucket`,`day_bucket`,`event_time`,`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='排行榜行为事件日志';

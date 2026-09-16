@@ -1,0 +1,7 @@
+interface:
+  display_name: "Secure Codebase Onboarding"
+  short_description: "Safely map unfamiliar repositories into onboarding docs"
+  default_prompt: "Use $secure-codebase-onboarding to safely analyze this repository and create a source-linked onboarding guide."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,45 @@
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework: WARN
+    com.alibaba.otter.canal.client.adapter.es8x: INFO
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+
+canal.conf:
+  mode: tcp
+  flatMessage: true
+  zookeeperHosts:
+  syncBatchSize: 1000
+  retries: -1
+  timeout:
+  accessKey:
+  secretKey:
+  consumerProperties:
+    canal.tcp.server.host: canal:11111
+    canal.tcp.zookeeper.hosts:
+    canal.tcp.batch.size: 500
+    canal.tcp.username:
+    canal.tcp.password:
+  srcDataSources:
+    defaultDS:
+      url: jdbc:mysql://host.docker.internal:${PAICODING_DB_PORT:3306}/pai_coding?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
+      username: ${CANAL_DB_USERNAME:canal}
+      password: ${CANAL_DB_PASSWORD}
+  canalAdapters:
+    - instance: paicoding
+      groups:
+        - groupId: g1
+          outerAdapters:
+            - name: es8
+              hosts: ${CANAL_ES_HOSTS:http://host.docker.internal:9200}
+              properties:
+                mode: rest
+                cluster.name: elasticsearch
+
