@@ -1,0 +1,7 @@
+# Large deterministic fixture payloads are regenerated from checked-in config and manifest.
+data/*/articles.jsonl
+# Never commit local credentials/config overrides.
+config/*.secret.*
+build/
+results/fixes-*/**/build/
+results/es/*/alias/rebuild-input.jsonl

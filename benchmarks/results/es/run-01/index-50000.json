@@ -1,0 +1,252 @@
+{
+  "mapping": {
+    "bench_es_1790318236224_50000": {
+      "mappings": {
+        "_meta": {
+          "sourceSha256": "5220744fca7e0c27d735e4791fa639f3f9ee6322592a9459ccca0e4a886b0ffd",
+          "benchmarkRun": "bench_es_1790318236224"
+        },
+        "properties": {
+          "articleId": {
+            "type": "long"
+          },
+          "authorId": {
+            "type": "long"
+          },
+          "authorName": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "pinyin": {
+                "type": "text",
+                "analyzer": "pai_pinyin_index",
+                "search_analyzer": "pai_pinyin_search"
+              }
+            },
+            "analyzer": "pai_zh_index",
+            "search_analyzer": "pai_zh_search"
+          },
+          "columnIds": {
+            "type": "long"
+          },
+          "content": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "pinyin": {
+                "type": "text",
+                "analyzer": "pai_pinyin_index",
+                "search_analyzer": "pai_pinyin_search"
+              }
+            },
+            "analyzer": "pai_zh_index",
+            "search_analyzer": "pai_zh_search"
+          },
+          "contentExact": {
+            "type": "wildcard"
+          },
+          "creamStat": {
+            "type": "integer"
+          },
+          "createTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+          },
+          "deleted": {
+            "type": "integer"
+          },
+          "officalStat": {
+            "type": "integer"
+          },
+          "praiseCount": {
+            "type": "long"
+          },
+          "qualityScore": {
+            "type": "long"
+          },
+          "readCount": {
+            "type": "long"
+          },
+          "shortTitle": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "pinyin": {
+                "type": "text",
+                "analyzer": "pai_pinyin_index",
+                "search_analyzer": "pai_pinyin_search"
+              }
+            },
+            "analyzer": "pai_zh_index",
+            "search_analyzer": "pai_zh_search"
+          },
+          "shortTitleExact": {
+            "type": "wildcard"
+          },
+          "status": {
+            "type": "integer"
+          },
+          "summary": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "pinyin": {
+                "type": "text",
+                "analyzer": "pai_pinyin_index",
+                "search_analyzer": "pai_pinyin_search"
+              }
+            },
+            "analyzer": "pai_zh_index",
+            "search_analyzer": "pai_zh_search"
+          },
+          "summaryExact": {
+            "type": "wildcard"
+          },
+          "title": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              },
+              "pinyin": {
+                "type": "text",
+                "analyzer": "pai_pinyin_index",
+                "search_analyzer": "pai_pinyin_search"
+              }
+            },
+            "analyzer": "pai_zh_index",
+            "search_analyzer": "pai_zh_search"
+          },
+          "titleExact": {
+            "type": "wildcard"
+          },
+          "toppingStat": {
+            "type": "integer"
+          },
+          "updateTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+          },
+          "urlSlug": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "bench_es_1790318236224_50000": {
+      "settings": {
+        "index": {
+          "routing": {
+            "allocation": {
+              "include": {
+                "_tier_preference": "data_content"
+              }
+            }
+          },
+          "number_of_shards": "1",
+          "provided_name": "bench_es_1790318236224_50000",
+          "creation_date": "1790319183049",
+          "analysis": {
+            "filter": {
+              "pai_stop": {
+                "type": "stop",
+                "stopwords": [
+                  "的",
+                  "了",
+                  "和",
+                  "是",
+                  "在",
+                  "与",
+                  "及",
+                  "或",
+                  "一个",
+                  "如何"
+                ]
+              },
+              "pai_synonym": {
+                "type": "synonym_graph",
+                "lenient": "true",
+                "synonyms": [
+                  "java虚拟机,jvm",
+                  "数据库,db",
+                  "缓存,cache",
+                  "消息队列,mq",
+                  "人工智能,ai",
+                  "搜索引擎,elasticsearch,es",
+                  "微服务,microservice",
+                  "前端,frontend",
+                  "后端,backend"
+                ]
+              },
+              "pai_pinyin": {
+                "keep_joined_full_pinyin": "true",
+                "keep_original": "true",
+                "remove_duplicated_term": "true",
+                "keep_first_letter": "true",
+                "type": "pinyin",
+                "limit_first_letter_length": "32",
+                "keep_full_pinyin": "true"
+              }
+            },
+            "analyzer": {
+              "pai_zh_search": {
+                "filter": [
+                  "lowercase",
+                  "pai_stop",
+                  "pai_synonym"
+                ],
+                "type": "custom",
+                "tokenizer": "ik_smart"
+              },
+              "pai_pinyin_index": {
+                "filter": [
+                  "lowercase",
+                  "pai_pinyin"
+                ],
+                "type": "custom",
+                "tokenizer": "ik_smart"
+              },
+              "pai_zh_index": {
+                "filter": [
+                  "lowercase",
+                  "pai_stop"
+                ],
+                "type": "custom",
+                "tokenizer": "ik_max_word"
+              },
+              "pai_pinyin_search": {
+                "filter": [
+                  "lowercase",
+                  "pai_pinyin"
+                ],
+                "type": "custom",
+                "tokenizer": "keyword"
+              }
+            }
+          },
+          "number_of_replicas": "0",
+          "uuid": "uWyUCEpNSpGPDKZ8AX8kNw",
+          "version": {
+            "created": "8100099"
+          }
+        }
+      }
+    }
+  }
+}

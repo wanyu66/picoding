@@ -1,0 +1,8 @@
+scenario,attempted,committed,success,listenerAttempts,brokerDeliveries,duplicateDeliveries,duplicateBusinessWrites,deadLetterArrivals,meanMs,p50Ms,p95Ms,maxMs
+"normal",32,32,32,32,32,0,0,0,1003.09375,1008,1602,1638
+"rollback",8,0,0,0,0,0,0,0,"","","",""
+"send_failure",8,8,8,8,8,0,0,0,2242.625,2346,2492,2492
+"rabbit_outage",8,8,8,8,8,0,0,0,22202.375,22179,22326,22326
+"ack_crash",8,8,8,16,16,8,0,0,3792.5,3776,4007,4007
+"duplicate",32,32,32,96,96,64,0,0,901.46875,907,1534,1587
+"dlq",8,8,8,32,16,8,0,8,4672,4640,4706,4706

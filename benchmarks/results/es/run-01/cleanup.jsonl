@@ -1,0 +1,5 @@
+{"at":"2026-09-25T07:35:08.974Z","index":"bench_es_1790318236224_10000","result":{"acknowledged":true}}
+{"at":"2026-09-25T07:35:09.203Z","index":"bench_es_1790318236224_50000","result":{"acknowledged":true}}
+{"at":"2026-09-25T07:35:09.439Z","index":"bench_es_1790318236224_100000","result":{"acknowledged":true}}
+{"at":"2026-09-25T07:35:09.539Z","index":"bench_es_1790318236224_old","result":{"acknowledged":true}}
+{"at":"2026-09-25T07:35:09.628Z","index":"bench_es_1790318236224_new","result":{"acknowledged":true}}

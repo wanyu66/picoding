@@ -1,0 +1,10 @@
+[ {
+  "id" : 1,
+  "event_id" : "bench-ob-1790335975563:normal:0",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 2000,
+  "payload" : "{\"eventId\":\"bench-ob-1790335975563:normal:0\",\"eventType\":\"PRAISE\",\"operatorId\":1000,\"target\":{\"type\":\"ARTICLE\",\"id\":2000,\"ownerId\":9000,\"articleId\":null,\"parentId\":null,\"commentId\":null},\"occurredAt\":1790336001528,\"version\":1,\"traceId\":\"bench-normal-0\",\"content\":\"normal\"}",
+  "status" : "SENT",
+  "retry_count" : 0,
+  "next_retry_time"

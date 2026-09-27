@@ -34,8 +34,12 @@ public final class RequestIoStats {
         if (stats != null) { stats.acquisitions++; stats.acquisitionNanos += nanos; }
     }
     public static String finish() {
-        RequestIoStats stats = CURRENT.get();
+        String result = snapshot();
         CURRENT.remove();
+        return result;
+    }
+    public static String snapshot() {
+        RequestIoStats stats = CURRENT.get();
         if (stats == null) return "";
         return "sql=" + stats.sql + ", redisCommands=" + stats.redis + ", redisAcquisitions="
                 + stats.acquisitions + ", redisAcquisitionMs=" + stats.acquisitionNanos / 1_000_000D;

@@ -1,0 +1,15 @@
+[ {
+  "id" : 1,
+  "user_id" : 1,
+  "document_id" : 42,
+  "document_type" : 1,
+  "praise_stat" : 1,
+  "collection_stat" : 0
+}, {
+  "id" : 10,
+  "user_id" : 1,
+  "document_id" : 43,
+  "document_type" : 1,
+  "praise_stat" : 1,
+  "collection_stat" : 2
+} ]

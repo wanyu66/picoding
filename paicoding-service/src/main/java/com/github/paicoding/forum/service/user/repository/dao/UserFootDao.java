@@ -22,6 +22,17 @@ import java.util.Optional;
  */
 @Repository
 public class UserFootDao extends ServiceImpl<UserFootMapper, UserFootDO> {
+    /** Must run in the same transaction as the state update and outbox append. */
+    public UserFootDO getOrCreateForUpdate(Long documentId, Integer type, Long userId, Long authorId) {
+        // Upsert obtains the row lock even for first-time concurrent requests, without a missing-row gap lock.
+        baseMapper.ensureFootForUpdate(userId, documentId, type, authorId);
+        return baseMapper.selectOne(Wrappers.<UserFootDO>lambdaQuery()
+                .eq(UserFootDO::getDocumentId, documentId)
+                .eq(UserFootDO::getDocumentType, type)
+                .eq(UserFootDO::getUserId, userId)
+                .last("FOR UPDATE"));
+    }
+
     public UserFootDO getByDocumentAndUserId(Long documentId, Integer type, Long userId) {
         LambdaQueryWrapper<UserFootDO> query = Wrappers.lambdaQuery();
         query.eq(UserFootDO::getDocumentId, documentId)

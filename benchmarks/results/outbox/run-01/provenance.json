@@ -1,0 +1,12 @@
+{
+  "javaVersion": "openjdk version \"1.8.0_492\"\r\nOpenJDK Runtime Environment Corretto-8.492.09.2 (build 1.8.0_492-b09)\r\nOpenJDK 64-Bit Server VM Corretto-8.492.09.2 (build 25.492-b09, mixed mode)\r\n",
+  "sources": {
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventOutboxServiceImpl.java": "46895ffe60ead4802d1067cbb722c6b4b08ce2bcbffee4a08f87191e95a8648d",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventOutboxPublisher.java": "b65c5b8fb36c538c8b6bfaeb431ebeec722db29341c5e0861f458603aff4d9bb",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventConsumeService.java": "42d806f705ad261fe75615027cc44f3070edef6b71c6d9916f9dafeccc95eae6",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/config/RabbitMqAutoConfig.java": "1889f1ac8e4a046bd422450bda3365b2c4095cd49eb3ce0f3dd06544f923a845",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/config/RabbitMdcTraceAdvice.java": "503f160031f3b07812a67f940c9de46cb2f46325338fd057cff5a72122e23603",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/monitor/DomainEventMessageMonitor.java": "46ff0b181bde955076c8771f6ec3c4422cd0f9c7dc894701649141de801da561",
+    "benchmarks/java/outbox/OutboxReliabilityHarness.java": "a7183ed9deec23dc0d219b2d88b775e6f5141f16d60916ad0d7ffcbb92f51c2a"
+  }
+}

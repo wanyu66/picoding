@@ -15,13 +15,15 @@ server:
 
 spring:
   redis:
-    timeout: 2s
+    # Cache failures should fall back promptly; connect and pool waits are separate budgets.
+    timeout: ${PAICODING_REDIS_TIMEOUT:250ms}
+    connect-timeout: ${PAICODING_REDIS_CONNECT_TIMEOUT:250ms}
     lettuce:
       pool:
         max-active: 16
         max-idle: 8
         min-idle: 2
-        max-wait: 500ms
+        max-wait: ${PAICODING_REDIS_POOL_MAX_WAIT:100ms}
   devtools:
     livereload:
       enabled: true
@@ -154,7 +156,7 @@ cache:
     refresh-threads: 4
     refresh-queue-capacity: 500
     preheat-batch-size: 200
-    breaker-failure-threshold: 5
+    breaker-failure-threshold: ${PAICODING_REDIS_BREAKER_FAILURE_THRESHOLD:1}
     breaker-open-seconds: 30
     hot-key-threshold: 100
     hot-key-window-seconds: 60

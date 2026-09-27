@@ -1,0 +1,22 @@
+{
+  "run": "bench-rank-1790337423048",
+  "startedAt": "2026-09-25T11:57:03.049Z",
+  "concurrency": [
+    10,
+    50,
+    100,
+    200
+  ],
+  "operations": 400,
+  "poolSize": 220,
+  "redisCommandTimeoutMs": 100,
+  "redisPersistence": "disabled",
+  "environment": {
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCpus": 24,
+    "memoryBytes": 16944848896,
+    "os": "10.0.26100",
+    "node": "v24.15.0"
+  },
+  "scope": "Actual transactional rank service, MyBatis mapper, MySQL and Redis; synthetic user profiles; no HTTP or Rabbit producer/consumer"
+}

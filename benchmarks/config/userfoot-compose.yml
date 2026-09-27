@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8.0
+    command: ['--max-connections=100']
+    environment:
+      MYSQL_ROOT_PASSWORD: ${BENCH_TEST_PASSWORD:?temporary password required}
+      MYSQL_DATABASE: bench_userfoot
+    ports: ['127.0.0.1:13436:3306']
+    labels:
+      paicoding.benchmark.run: ${BENCH_RUN:?run id required}
+    healthcheck:
+      test: ['CMD-SHELL', 'MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysql --protocol=TCP -h 127.0.0.1 -uroot bench_userfoot -Nse "SELECT 1"']
+      interval: 2s
+      timeout: 3s
+      retries: 60

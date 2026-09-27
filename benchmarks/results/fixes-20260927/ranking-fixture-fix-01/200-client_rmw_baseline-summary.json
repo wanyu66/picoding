@@ -1,0 +1,21 @@
+{
+  "scenario" : "200-client_rmw_baseline",
+  "concurrency" : 200,
+  "peakInFlight" : 200,
+  "operations" : 400,
+  "durationMs" : 60.3833,
+  "attemptTPS" : 6624.348122742546,
+  "successTPS" : 6624.348122742546,
+  "updateSuccessRate" : 1.0,
+  "p50Ms" : 23.7275,
+  "p95Ms" : 28.7919,
+  "p99Ms" : 29.0488,
+  "expectedScore" : 800,
+  "actualScores" : {
+    "1" : 8
+  },
+  "scoreDifferenceCount" : 1,
+  "duplicateScoreCount" : 0,
+  "passed" : false,
+  "scope" : "Illustrative unsafe client ZSCORE+ZADD; fewer side effects, NOT historical production baseline"
+}

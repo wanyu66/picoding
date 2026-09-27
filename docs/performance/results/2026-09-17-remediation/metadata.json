@@ -1,0 +1,159 @@
+{
+  "started": "2026-09-17T07:35:21.505Z",
+  "base": "http://127.0.0.1:8080/",
+  "seconds": 10,
+  "warmup": 3,
+  "rounds": 1,
+  "levels": [
+    8,
+    32
+  ],
+  "timeoutMs": 10000,
+  "serverRuntime": "IDEA Java 17; compiled with Java 8; development diagnostics enabled",
+  "model": "Closed loop, no think time, HTTP/1.1 keep-alive, no retries, full response + JSON/semantic validation; drain included in elapsed time",
+  "latency": "Client-observed elapsed time through full body receipt and validation; successful responses only; nearest-rank percentiles",
+  "host": {
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCpus": 24,
+    "totalMemoryGiB": 15.781120300292969,
+    "platform": "win32",
+    "release": "10.0.26100",
+    "node": "v24.15.0"
+  },
+  "gitHead": "318e5d08e149f2da80fb51af04890441bc497284",
+  "gitStatus": " M paicoding-core/src/main/java/com/github/paicoding/forum/core/cache/RequestIoStats.java\n M paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/SqlStateInterceptor.java\n M paicoding-core/src/main/java/com/github/paicoding/forum/core/mdc/SelfTraceIdGenerator.java\n M paicoding-service/src/main/java/com/github/paicoding/forum/service/user/service/whitelist/AuthorWhiteListServiceImpl.java\n M paicoding-web/src/main/java/com/github/paicoding/forum/web/config/ReqRecordFilterConfig.java\n M paicoding-web/src/main/java/com/github/paicoding/forum/web/global/ForumExceptionHandler.java\n M paicoding-web/src/main/java/com/github/paicoding/forum/web/hook/filter/ReqRecordFilter.java\n?? docs/performance/2026-09-17-remediation.md\n?? docs/performance/detail-healthy-before-2026-09-17.json\n?? docs/performance/detail-redis-outage-after-2026-09-17.json\n?? docs/performance/detail-redis-outage-before-2026-09-17.json\n?? docs/performance/fixed-search-fixture-2026-09-17.json\n?? docs/performance/list-io-profile-2026-09-17.json\n?? docs/performance/read-count-before-2026-09-17.txt\n?? docs/performance/read-count-during-outage-2026-09-17.txt\n?? docs/performance/read-count-pre-outage-2026-09-17.txt\n?? docs/performance/read-count-recovered-2026-09-17.txt\n?? paicoding-core/src/main/java/com/github/paicoding/forum/core/dal/RequestSqlDiagnostics.java\n?? paicoding-core/src/test/java/com/github/paicoding/forum/core/mdc/\n?? paicoding-service/src/test/java/com/github/paicoding/forum/service/user/\n?? paicoding-web/src/main/java/com/github/paicoding/forum/web/global/RequestIoResponseAdvice.java\n?? scripts/load-test/probe-detail-outage.js\n?? scripts/load-test/profile-list.js\n?? scripts/load-test/snapshot-read-count.ps1\n",
+  "articles": [
+    {
+      "id": "102",
+      "title": "分布式系统的特征、瓶颈以及性能指标介绍"
+    },
+    {
+      "id": "101",
+      "title": "分布式系统的8个谬误"
+    },
+    {
+      "id": "100",
+      "title": "分布式系统的38个知识点"
+    },
+    {
+      "id": "17",
+      "title": "技术派的知识星球，开通啦！附 120 篇技术派的详细教程！"
+    },
+    {
+      "id": "16",
+      "title": "对标大厂的技术派详细方案设计，务必要看"
+    },
+    {
+      "id": "15",
+      "title": "官宣：技术派上线了！⭐️一款好用又强大的开源社区，学编程，就上技术派?"
+    },
+    {
+      "id": "14",
+      "title": "二哥的 Java 进阶之路.pdf 开放下载了，GitHub 星标 7700+，太赞了！"
+    },
+    {
+      "id": "1",
+      "title": "技术派全方位视角解读"
+    }
+  ],
+  "listHasMore": false,
+  "keywords": [
+    "Java",
+    "技术派",
+    "分布式"
+  ],
+  "preflight": [
+    {
+      "scenario": "list",
+      "path": "/article/api/list/data/category/0?page=1&size=10",
+      "bytes": 10772,
+      "ms": 94.89620000000014
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/102",
+      "bytes": 12466,
+      "ms": 68.13380000000006
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/101",
+      "bytes": 21188,
+      "ms": 45.146999999999935
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/100",
+      "bytes": 48742,
+      "ms": 70.00540000000001
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/17",
+      "bytes": 9366,
+      "ms": 46.259500000000116
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/16",
+      "bytes": 40148,
+      "ms": 52.642399999999725
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/15",
+      "bytes": 16230,
+      "ms": 43.819600000000264
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/14",
+      "bytes": 17720,
+      "ms": 30.390300000000025
+    },
+    {
+      "scenario": "detail",
+      "path": "/article/api/data/detail/1",
+      "bytes": 5978,
+      "ms": 54.47530000000006
+    },
+    {
+      "scenario": "search",
+      "path": "/search/api/list?key=Java&page=1&size=10",
+      "bytes": 38437,
+      "ms": 954.0394000000006,
+      "state": "ES_NORMAL"
+    },
+    {
+      "scenario": "search",
+      "path": "/search/api/list?key=%E6%8A%80%E6%9C%AF%E6%B4%BE&page=1&size=10",
+      "bytes": 37909,
+      "ms": 765.6034,
+      "state": "ES_NORMAL"
+    },
+    {
+      "scenario": "search",
+      "path": "/search/api/list?key=%E5%88%86%E5%B8%83%E5%BC%8F&page=1&size=10",
+      "bytes": 44029,
+      "ms": 787.4164999999994,
+      "state": "ES_NORMAL"
+    }
+  ],
+  "searchStatusBefore": {
+    "status": {
+      "code": 0,
+      "msg": "OK"
+    },
+    "result": {
+      "state": "ES_NORMAL",
+      "message": "Elasticsearch is serving searches normally",
+      "indexCoverageComplete": true,
+      "rebuildInProgress": false,
+      "circuitOpen": false,
+      "consecutiveFailures": 0,
+      "circuitOpenUntil": null,
+      "lastFailureTime": null,
+      "lastFailure": null
+    }
+  }
+}

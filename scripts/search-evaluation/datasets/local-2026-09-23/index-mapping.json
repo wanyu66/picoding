@@ -1,0 +1,145 @@
+{
+  "paicoding_article_v20260916165124894": {
+    "mappings": {
+      "properties": {
+        "articleId": {
+          "type": "long"
+        },
+        "authorId": {
+          "type": "long"
+        },
+        "authorName": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            },
+            "pinyin": {
+              "type": "text",
+              "analyzer": "pai_pinyin_index",
+              "search_analyzer": "pai_pinyin_search"
+            }
+          },
+          "analyzer": "pai_zh_index",
+          "search_analyzer": "pai_zh_search"
+        },
+        "columnIds": {
+          "type": "long"
+        },
+        "content": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            },
+            "pinyin": {
+              "type": "text",
+              "analyzer": "pai_pinyin_index",
+              "search_analyzer": "pai_pinyin_search"
+            }
+          },
+          "analyzer": "pai_zh_index",
+          "search_analyzer": "pai_zh_search"
+        },
+        "contentExact": {
+          "type": "wildcard"
+        },
+        "creamStat": {
+          "type": "integer"
+        },
+        "createTime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+        },
+        "deleted": {
+          "type": "integer"
+        },
+        "officalStat": {
+          "type": "integer"
+        },
+        "praiseCount": {
+          "type": "long"
+        },
+        "qualityScore": {
+          "type": "long"
+        },
+        "readCount": {
+          "type": "long"
+        },
+        "shortTitle": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            },
+            "pinyin": {
+              "type": "text",
+              "analyzer": "pai_pinyin_index",
+              "search_analyzer": "pai_pinyin_search"
+            }
+          },
+          "analyzer": "pai_zh_index",
+          "search_analyzer": "pai_zh_search"
+        },
+        "shortTitleExact": {
+          "type": "wildcard"
+        },
+        "status": {
+          "type": "integer"
+        },
+        "summary": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            },
+            "pinyin": {
+              "type": "text",
+              "analyzer": "pai_pinyin_index",
+              "search_analyzer": "pai_pinyin_search"
+            }
+          },
+          "analyzer": "pai_zh_index",
+          "search_analyzer": "pai_zh_search"
+        },
+        "summaryExact": {
+          "type": "wildcard"
+        },
+        "title": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            },
+            "pinyin": {
+              "type": "text",
+              "analyzer": "pai_pinyin_index",
+              "search_analyzer": "pai_pinyin_search"
+            }
+          },
+          "analyzer": "pai_zh_index",
+          "search_analyzer": "pai_zh_search"
+        },
+        "titleExact": {
+          "type": "wildcard"
+        },
+        "toppingStat": {
+          "type": "integer"
+        },
+        "updateTime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+        },
+        "urlSlug": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    }
+  }
+}

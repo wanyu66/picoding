@@ -1,0 +1,2 @@
+batch,article_total,mysql_import_seconds,import_articles_per_second,es_documents,checked,mismatches,es_sync_seconds,status
+search-s20260924-n10000-v1,10000,9.739626400000002,1026.733427885899,10000,10000,0,N/A,PASS_EVENTUAL_CONSISTENCY_WITH_INITIAL_TIMEOUT

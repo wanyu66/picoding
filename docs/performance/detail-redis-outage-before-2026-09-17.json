@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-17T07:17:10.338Z",
+  "results": [
+    {
+      "id": 102,
+      "http": 200,
+      "status": {
+        "code": 100500001,
+        "msg": "服务异常，请稍后重试"
+      },
+      "traceId": null,
+      "io": null,
+      "elapsedMs": 4122.3837
+    },
+    {
+      "id": 101,
+      "http": 200,
+      "status": {
+        "code": 100500001,
+        "msg": "服务异常，请稍后重试"
+      },
+      "traceId": null,
+      "io": null,
+      "elapsedMs": 4099.9685
+    },
+    {
+      "id": 100,
+      "http": 200,
+      "status": {
+        "code": 100500001,
+        "msg": "服务异常，请稍后重试"
+      },
+      "traceId": null,
+      "io": null,
+      "elapsedMs": 4099.7608
+    }
+  ]
+}

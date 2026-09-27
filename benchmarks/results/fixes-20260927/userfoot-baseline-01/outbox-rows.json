@@ -1,0 +1,967 @@
+[ {
+  "event_id" : "38c79d63-988c-430f-9bc4-de5f9af49b84",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "0d456c91-480f-446a-92da-8840373c4635",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e6f0b27f-7e45-41d0-bcff-1677139ea74c",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "6d8b5525-df63-46ce-845a-2819ba832cc9",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "3c2428bf-e183-41f2-98ac-bef70eb62cfe",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "b967f9ed-75b4-412c-980b-1f337997e119",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9c667714-9ea7-4b28-b411-a59ef6585b38",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "0e9bf18b-a6c7-4c26-8dba-20309c2c9236",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "b642ba48-57d5-4b39-bfcc-a42dbdf37480",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "35c396b4-29b7-407f-be3c-71f063588ae0",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "5ae621a2-60b8-44d6-9128-90ac5ff5a877",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "434144b2-7b25-45b5-af39-4fa70e6a7387",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "47052105-802e-4bfe-b859-1f37756add2d",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "0eabe455-2a6f-4dad-bed3-af0b2d966a53",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "c4d6e9ca-fd02-485d-bbe2-48dcfe11232f",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "fcad68bb-e18a-4464-b27e-0653a95fa28d",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "8b7edbc4-bc63-4446-aac0-cb5f6bb37cf3",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "6a97300d-994b-4bab-8771-5ed1f7c1d674",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "dc18d638-16d8-44c1-9144-3f229695fcb1",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "82fc47f3-bc46-4aee-b7ce-279510f2a8f4",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "88b4d196-7b91-4b9b-8d1c-54ea82c00506",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "2a93b6c6-44f9-4ec0-9f86-b88f604ac338",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "94a390d0-6dcc-4fb6-a3c4-3e3367e850a7",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9bba2af8-f714-4b7f-9292-d450b8d4eef0",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e7b9137b-f6c8-48aa-99e8-d7fcf3b301c0",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "626ceb23-aeb8-46d6-b2a6-00e196d9fa1d",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "fed01707-7fd4-45a6-a20e-81d8857e6a28",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "004783fa-c41a-4b28-b843-34f047b06a22",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "fed5be22-45d2-4273-8ef3-293db5f51779",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "7f51e123-a2b8-488e-9929-70ccc9ddf61b",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "cbcd8cbf-39fb-4202-80fd-3ec4fb46c4ee",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "2a26c6bf-2058-4998-9f13-64eb8b480d7e",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "1ce4af5f-e21d-48ff-8db2-80da53736583",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "b2175683-93b2-4196-8cea-abb3e5856b56",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "65a008e3-d974-49ed-b7a3-82f7ff680e23",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "a6b77f76-b459-4298-9d87-237c204d7779",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "163b6404-41e6-437d-8ff7-fb5ceb0fc0ce",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "4e9761af-a411-467c-a5b7-de70f49f5f31",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "518c4b76-2812-4fca-ac36-c77eece0be2a",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "27fa69a1-ed56-4990-9cb5-d6ca78b802a6",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "005e8d7c-48a9-4768-a34b-bedfd2766e4a",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "2ce8f4a3-ac2f-4e66-a0b6-1948938c512f",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "a6d144f4-3cd9-44a1-9848-6acd6e0493c3",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "efa3eb1a-ebc8-4a6c-825a-1ea735200ff0",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "da294767-86c1-409c-9a1b-ac9eacf64216",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "d0a088f0-6115-4d58-a743-3493bb472c95",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "f60f8994-f55e-44c8-802d-1b6dbfcd807d",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "8cc2cffe-e542-4a74-b887-490bfcbb9dae",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "20889552-fd31-4dc0-a3c7-5b4e45e35b97",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "87e20dd3-8ea0-4114-b81e-8523afbff3d9",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "42ea82c2-5ce9-4678-b6a3-245544ac218e",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "8e581fdd-dc23-4083-a518-b5a98945cf55",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "071e9cf4-14da-47f1-8cde-dc70d922c503",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "511f4b55-95b8-46da-98b1-26214a38e270",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "249a5286-14e1-4cf3-9e30-3084b3dc117c",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "26fee343-4b5e-488f-8a5c-280a8bb1ae68",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "35aeab5e-550a-426d-82e2-3146d37423e5",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "598656b1-ed4b-452d-b061-c83307a86112",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "79805aef-731c-40ff-b393-ed68426eb675",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "35bd343c-2d21-4204-9ba5-fed730653450",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e0b81209-fe41-4b87-a655-cbe34f755b47",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e6d1dd18-cc74-4b73-a03f-d22bbaf4d83f",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "3a56ed6d-4dda-4b3d-a382-3f61fa767770",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "f6c912a5-ee9a-4036-9368-d89a0d39528c",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ab74d7c7-53bb-4ae1-a499-c2016f0d9bd7",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "af73f2f3-486b-4e66-97ab-001125845776",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "7dd6daba-d95f-4b16-b46b-826c616e16ee",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "0a63e839-94cf-48dd-8f92-fdb311d0906f",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "8da6c606-7e31-4bf2-bb09-0cc8e7539d4f",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "f8674d0c-a091-4f02-bfb9-9929a0c127bc",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "1cbd5bd5-2142-4565-a2aa-49efe1f38ab3",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "dce30605-1dcd-495b-b2f6-e444e154122c",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "7834d46e-c0fa-4cfd-b934-22cb1f93f2e1",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "d22fcb40-dc85-46fc-a07b-896ee029034f",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "56ea9b11-e192-4ee1-8bf9-4ec872623d4c",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "4119270b-7865-43af-be31-c8b783014647",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "eff50918-36a3-47be-b2c2-ffaa42982a39",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "584f991e-1a91-4094-8e5f-e8d11c2f5c9d",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "f71c30a0-c24c-4d16-86c5-b08b572915ae",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "c591c05b-0cde-41b7-abf4-217df7905879",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e8cc4dc5-d0db-4344-ac85-dfc20b891072",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "eb2989ea-81d5-4a50-85dc-2ac8acec1994",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "68a9a051-2704-4e43-a658-985ac7696cab",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "d4649d99-22b8-42e8-bb2a-9cc0b170a6b6",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ea25d5cb-d265-4aaf-85fb-dc594b404f9f",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "f12d768b-b6aa-4f23-8591-a4a04a771a4a",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "8ef61f58-0e3d-42d8-8d2e-ffdbbbb24b03",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "16f8fbb5-4440-4130-b839-0b7d4abb3280",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "574a331b-0e0c-4f02-98ba-36dd6c7265ce",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ab4cd683-f2e1-44fe-ac51-13917b1e941e",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9c8a4681-3b88-4647-a38d-bfa35c18f923",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "0b33cbd3-b014-4954-93af-c17d03a79b39",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "5fdea59c-7ca2-4504-b662-58a62d91a63b",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "924ca2e9-12ac-47a7-9106-e321ea52f1e1",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ea28b296-ae2a-4b84-a66e-9cbae6179425",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "86dafbd2-279d-40d7-a98e-c3de5b3049b1",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "7d6f8455-dcff-4bba-a0c7-2686f7439e6d",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "2dfcae24-2ae4-4a2b-8920-c8418cc83221",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "3b00a577-6fa2-4083-b9d4-9c0831066b09",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "c74f92c1-cc0f-4087-8a2c-87d10fab7018",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "8b330b3a-380c-4c8e-a318-fb327979acff",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "454667b8-ec2c-4235-b8dd-bc67bae294fe",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "d8e1db90-c838-49d3-8c25-bb3e8c3e905f",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "809757ac-9782-4a99-9228-99fa6ec047dd",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "cea008d6-6f41-418d-b948-c2c5f67cdf37",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e829f029-b802-4101-8f67-2e6c91ccafe5",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "417d6c35-95c8-4362-abb6-8e7a15b09959",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "562fc0bf-8a56-4096-9bfd-11b4d5048fe0",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "b3599226-2e95-4a1a-9d4c-96ca1137b633",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "1ed7db87-51e2-4a31-ab15-eee351201cea",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "efca94ff-a1c4-403f-8d71-9908b6a6a11f",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ada89547-a891-4247-8903-703cdff0fa73",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "4c8d98b1-ce0e-4e97-aacd-89fab281fc29",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "d7ea3dfc-fd74-480b-9d50-a8d77146a7ae",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "c35d25cb-7080-4c17-bcbd-18559e7d1306",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ff0cf4a4-37bf-4019-b60d-501c0868f1e8",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "8abed239-d957-421c-883a-c2dc5e99ee56",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "2cfda911-4080-4b61-8e70-0239d06fe0f8",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "c28bdf2d-93c1-40fb-8fe2-27570794aa81",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "c7d576ec-db3f-4666-bd7a-d51464324806",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "b3ab012d-7053-474b-8211-010bbb8de313",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "58507f55-a2b7-41f9-b96a-8f3792cf22f9",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "3b43b9e9-0be5-442e-9d23-f21b6b87a298",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "fda763bb-0ed7-46e7-9b4b-12c31f35c832",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "7ce31e66-fce2-4950-9551-ac20d445d792",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "1769faa8-f302-449c-85f4-9c2dc1610dc3",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "c0583164-7fff-4b66-bf7d-fe4bbf88c276",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "79c56063-8177-4932-8c88-3adf2209b675",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9f8ed54c-539c-4ab1-a418-79026c803078",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "143ec9a8-02be-4d80-87c9-bd0d45315700",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "725b0c2a-426c-4a88-8117-cc65b78830ed",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "02f188db-79fd-4d8a-8c2c-f7ce4191af27",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "b97c7369-c426-4566-874e-64cb073b439b",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "97b30530-d389-4117-a071-f7b3c07d6ec0",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "69343da0-08fb-4e44-ad68-98a0da7723ef",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e6151b70-5621-4f5c-89c3-aed45bd3aa26",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "2d7b7546-f5f1-4912-8b75-15582e75aa99",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "f433b769-571a-4fad-9a50-a889b2cbdd27",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "dd3acead-21f0-4e96-aea9-6a58301c3b7a",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e2e8e458-e237-4558-8f1d-c3a451c9ab30",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "e83137d1-4c5c-4337-a079-02cf91d6fe1e",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "59410e15-d269-487d-bc14-a4e235bbde38",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "1a9c1a79-5445-4864-bc99-6e72d6ee3bc8",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9e241012-0434-4dde-8557-291d79a7f1c7",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "de4b35ae-af77-47a9-8246-afdb3d054965",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ce756d31-692b-4c3d-97c7-da8b25a8f832",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9cf46f0a-ffd6-4999-a149-9853afa891b1",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "629b435a-90de-4759-b117-a24bf7a2991e",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "2645c5d1-1bf6-4303-99fe-aa938567c365",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "f99a8f96-4dea-47fd-9a4b-cac0ab771c8d",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "48e56f22-0805-49f6-892b-a48bbb6bf363",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "a414960c-f981-4a3d-8ee6-a3ee2255b95e",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "c8d9340d-bb24-4db6-9cfe-71172c0bcb17",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "18df9365-ae7d-4fda-a199-754062b3de60",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "49d99c86-ad09-4c2a-91cd-8dc1a03519f5",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ff67d9d3-79d1-4550-bc6a-3bddcf5d5ecb",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ade90fa9-cff4-4f4a-b6d3-44ac49599f9c",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9766bae9-9501-4922-b6b5-c63959cab3cc",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ff77875b-69f3-4ec2-9a79-58a2934dd3ea",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "a7e139c6-3c5e-4c8f-8aed-773fcd4d113d",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "cfbdaea2-ad4f-4bdf-898a-1e270a5514fe",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+} ]

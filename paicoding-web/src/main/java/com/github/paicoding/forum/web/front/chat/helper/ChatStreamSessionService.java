@@ -40,6 +40,7 @@ public class ChatStreamSessionService {
 
     public Generation start(String session, String chatId, String requestId, Consumer<ChatStreamEvent> sender) {
         String generationId = UUID.randomUUID().toString().replace("-", "");
+        generationControl.prepare(generationId);
         Generation generation = new Generation(session, chatId, requestId, generationId, sender);
         generations.put(generationId, generation);
         safeRedis(() -> RedisClient.setStrWithExpire(latestKey(session, chatId), generationId, properties.getReplayTtlSeconds()));

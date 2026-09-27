@@ -1,0 +1,81 @@
+[ [ ], [ {
+  "id" : "event-0",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 1,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-1",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 2,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-2",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 3,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-3",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 4,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-4",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 5,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-5",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 6,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-6",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 7,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-7",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 8,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-8",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 9,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+}, {
+  "id" : "event-9",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 10,
+  "article" : 42,
+  "time" : 1790496858022,
+  "active" : true
+} ] ]

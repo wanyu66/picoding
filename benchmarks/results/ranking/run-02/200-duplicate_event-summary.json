@@ -1,0 +1,46 @@
+{
+  "scenario" : "200-duplicate_event",
+  "concurrency" : 200,
+  "peakInFlight" : 200,
+  "operations" : 400,
+  "durationMs" : 145.1147,
+  "attemptTPS" : 2756.440250367468,
+  "successTPS" : 2756.440250367468,
+  "updateSuccessRate" : 1.0,
+  "p50Ms" : 48.9926,
+  "p95Ms" : 115.8031,
+  "p99Ms" : 118.6212,
+  "pendingBeforeRecovery" : 0,
+  "scoresImmediatelyAfterWrites" : {
+    "1" : 2
+  },
+  "expected" : {
+    "1" : 2
+  },
+  "beforeScores" : {
+    "1" : 2
+  },
+  "beforeMonthScores" : {
+    "1" : 2
+  },
+  "beforeOrder" : [ 1 ],
+  "expectedOrder" : [ 1 ],
+  "ledgerRows" : 1,
+  "scoreDifferenceCount" : 0,
+  "monthScoreDifferenceCount" : 0,
+  "duplicateScoreCount" : 0,
+  "rebuildMs" : 102.6477,
+  "afterScores" : {
+    "1" : 2
+  },
+  "afterMonthScores" : {
+    "1" : 2
+  },
+  "afterOrder" : [ 1 ],
+  "beforeMonthOrder" : [ 1 ],
+  "afterMonthOrder" : [ 1 ],
+  "recoveryScoreConsistency" : 1.0,
+  "beforeAfterIdentical" : true,
+  "pendingAfterRecovery" : 0,
+  "passed" : true
+}

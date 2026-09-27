@@ -1,0 +1,8 @@
+scenario,concurrency,calls,successes,outboxEvents,expectedEvents,durationMs,passed
+existing-like,32,64,64,1,1,2021.2944,true
+new-like,32,64,64,1,1,222.6116,true
+cancel-like,32,64,64,1,1,245.3779,true
+relike,32,64,64,1,1,319.2316,true
+collect,32,64,64,1,1,287.6117,true
+cancel-collect,32,64,64,1,1,252.3202,true
+rollback,,,,,,,true

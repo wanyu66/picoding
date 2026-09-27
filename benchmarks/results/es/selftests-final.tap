@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: B preserves actual Java DSL except explicitly frozen date and requested size
+ok 1 - B preserves actual Java DSL except explicitly frozen date and requested size
+  ---
+  duration_ms: 1.3497
+  type: 'test'
+  ...
+# Subtest: A isolates strategy without changing projection, filters, sort or highlights
+ok 2 - A isolates strategy without changing projection, filters, sort or highlights
+  ---
+  duration_ms: 0.2941
+  type: 'test'
+  ...
+# Subtest: pagination uses exactly one of offset and cursor and never mutates contract
+ok 3 - pagination uses exactly one of offset and cursor and never mutates contract
+  ---
+  duration_ms: 0.4123
+  type: 'test'
+  ...
+# Subtest: throughput includes drain time, errors are not silently removed from latency
+ok 4 - throughput includes drain time, errors are not silently removed from latency
+  ---
+  duration_ms: 0.1822
+  type: 'test'
+  ...
+# Subtest: deterministic prefixes and generated quality score match documented production formula
+ok 5 - deterministic prefixes and generated quality score match documented production formula
+  ---
+  duration_ms: 4.0582
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 120.6895

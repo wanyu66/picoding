@@ -1,0 +1,116 @@
+{
+  "capturedAt": "2026-09-17T06:57:45.241Z",
+  "articles": [
+    {
+      "id": "102",
+      "title": "分布式系统的特征、瓶颈以及性能指标介绍",
+      "updated": "1786351585000",
+      "sha256": "2dcc46b67788eb318d5fdc61413451786e9f236f04ccf254587cb3c02434b332"
+    },
+    {
+      "id": "101",
+      "title": "分布式系统的8个谬误",
+      "updated": "1786351585000",
+      "sha256": "c17f600d94d62b4be192a462e39feca7cdcbf3aa3df0e81dedba2a672f385261"
+    },
+    {
+      "id": "100",
+      "title": "分布式系统的38个知识点",
+      "updated": "1786351585000",
+      "sha256": "566067e59b10fea736be6aaa968fad28196b8a11d3393fc0385e0eff4a9b99ff"
+    },
+    {
+      "id": "17",
+      "title": "技术派的知识星球，开通啦！附 120 篇技术派的详细教程！",
+      "updated": "1786351585000",
+      "sha256": "549fabfa40a7901b5a65d846613afa418aaf12840fcfa9b374a1bc24a624102d"
+    },
+    {
+      "id": "16",
+      "title": "对标大厂的技术派详细方案设计，务必要看",
+      "updated": "1786351585000",
+      "sha256": "f2d8e2c2346f40ec37b380cbfa397c99450893b5fae14d810881fa5467f1dbdd"
+    },
+    {
+      "id": "15",
+      "title": "官宣：技术派上线了！⭐️一款好用又强大的开源社区，学编程，就上技术派?",
+      "updated": "1786351585000",
+      "sha256": "ebc2d7e4cdc3f82bd4b5dd082770ae56061ee1144a8ed6ae06512c9197f437ee"
+    },
+    {
+      "id": "14",
+      "title": "二哥的 Java 进阶之路.pdf 开放下载了，GitHub 星标 7700+，太赞了！",
+      "updated": "1786351585000",
+      "sha256": "6dd4bffcefc21450f5f4ff8633967e79483c0c57af8cdeca9b67a914fdb12c5c"
+    },
+    {
+      "id": "1",
+      "title": "技术派全方位视角解读",
+      "updated": "1786351585000",
+      "sha256": "9c95996e484c61b02ae6e8edaab368b6950bfa1c1b94155f998e48bb681dd3b5"
+    }
+  ],
+  "listHasMore": false,
+  "keywords": [
+    "Java",
+    "技术派",
+    "分布式"
+  ],
+  "queries": [
+    {
+      "keyword": "Java",
+      "traceId": "0a142819.1789628264006.359921015",
+      "state": "ES_NORMAL",
+      "results": [
+        "14",
+        "17",
+        "16",
+        "1",
+        "15",
+        "100",
+        "101"
+      ]
+    },
+    {
+      "keyword": "技术派",
+      "traceId": "0a142819.1789628264665.359921016",
+      "state": "ES_NORMAL",
+      "results": [
+        "1",
+        "17",
+        "15",
+        "16",
+        "14",
+        "100",
+        "101"
+      ]
+    },
+    {
+      "keyword": "分布式",
+      "traceId": "0a142819.1789628264916.359921017",
+      "state": "ES_NORMAL",
+      "results": [
+        "102",
+        "100",
+        "101",
+        "14",
+        "15",
+        "16",
+        "17",
+        "1"
+      ]
+    }
+  ],
+  "searchStatus": {
+    "state": "ES_NORMAL",
+    "message": "Elasticsearch is serving searches normally",
+    "indexCoverageComplete": true,
+    "rebuildInProgress": false,
+    "circuitOpen": false,
+    "consecutiveFailures": 0,
+    "circuitOpenUntil": null,
+    "lastFailureTime": null,
+    "lastFailure": null
+  },
+  "note": "Document fingerprints exclude read counts. Observed result IDs are a reproducibility snapshot, not human relevance judgments."
+}

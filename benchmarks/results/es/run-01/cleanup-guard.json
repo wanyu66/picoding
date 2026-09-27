@@ -1,0 +1,48 @@
+{
+  "before": {
+    "at": "2026-09-25T07:35:08.548Z",
+    "businessAlias": {
+      "paicoding_article_v20260916165124894": {
+        "aliases": {
+          "paicoding_article": {
+            "is_write_index": true
+          }
+        }
+      }
+    },
+    "businessCount": {
+      "count": 10008,
+      "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+      }
+    }
+  },
+  "after": {
+    "at": "2026-09-25T07:35:09.638Z",
+    "businessAlias": {
+      "paicoding_article_v20260916165124894": {
+        "aliases": {
+          "paicoding_article": {
+            "is_write_index": true
+          }
+        }
+      }
+    },
+    "businessCount": {
+      "count": 10008,
+      "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+      }
+    }
+  },
+  "exitCode": 0,
+  "businessAliasUnchanged": true,
+  "businessCountUnchanged": true,
+  "status": "PASS"
+}

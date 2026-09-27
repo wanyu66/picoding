@@ -1,0 +1,17 @@
+{
+  "corePoolSize" : 4,
+  "maxPoolSize" : 10,
+  "queueCapacity" : 256,
+  "queueDepthAtSend" : 256,
+  "sendError" : "org.springframework.messaging.MessageDeliveryException: Failed to send message to ExecutorSubscribableChannel[ExecutorSubscribableChannel@18a70f16]; nested exception is org.springframework.core.task.TaskRejectedException: Executor [java.util.concurrent.ThreadPoolExecutor@2c34f934[Running, pool size = 10, active threads = 10, queued tasks = 256, completed tasks = 0]] did not accept task: org.springframework.messaging.support.ExecutorSubscribableChannel$SendTask@55ca8de8, failedMessage=GenericMessage [payload=saturated-inbound-frame, headers={id=a5047e56-71a8-8226-467e-ffdea9840a64, timestamp=1790496896898}]",
+  "saturatedSendRejected" : true,
+  "handlerCalls" : 0,
+  "handlerThreads" : [ ],
+  "callerThread" : "main",
+  "queuedTasksExecuted" : 256,
+  "shutdownRejected" : true,
+  "failures" : [ "Saturated inbound frame was rejected", "Each subscribed handler must receive the frame exactly once" ],
+  "passed" : false,
+  "durationMs" : 5358.5214,
+  "realModelCalls" : 0
+}

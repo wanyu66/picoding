@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.function.BiConsumer;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * deepSeek 聊天接入
@@ -63,6 +64,7 @@ public class DeepSeekChatServiceImpl extends AbsChatService {
     public AiChatStatEnum doAsyncAnswer(Long user, ChatRecordsVo response, BiConsumer<AiChatStatEnum, ChatRecordsVo> consumer) {
         // 获取问答中的最新的记录，用于问答
         ChatItemVo item = response.getRecords().get(0);
+        AtomicBoolean terminal = new AtomicBoolean();
         // 创建一个抽象流监听器来处理流式返回的结果
         AbstractStreamListener listener = new AbstractStreamListener() {
             // 当连接打开时的处理
@@ -81,24 +83,18 @@ public class DeepSeekChatServiceImpl extends AbsChatService {
                 if (log.isDebugEnabled()) {
                     log.debug("已经关闭了连接: {}", eventSource);
                 }
-                // 检查是否正常结束对话
-                if (item.getAnswerType() != ChatAnswerTypeEnum.STREAM_END) {
-                    // 主动结束这一次的对话
-                    if (StringUtils.isBlank(lastMessage)) {
-                        item.appendAnswer("大模型超时未返回结果，主动关闭会话；请重新提问吧\n")
-                                .setAnswerType(ChatAnswerTypeEnum.STREAM_END);
-                        consumer.accept(AiChatStatEnum.ERROR, response);
-                    } else {
-                        item.appendAnswer("\n")
-                                .setAnswerType(ChatAnswerTypeEnum.STREAM_END);
-                        consumer.accept(AiChatStatEnum.END, response);
-                    }
+                // A transport EOF is not the protocol's [DONE] marker.
+                if (terminal.compareAndSet(false, true)) {
+                    response.setErrorCode("UPSTREAM_INCOMPLETE").setErrorMessage("模型连接提前结束，已保留部分输出");
+                    item.setAnswerType(ChatAnswerTypeEnum.STREAM_END);
+                    consumer.accept(AiChatStatEnum.ERROR, response);
                 }
             }
 
             // 当接收到消息时的处理
             @Override
             public void onMsg(String message) {
+                if (terminal.get()) return;
                 // 成功返回结果的场景, 过滤掉开头的空行
                 if (StringUtils.isNotBlank(lastMessage)) {
                     item.appendAnswer(message);
@@ -112,6 +108,8 @@ public class DeepSeekChatServiceImpl extends AbsChatService {
             // 当遇到错误时的处理
             @Override
             public void onError(Throwable throwable, String res) {
+                if (!terminal.compareAndSet(false, true)) return;
+                response.setErrorCode("MODEL_ERROR").setErrorMessage("模型调用失败，已保留部分输出");
                 // 返回异常的场景
                 String errorMsg = StringUtils.defaultIfBlank(res, throwable == null ? null : throwable.getMessage());
                 if (StringUtils.isNotBlank(errorMsg)) {
@@ -129,6 +127,7 @@ public class DeepSeekChatServiceImpl extends AbsChatService {
 
         // 注册回答结束的回调钩子
         listener.setOnComplate((s) -> {
+            if (!terminal.compareAndSet(false, true)) return;
             if (log.isDebugEnabled()) {
                 log.debug("这一轮对话聊天已结束，完整的返回结果是：{}", s);
             }

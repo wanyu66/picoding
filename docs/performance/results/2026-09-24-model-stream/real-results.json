@@ -1,0 +1,8 @@
+[
+  {
+    "case": "real_model_compatibility",
+    "status": "BLOCKED",
+    "reason": "Set PAI_MODEL_TEST_BASE_URL, PAI_MODEL_TEST_API_KEY, PAI_MODEL_TEST_MODEL; no real request made",
+    "latencySource": "real"
+  }
+]

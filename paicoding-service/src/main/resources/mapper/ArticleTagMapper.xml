@@ -9,4 +9,14 @@
         where a.article_id = #{articleId}
           and a.deleted = 0
     </select>
+    <select id="listArticleTagDetailsBatch" resultType="com.github.paicoding.forum.service.article.repository.entity.ArticleTagDetail">
+        select a.article_id as articleId, a.tag_id as tagId, t.tag_name as tag
+        from article_tag as a
+                 left join tag as t on a.tag_id = t.id
+        where a.article_id in
+        <foreach collection="articleIds" item="articleId" open="(" separator="," close=")">
+            #{articleId}
+        </foreach>
+          and a.deleted = 0
+    </select>
 </mapper>

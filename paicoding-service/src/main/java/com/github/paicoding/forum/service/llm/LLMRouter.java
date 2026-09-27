@@ -1,7 +1,6 @@
 package com.github.paicoding.forum.service.llm;
 
 import com.github.paicoding.forum.api.model.enums.ai.AISourceEnum;
-import com.github.paicoding.forum.core.async.AsyncUtil;
 import io.micrometer.core.instrument.MeterRegistry;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -16,6 +15,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
@@ -23,6 +25,13 @@ import java.util.concurrent.atomic.AtomicLong;
 @Slf4j
 @Service
 public class LLMRouter {
+    // Never execute on the caller when saturated: that would bypass its deadline.
+    private static final ThreadPoolExecutor CALLS = new ThreadPoolExecutor(0, 32, 60L, TimeUnit.SECONDS,
+            new SynchronousQueue<>(), runnable -> {
+                Thread thread = new Thread(runnable, "llm-provider-call");
+                thread.setDaemon(true);
+                return thread;
+            }, new ThreadPoolExecutor.AbortPolicy());
     private final Map<String, LLMProvider> providers = new LinkedHashMap<>();
     private final ConcurrentHashMap<String, Circuit> circuits = new ConcurrentHashMap<>();
 
@@ -37,22 +46,39 @@ public class LLMRouter {
     public LLMResponse complete(LLMRequest request) {
         if (request == null || request.getScene() == null) throw new IllegalArgumentException("LLM scene is required");
         LLMRouteProperties.Route route = route(request.getScene());
+        long started = System.nanoTime();
+        long totalMs = route.getTotalTimeoutMs() == null ? properties.getTotalTimeoutMs() : route.getTotalTimeoutMs();
+        int maxAttempts = route.getMaxTotalAttempts() == null ? properties.getMaxTotalAttempts() : route.getMaxTotalAttempts();
+        if (totalMs <= 0 || maxAttempts <= 0) throw new IllegalArgumentException("LLM total budgets must be positive");
+        long budgetNanos = TimeUnit.MILLISECONDS.toNanos(totalMs);
         try (LLMUsageGuard.Permit ignored = usageGuard.acquire(request.getUserId(), request.getScene())) {
             Throwable last = null;
+            int attempts = 0;
             String[][] candidates = {
                     {route.getPrimaryProvider(), route.getPrimaryModel()},
                     {route.getFallbackProvider(), route.getFallbackModel()}
             };
-            for (String[] candidate : candidates) {
+            providersLoop: for (String[] candidate : candidates) {
+                if (Thread.currentThread().isInterrupted()) throw new IllegalStateException("LLM call interrupted");
+                if (attempts >= maxAttempts || System.nanoTime() - started >= budgetNanos) break;
                 if (StringUtils.isBlank(candidate[0])) continue;
                 LLMProvider provider = providers.get(candidate[0]);
                 if (provider == null || !allow(provider.id())) continue;
                 int retries = route.getMaxRetries() == null ? properties.getMaxRetries() : route.getMaxRetries();
                 for (int attempt = 0; attempt <= Math.max(0, retries); attempt++) {
+                    long remaining = budgetNanos - (System.nanoTime() - started);
+                    if (Thread.currentThread().isInterrupted()) throw new IllegalStateException("LLM call interrupted");
+                    if (remaining <= 0 || attempts >= maxAttempts) {
+                        last = new LLMTimeoutException("LLM total time or attempt budget exhausted");
+                        break providersLoop;
+                    }
+                    attempts++;
                     long attemptStarted = System.nanoTime();
                     try {
-                        request.setModel(candidate[1]);
-                        LLMResponse response = invoke(provider, request, timeout(route));
+                        // Timed-out workers may still run; never mutate a request they share.
+                        LLMRequest attemptRequest = request.toBuilder().model(candidate[1]).build();
+                        LLMResponse response = invoke(provider, attemptRequest,
+                                Math.min(TimeUnit.MILLISECONDS.toNanos(Math.max(1L, timeout(route))), remaining));
                         success(provider.id());
                         enrichUsage(response, request, route);
                         observe(request.getScene(), response, "success", null);
@@ -66,6 +92,7 @@ public class LLMRouter {
                         failed.setLatencyMs(TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - attemptStarted));
                         failed.setFailureReason(e.getClass().getSimpleName());
                         observe(request.getScene(), failed, "failure", e);
+                        if (Thread.currentThread().isInterrupted()) throw new IllegalStateException("LLM call interrupted", e);
                         if (!retryable(e)) break;
                     }
                 }
@@ -78,8 +105,21 @@ public class LLMRouter {
                 fallback.setFallback(true);
                 fallback.setFailureReason(last == null ? "no_provider" : last.getClass().getSimpleName());
                 if (request.getValidator() != null) {
-                    try { request.getValidator().validate(fallback.getContent()); }
-                    catch (Exception e) { throw new IllegalStateException("LLM fallback template validation failed", e); }
+                    Future<?> validation = null;
+                    try {
+                        if (System.nanoTime() - started >= budgetNanos) throw new TimeoutException();
+                        validation = CALLS.submit(() -> { request.getValidator().validate(fallback.getContent()); return null; });
+                        long remaining = budgetNanos - (System.nanoTime() - started);
+                        if (remaining <= 0) throw new TimeoutException();
+                        validation.get(remaining, TimeUnit.NANOSECONDS);
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                        throw new IllegalStateException("LLM fallback validation interrupted", e);
+                    } catch (Exception e) {
+                        throw new IllegalStateException("LLM fallback template validation failed or exceeded deadline", e);
+                    } finally {
+                        if (validation != null && !validation.isDone()) validation.cancel(true);
+                    }
                 }
                 enrichUsage(fallback, request, route);
                 observe(request.getScene(), fallback, "fallback", last);
@@ -137,13 +177,19 @@ public class LLMRouter {
         return StringUtils.defaultIfBlank(candidate.modelName(requestedModel), "configured");
     }
 
-    private LLMResponse invoke(LLMProvider provider, LLMRequest request, long timeoutMs) throws Exception {
+    private LLMResponse invoke(LLMProvider provider, LLMRequest request, long timeoutNanos) throws Exception {
         long start = System.nanoTime();
+        Future<LLMResponse> task = null;
         try {
-            LLMResponse response = AsyncUtil.callWithTimeLimit(Math.max(100L, timeoutMs), TimeUnit.MILLISECONDS,
-                    () -> provider.complete(request));
-            if (response == null || StringUtils.isBlank(response.getContent())) throw new IllegalStateException("empty LLM response");
-            if (request.getValidator() != null) request.getValidator().validate(response.getContent());
+            task = CALLS.submit(() -> {
+                LLMResponse value = provider.complete(request);
+                if (value == null || StringUtils.isBlank(value.getContent())) throw new IllegalStateException("empty LLM response");
+                if (request.getValidator() != null) request.getValidator().validate(value.getContent());
+                return value;
+            });
+            long remaining = timeoutNanos - (System.nanoTime() - start);
+            if (remaining <= 0) throw new TimeoutException();
+            LLMResponse response = task.get(remaining, TimeUnit.NANOSECONDS);
             long elapsed = TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - start);
             response.setLatencyMs(elapsed);
             response.setFirstTokenLatencyMs(elapsed);
@@ -157,6 +203,8 @@ public class LLMRouter {
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             throw e;
+        } finally {
+            if (task != null && !task.isDone()) task.cancel(true);
         }
     }
 

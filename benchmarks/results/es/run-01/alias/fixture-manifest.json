@@ -1,0 +1,10 @@
+{
+  "count": 10000,
+  "sha256": "5ad5a8340f0e78a8d689634d6bbab0c825e316fb1c89b750a153f3ff37779491",
+  "generatorSpec": {
+    "count": 10000,
+    "seed": 20260924,
+    "batch": "es-s20260924-n10000",
+    "referenceTime": "2026-01-01T00:00:00.000Z"
+  }
+}

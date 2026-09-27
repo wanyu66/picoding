@@ -1,0 +1,5 @@
+# Frozen experiment SHA-256 values require identical bytes on Windows and Unix.
+*.js text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.html text eol=lf

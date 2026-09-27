@@ -6,6 +6,7 @@ import com.github.paicoding.forum.api.model.vo.user.dto.ArticleFootCountDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.SimpleUserInfoDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.UserFootStatisticDTO;
 import com.github.paicoding.forum.service.user.repository.entity.UserFootDO;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -17,6 +18,12 @@ import java.util.List;
  * @date 2022-07-18
  */
 public interface UserFootMapper extends BaseMapper<UserFootDO> {
+
+    /** Create the neutral state or lock the existing unique user/document row. */
+    @Insert("INSERT INTO user_foot(user_id,document_id,document_type,document_user_id) " +
+            "VALUES(#{userId},#{documentId},#{documentType},#{authorId}) ON DUPLICATE KEY UPDATE id=id")
+    void ensureFootForUpdate(@Param("userId") Long userId, @Param("documentId") Long documentId,
+                             @Param("documentType") Integer documentType, @Param("authorId") Long authorId);
 
     /**
      * 查询文章计数信息

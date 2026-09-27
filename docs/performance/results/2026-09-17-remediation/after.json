@@ -1,0 +1,20 @@
+{
+  "finished": "2026-09-17T07:36:45.878Z",
+  "searchStatusAfter": {
+    "status": {
+      "code": 0,
+      "msg": "OK"
+    },
+    "result": {
+      "state": "ES_NORMAL",
+      "message": "Elasticsearch is serving searches normally",
+      "indexCoverageComplete": true,
+      "rebuildInProgress": false,
+      "circuitOpen": false,
+      "consecutiveFailures": 0,
+      "circuitOpenUntil": null,
+      "lastFailureTime": null,
+      "lastFailure": null
+    }
+  }
+}

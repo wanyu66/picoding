@@ -1,0 +1,30 @@
+{
+  "runId": "bench_es_1790318236224",
+  "createdAt": "2026-09-25T06:37:16.225Z",
+  "source": "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/impl/ArticleSearchServiceImpl.java",
+  "sourceSha256": "5220744fca7e0c27d735e4791fa639f3f9ee6322592a9459ccca0e4a886b0ffd",
+  "contractSha256": "503030721eea07d45a53dde5e44b2ffd83eafe3e638d1ec9edffd78a062876ee",
+  "configSha256": "aeaff782db7374176b655325bb187ccb1a0ee021a0ab65d2f8f20eddc58de0db",
+  "generatorSha256": "f2a65612e500f29e90503b93641872128476ab2577e2940be1ea60ef60e592b9",
+  "runnerSha256": "28c5676bab2422ae7e51f022eef188eb36cca1e528b351aa83d93f76c76ee6be",
+  "indices": [
+    "bench_es_1790318236224_10000",
+    "bench_es_1790318236224_50000",
+    "bench_es_1790318236224_100000"
+  ],
+  "alias": "bench_es_1790318236224_alias",
+  "aliasIndices": [
+    "bench_es_1790318236224_old",
+    "bench_es_1790318236224_new"
+  ],
+  "environment": {
+    "platform": "win32",
+    "release": "10.0.26100",
+    "arch": "x64",
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCpus": 24,
+    "memoryBytes": 16944848896,
+    "node": "v24.15.0"
+  },
+  "clusterUuid": "tKG4HbGpTwijr_uYZIAWRw"
+}

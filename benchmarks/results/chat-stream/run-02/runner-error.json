@@ -1,0 +1,3 @@
+{
+  "error": "Error: Subscription not ready\n    at c.open (file:///D:/Downloads/paicoding/benchmarks/scripts/chat-stream-client.mjs:38:97)\n    at async Promise.all (index 0)\n    at async scenario (file:///D:/Downloads/paicoding/benchmarks/scripts/chat-stream-client.mjs:48:4)\n    at async runSuite (file:///D:/Downloads/paicoding/benchmarks/scripts/chat-stream-client.mjs:99:3)\n    at async file:///D:/Downloads/paicoding/benchmarks/scripts/run-chat-stream.mjs:23:8"
+}

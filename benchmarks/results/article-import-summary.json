@@ -1,0 +1,40 @@
+{
+  "status": "PASS_EVENTUAL_CONSISTENCY_WITH_INITIAL_TIMEOUT",
+  "batch": "search-s20260924-n10000-v1",
+  "articleTotal": 10000,
+  "mysqlImportSeconds": 9.739626400000002,
+  "importArticlesPerSecond": 1026.733427885899,
+  "indexDocumentCount": 10000,
+  "checked": 10000,
+  "mismatches": 0,
+  "esSyncSeconds": null,
+  "esSyncReason": "Initial 1800-second wait timed out; observation stopped before completion. Next-day verification proves consistency, not exact completion time.",
+  "lastIncompleteObservation": {
+    "at": "2026-09-24T12:02:29.292Z",
+    "databaseBatchCount": 10000,
+    "databaseActiveCount": 10000,
+    "esBatchCount": 9242
+  },
+  "lastSqlCommit": "2026-09-24T11:32:29.939Z",
+  "observedSyncLowerBoundSeconds": 1799.353,
+  "verificationStarted": "2026-09-25T06:05:43.329Z",
+  "verificationFinished": "2026-09-25T06:05:51.232Z",
+  "unownedHeadersUnchanged": true,
+  "dataRetained": true,
+  "onlineScales": [
+    100,
+    10000
+  ],
+  "offlineOnlyScales": [
+    50000,
+    100000
+  ],
+  "evidence": [
+    "import-10k-01/summary.json",
+    "import-10k-01/batches.jsonl",
+    "import-10k-01/sync-polls.jsonl",
+    "verify-10k-01/summary.json",
+    "verify-10k-01/consistency.jsonl",
+    "cleanup-smoke-01/summary.json"
+  ]
+}

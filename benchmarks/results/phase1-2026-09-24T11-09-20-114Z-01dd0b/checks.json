@@ -1,0 +1,136 @@
+{
+  "capturedAt": "2026-09-24T11:09:20.114Z",
+  "scope": "Static artifact checks; no business tests or service requests",
+  "sourceFiles": 1215,
+  "passed": 22,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "document:README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "document:test-plan.md",
+      "status": "PASS"
+    },
+    {
+      "check": "document:metrics-definition.md",
+      "status": "PASS"
+    },
+    {
+      "check": "document:environment.md",
+      "status": "PASS"
+    },
+    {
+      "check": "document:results/README.md",
+      "status": "PASS"
+    },
+    {
+      "check": "source:SearchRestController.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/search/rest/SearchRestController.java"
+      ]
+    },
+    {
+      "check": "source:ArticleSearchServiceImpl.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/impl/ArticleSearchServiceImpl.java"
+      ]
+    },
+    {
+      "check": "source:DomainEventOutboxPublisher.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventOutboxPublisher.java"
+      ]
+    },
+    {
+      "check": "source:DomainEventConsumeService.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventConsumeService.java"
+      ]
+    },
+    {
+      "check": "source:UserActivityRankServiceImpl.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-service/src/main/java/com/github/paicoding/forum/service/rank/service/impl/UserActivityRankServiceImpl.java"
+      ]
+    },
+    {
+      "check": "source:ChatRestController.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/rest/ChatRestController.java"
+      ]
+    },
+    {
+      "check": "source:WsChatConfig.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/stomp/WsChatConfig.java"
+      ]
+    },
+    {
+      "check": "source:WsAnswerHelper.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/helper/WsAnswerHelper.java"
+      ]
+    },
+    {
+      "check": "source:ChatStreamSessionService.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/helper/ChatStreamSessionService.java"
+      ]
+    },
+    {
+      "check": "source:LLMRouter.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-service/src/main/java/com/github/paicoding/forum/service/llm/LLMRouter.java"
+      ]
+    },
+    {
+      "check": "source:OutboxRankFaultTest.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-service/src/test/java/com/github/paicoding/forum/service/rank/OutboxRankFaultTest.java"
+      ]
+    },
+    {
+      "check": "source:ModelStreamFaultHarness.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-web/src/test/java/com/github/paicoding/forum/test/chat/ModelStreamFaultHarness.java"
+      ]
+    },
+    {
+      "check": "source:StatisticDomainEventConsumer.java",
+      "status": "PASS",
+      "paths": [
+        "paicoding-service/src/main/java/com/github/paicoding/forum/service/statistics/listener/StatisticDomainEventConsumer.java"
+      ]
+    },
+    {
+      "check": "link:README.md:test-plan.md",
+      "status": "PASS"
+    },
+    {
+      "check": "link:README.md:metrics-definition.md",
+      "status": "PASS"
+    },
+    {
+      "check": "link:README.md:environment.md",
+      "status": "PASS"
+    },
+    {
+      "check": "link:README.md:results/README.md",
+      "status": "PASS"
+    }
+  ]
+}

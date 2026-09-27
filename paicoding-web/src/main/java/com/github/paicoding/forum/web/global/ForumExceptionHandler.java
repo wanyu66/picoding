@@ -55,6 +55,9 @@ public class ForumExceptionHandler implements HandlerExceptionResolver {
 
             try {
                 response.reset();
+                response.setHeader("X-Trace-Id", com.github.paicoding.forum.core.mdc.MdcUtil.getTraceId());
+                String io = com.github.paicoding.forum.core.cache.RequestIoStats.snapshot();
+                if (!io.isEmpty()) response.setHeader("X-Request-Io", io);
                 // 若是rest接口请求异常时，返回json格式的异常数据；而不是专门的500页面
                 response.setContentType(MediaType.APPLICATION_JSON_UTF8_VALUE);
                 response.setHeader("Cache-Control", "no-cache, must-revalidate");

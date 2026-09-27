@@ -1,0 +1,27 @@
+{
+  "run": "bench-ob-1790335975563",
+  "startedAt": "2026-09-25T11:32:55.563Z",
+  "schema": "bench_outbox",
+  "mysqlPort": 13416,
+  "rabbitPort": 15782,
+  "consumerConcurrency": 4,
+  "prefetch": 1,
+  "seed": 20260925,
+  "eventsPerScenario": {
+    "normal": 32,
+    "rollback": 8,
+    "send_failure": 8,
+    "rabbit_outage": 8,
+    "ack_crash": 8,
+    "duplicate": 32,
+    "dlq": 8
+  },
+  "environment": {
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCpus": 24,
+    "memoryBytes": 16944848896,
+    "os": "10.0.26100",
+    "node": "v24.15.0"
+  },
+  "scope": "real isolated MySQL/Rabbit; actual Outbox/publisher/consumer and retry factory; instrumented JDBC business fixture, not full HTTP/notification/rank projections"
+}

@@ -1,0 +1,5 @@
+scenario,mode,startMs,finishMs,recoveryMs
+"send_failure","production publishPending; natural retry due time",1790336163263,1790336165478,2215
+"rabbit_outage","container restart + production publisher compensation",1790336183762,1790336188839,5077
+"ack_crash","new listener receives broker redeliveries",1790336194333,1790336194461,128
+"dlq","explicit benchmark DLQ replay; NOT existing automatic compensation",1790336201541,1790336201706,165

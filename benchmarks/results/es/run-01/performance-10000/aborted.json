@@ -1,0 +1,7 @@
+{
+  "status": "ABORTED_DURING_CURSOR_PREPARATION",
+  "reason": "500-hit highlighted responses made cursor preparation unnecessarily expensive. Operator interrupted only the benchmark process; no measured cells completed.",
+  "replacement": "performance-10000-retry1",
+  "rawEvidence": "cursor-preparation.jsonl",
+  "change": "Cursor preparation omits highlights and source; measured requests retain the exported production projection/highlighting. No business code changed."
+}

@@ -1,0 +1,11 @@
+{
+  "javaVersion": "openjdk version \"1.8.0_492\"\r\nOpenJDK Runtime Environment Corretto-8.492.09.2 (build 1.8.0_492-b09)\r\nOpenJDK 64-Bit Server VM Corretto-8.492.09.2 (build 25.492-b09, mixed mode)\r\n",
+  "files": {
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/impl/ArticleSearchServiceImpl.java": "5220744fca7e0c27d735e4791fa639f3f9ee6322592a9459ccca0e4a886b0ffd",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/impl/ArticleReadServiceImpl.java": "7ab76b8d7845bf8e617b4e96b8b1c1c86a4c1c29d071b83a9fe9930abab9ab4e",
+    "paicoding-web/target/model-test-classpath.txt": "d80fb50e805bbe772b89058e00056a4252f5aaeba69b392a9f10d1991667c179",
+    "benchmarks/java/SearchContract.java": "7daa701673c57510046fd41710dae90b942853fd67f88aa58c60ca689b7d814b",
+    "benchmarks/java/SearchFaultHarness.java": "2ff597f31c0bf15413c6dd61c7c9298e1fe3350d16818737720b75b5cd81573a",
+    "benchmarks/java/SearchRebuildHarness.java": "fd19026062e0b36c598bccb0ba8c6b56b9140309609366808a4f52e42a0753c3"
+  }
+}

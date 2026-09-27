@@ -1,0 +1,344 @@
+{
+  "scenario": "streaming-next-request-fallback",
+  "latencySource": "mock",
+  "generations": [
+    {
+      "durationMs": 198.88290000000052,
+      "events": [
+        {
+          "at": 22882.4152,
+          "event": {
+            "version": 2,
+            "event": "started",
+            "requestId": "fallback-10213-0",
+            "generationId": "4782fae36d9649468516df9aabe8bb79",
+            "chatId": "fallback-10213",
+            "seq": 1,
+            "terminal": false,
+            "partial": false,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497010488,
+            "payload": null
+          }
+        },
+        {
+          "at": 22900.1571,
+          "event": {
+            "version": 2,
+            "event": "error",
+            "requestId": "fallback-10213-0",
+            "generationId": "4782fae36d9649468516df9aabe8bb79",
+            "chatId": "fallback-10213",
+            "seq": 2,
+            "terminal": true,
+            "partial": true,
+            "retryable": true,
+            "errorCode": "MODEL_ERROR",
+            "errorMessage": "模型调用失败，已保留部分输出",
+            "serverTime": 1790497010503,
+            "payload": {
+              "source": "DEEP_SEEK",
+              "maxCnt": 10000,
+              "usedCnt": 0,
+              "errorCode": "MODEL_ERROR",
+              "errorMessage": "模型调用失败，已保留部分输出",
+              "records": [
+                {
+                  "chatUid": "4420863bd6f24dc2a1f30cf1b13b4929",
+                  "question": "unavailable:fallback-10213-0",
+                  "questionTime": "2026年09月27日 16:16:50",
+                  "answer": "AI 回复生成失败，请稍后再试",
+                  "answerTime": "2026年09月27日 16:16:50",
+                  "answerType": "STREAM_END"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "durationMs": 588.5717999999979,
+      "events": [
+        {
+          "at": 23090.787,
+          "event": {
+            "version": 2,
+            "event": "started",
+            "requestId": "fallback-10213-1",
+            "generationId": "c9e074cbdcdb4325b4872ecf27234107",
+            "chatId": "fallback-10213",
+            "seq": 1,
+            "terminal": false,
+            "partial": false,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497010690,
+            "payload": null
+          }
+        },
+        {
+          "at": 23175.0476,
+          "event": {
+            "version": 2,
+            "event": "delta",
+            "requestId": "fallback-10213-1",
+            "generationId": "c9e074cbdcdb4325b4872ecf27234107",
+            "chatId": "fallback-10213",
+            "seq": 2,
+            "terminal": false,
+            "partial": true,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497010780,
+            "payload": {
+              "source": "ZHI_PU_AI",
+              "maxCnt": 10000,
+              "usedCnt": 0,
+              "errorCode": null,
+              "errorMessage": null,
+              "records": [
+                {
+                  "chatUid": "f3a174097609403cbe6b131ea537aadd",
+                  "question": "unavailable:fallback-10213-1",
+                  "questionTime": "2026年09月27日 16:16:50",
+                  "answer": "chunk01|",
+                  "answerTime": "2026年09月27日 16:16:50",
+                  "answerType": "STREAM"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "at": 23236.4173,
+          "event": {
+            "version": 2,
+            "event": "delta",
+            "requestId": "fallback-10213-1",
+            "generationId": "c9e074cbdcdb4325b4872ecf27234107",
+            "chatId": "fallback-10213",
+            "seq": 3,
+            "terminal": false,
+            "partial": true,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497010841,
+            "payload": {
+              "source": "ZHI_PU_AI",
+              "maxCnt": 10000,
+              "usedCnt": 0,
+              "errorCode": null,
+              "errorMessage": null,
+              "records": [
+                {
+                  "chatUid": "f3a174097609403cbe6b131ea537aadd",
+                  "question": "unavailable:fallback-10213-1",
+                  "questionTime": "2026年09月27日 16:16:50",
+                  "answer": "chunk01|chunk02|",
+                  "answerTime": "2026年09月27日 16:16:50",
+                  "answerType": "STREAM"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "at": 23313.0901,
+          "event": {
+            "version": 2,
+            "event": "delta",
+            "requestId": "fallback-10213-1",
+            "generationId": "c9e074cbdcdb4325b4872ecf27234107",
+            "chatId": "fallback-10213",
+            "seq": 4,
+            "terminal": false,
+            "partial": true,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497010913,
+            "payload": {
+              "source": "ZHI_PU_AI",
+              "maxCnt": 10000,
+              "usedCnt": 0,
+              "errorCode": null,
+              "errorMessage": null,
+              "records": [
+                {
+                  "chatUid": "f3a174097609403cbe6b131ea537aadd",
+                  "question": "unavailable:fallback-10213-1",
+                  "questionTime": "2026年09月27日 16:16:50",
+                  "answer": "chunk01|chunk02|chunk03|",
+                  "answerTime": "2026年09月27日 16:16:50",
+                  "answerType": "STREAM"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "at": 23362.2561,
+          "event": {
+            "version": 2,
+            "event": "delta",
+            "requestId": "fallback-10213-1",
+            "generationId": "c9e074cbdcdb4325b4872ecf27234107",
+            "chatId": "fallback-10213",
+            "seq": 5,
+            "terminal": false,
+            "partial": true,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497010966,
+            "payload": {
+              "source": "ZHI_PU_AI",
+              "maxCnt": 10000,
+              "usedCnt": 0,
+              "errorCode": null,
+              "errorMessage": null,
+              "records": [
+                {
+                  "chatUid": "f3a174097609403cbe6b131ea537aadd",
+                  "question": "unavailable:fallback-10213-1",
+                  "questionTime": "2026年09月27日 16:16:50",
+                  "answer": "chunk01|chunk02|chunk03|chunk04|",
+                  "answerTime": "2026年09月27日 16:16:50",
+                  "answerType": "STREAM"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "at": 23420.7344,
+          "event": {
+            "version": 2,
+            "event": "delta",
+            "requestId": "fallback-10213-1",
+            "generationId": "c9e074cbdcdb4325b4872ecf27234107",
+            "chatId": "fallback-10213",
+            "seq": 6,
+            "terminal": false,
+            "partial": true,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497011027,
+            "payload": {
+              "source": "ZHI_PU_AI",
+              "maxCnt": 10000,
+              "usedCnt": 0,
+              "errorCode": null,
+              "errorMessage": null,
+              "records": [
+                {
+                  "chatUid": "f3a174097609403cbe6b131ea537aadd",
+                  "question": "unavailable:fallback-10213-1",
+                  "questionTime": "2026年09月27日 16:16:50",
+                  "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|",
+                  "answerTime": "2026年09月27日 16:16:51",
+                  "answerType": "STREAM"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "at": 23485.7532,
+          "event": {
+            "version": 2,
+            "event": "delta",
+            "requestId": "fallback-10213-1",
+            "generationId": "c9e074cbdcdb4325b4872ecf27234107",
+            "chatId": "fallback-10213",
+            "seq": 7,
+            "terminal": false,
+            "partial": true,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497011090,
+            "payload": {
+              "source": "ZHI_PU_AI",
+              "maxCnt": 10000,
+              "usedCnt": 0,
+              "errorCode": null,
+              "errorMessage": null,
+              "records": [
+                {
+                  "chatUid": "f3a174097609403cbe6b131ea537aadd",
+                  "question": "unavailable:fallback-10213-1",
+                  "questionTime": "2026年09月27日 16:16:50",
+                  "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|",
+                  "answerTime": "2026年09月27日 16:16:51",
+                  "answerType": "STREAM"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "at": 23491.3309,
+          "event": {
+            "version": 2,
+            "event": "completed",
+            "requestId": "fallback-10213-1",
+            "generationId": "c9e074cbdcdb4325b4872ecf27234107",
+            "chatId": "fallback-10213",
+            "seq": 8,
+            "terminal": true,
+            "partial": false,
+            "retryable": false,
+            "errorCode": null,
+            "errorMessage": null,
+            "serverTime": 1790497011096,
+            "payload": {
+              "source": "ZHI_PU_AI",
+              "maxCnt": 10000,
+              "usedCnt": 1,
+              "errorCode": null,
+              "errorMessage": null,
+              "records": [
+                {
+                  "chatUid": "f3a174097609403cbe6b131ea537aadd",
+                  "question": "unavailable:fallback-10213-1",
+                  "questionTime": "2026年09月27日 16:16:50",
+                  "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|\n",
+                  "answerTime": "2026年09月27日 16:16:51",
+                  "answerType": "STREAM_END"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "calls": [
+    {
+      "startMs": 18472.2944,
+      "endMs": 18472.8875,
+      "question": "unavailable:fallback-10213-0",
+      "provider": "primary",
+      "chunks": 0,
+      "httpStatus": 503
+    },
+    {
+      "startMs": 18681.6327,
+      "endMs": 19060.1886,
+      "question": "unavailable:fallback-10213-1",
+      "provider": "backup",
+      "chunks": 6,
+      "done": true
+    }
+  ],
+  "passed": true,
+  "sameRequestStreamingFallback": "N/A: not implemented"
+}

@@ -1,0 +1,26 @@
+services:
+  mysql:
+    image: mysql:8.0
+    command: ['--max-connections=260']
+    environment:
+      MYSQL_ROOT_PASSWORD: ${BENCH_TEST_PASSWORD:?temporary password required}
+      MYSQL_DATABASE: bench_ranking
+    ports: ['127.0.0.1:13426:3306']
+    labels:
+      paicoding.benchmark.run: ${BENCH_RUN:?run id required}
+    healthcheck:
+      test: ['CMD-SHELL', 'MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysql --protocol=TCP -h 127.0.0.1 -uroot bench_ranking -Nse "SELECT 1"']
+      interval: 2s
+      timeout: 3s
+      retries: 60
+  redis:
+    image: redis:8.0
+    command: ['redis-server', '--appendonly', 'no', '--save', '']
+    ports: ['127.0.0.1:16409:6379']
+    labels:
+      paicoding.benchmark.run: ${BENCH_RUN:?run id required}
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 2s
+      timeout: 2s
+      retries: 30

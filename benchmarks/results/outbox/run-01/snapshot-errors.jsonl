@@ -1,0 +1,5 @@
+{"table":"domain_event_outbox","error":"org.springframework.jdbc.CannotGetJdbcConnectionException"}
+{"table":"domain_event_consume","error":"org.springframework.jdbc.CannotGetJdbcConnectionException"}
+{"table":"bench_source","error":"org.springframework.jdbc.BadSqlGrammarException"}
+{"table":"bench_effect","error":"org.springframework.jdbc.BadSqlGrammarException"}
+{"table":"bench_attempt","error":"org.springframework.jdbc.BadSqlGrammarException"}

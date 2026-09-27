@@ -1,0 +1,101 @@
+{
+  "paicoding_article_v20260916165124894": {
+    "settings": {
+      "index": {
+        "routing": {
+          "allocation": {
+            "include": {
+              "_tier_preference": "data_content"
+            }
+          }
+        },
+        "number_of_shards": "1",
+        "provided_name": "paicoding_article_v20260916165124894",
+        "creation_date": "1789548684958",
+        "analysis": {
+          "filter": {
+            "pai_stop": {
+              "type": "stop",
+              "stopwords": [
+                "的",
+                "了",
+                "和",
+                "是",
+                "在",
+                "与",
+                "及",
+                "或",
+                "一个",
+                "如何"
+              ]
+            },
+            "pai_synonym": {
+              "type": "synonym_graph",
+              "lenient": "true",
+              "synonyms": [
+                "java虚拟机,jvm",
+                "数据库,db",
+                "缓存,cache",
+                "消息队列,mq",
+                "人工智能,ai",
+                "搜索引擎,elasticsearch,es",
+                "微服务,microservice",
+                "前端,frontend",
+                "后端,backend"
+              ]
+            },
+            "pai_pinyin": {
+              "keep_joined_full_pinyin": "true",
+              "keep_original": "true",
+              "remove_duplicated_term": "true",
+              "keep_first_letter": "true",
+              "type": "pinyin",
+              "limit_first_letter_length": "32",
+              "keep_full_pinyin": "true"
+            }
+          },
+          "analyzer": {
+            "pai_zh_search": {
+              "filter": [
+                "lowercase",
+                "pai_stop",
+                "pai_synonym"
+              ],
+              "type": "custom",
+              "tokenizer": "ik_smart"
+            },
+            "pai_pinyin_index": {
+              "filter": [
+                "lowercase",
+                "pai_pinyin"
+              ],
+              "type": "custom",
+              "tokenizer": "ik_smart"
+            },
+            "pai_zh_index": {
+              "filter": [
+                "lowercase",
+                "pai_stop"
+              ],
+              "type": "custom",
+              "tokenizer": "ik_max_word"
+            },
+            "pai_pinyin_search": {
+              "filter": [
+                "lowercase",
+                "pai_pinyin"
+              ],
+              "type": "custom",
+              "tokenizer": "keyword"
+            }
+          }
+        },
+        "number_of_replicas": "0",
+        "uuid": "6EjyX-fyTkW3MBUu8a1Dhw",
+        "version": {
+          "created": "8100099"
+        }
+      }
+    }
+  }
+}

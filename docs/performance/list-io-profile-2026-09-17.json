@@ -1,0 +1,69 @@
+{
+  "capturedAt": "2026-09-17T07:30:56.028Z",
+  "scope": "Request-thread MyBatis executed statements plus instrumented outbox insert; Redis template commands, excluding asynchronous/background tasks and Lua subcommands.",
+  "observations": [
+    {
+      "size": 1,
+      "round": 1,
+      "articles": 1,
+      "traceId": "0a142819.1789630248975.359921003",
+      "io": "sql={request/article=1, article.tags/article_tag=1, article.author/user_info=1, request/global_conf=1, request/user_info=1}, redisCommands={article.statistics/hGetAll=1, request/sIsMember=1}, redisAcquisitions=2, redisAcquisitionMs=0.040299"
+    },
+    {
+      "size": 1,
+      "round": 2,
+      "articles": 1,
+      "traceId": "0a142819.1789630249048.359921004",
+      "io": "sql={request/article=1, article.tags/article_tag=1, article.author/user_info=1, request/global_conf=1, request/user_info=1}, redisCommands={article.statistics/hGetAll=1, request/sIsMember=1}, redisAcquisitions=2, redisAcquisitionMs=0.062199"
+    },
+    {
+      "size": 1,
+      "round": 3,
+      "articles": 1,
+      "traceId": "0a142819.1789630249097.359921005",
+      "io": "sql={request/article=1, article.tags/article_tag=1, article.author/user_info=1, request/global_conf=1, request/user_info=1}, redisCommands={article.statistics/hGetAll=1, request/sIsMember=1}, redisAcquisitions=2, redisAcquisitionMs=0.029501"
+    },
+    {
+      "size": 4,
+      "round": 1,
+      "articles": 4,
+      "traceId": "0a142819.1789630249153.359921006",
+      "io": "sql={request/article=1, article.tags/article_tag=4, article.author/user_info=4, request/global_conf=4, request/user_info=4}, redisCommands={article.statistics/hGetAll=4, request/sIsMember=4}, redisAcquisitions=8, redisAcquisitionMs=0.1527"
+    },
+    {
+      "size": 4,
+      "round": 2,
+      "articles": 4,
+      "traceId": "0a142819.1789630249286.359921007",
+      "io": "sql={request/article=1, article.tags/article_tag=4, article.author/user_info=4, request/global_conf=4, request/user_info=4}, redisCommands={article.statistics/hGetAll=4, request/sIsMember=4}, redisAcquisitions=8, redisAcquisitionMs=0.149298"
+    },
+    {
+      "size": 4,
+      "round": 3,
+      "articles": 4,
+      "traceId": "0a142819.1789630249407.359921008",
+      "io": "sql={request/article=1, article.tags/article_tag=4, article.author/user_info=4, request/global_conf=4, request/user_info=4}, redisCommands={article.statistics/hGetAll=4, request/sIsMember=4}, redisAcquisitions=8, redisAcquisitionMs=0.199204"
+    },
+    {
+      "size": 8,
+      "round": 1,
+      "articles": 8,
+      "traceId": "0a142819.1789630255206.359921009",
+      "io": "sql={request/article=1, article.tags/article_tag=8, article.author/user_info=8, request/global_conf=8, request/user_info=8}, redisCommands={article.statistics/hGetAll=8, request/sIsMember=8}, redisAcquisitions=16, redisAcquisitionMs=0.385899"
+    },
+    {
+      "size": 8,
+      "round": 2,
+      "articles": 8,
+      "traceId": "0a142819.1789630255500.359921010",
+      "io": "sql={request/article=1, article.tags/article_tag=8, article.author/user_info=8, request/global_conf=8, request/user_info=8}, redisCommands={article.statistics/hGetAll=8, request/sIsMember=8}, redisAcquisitions=16, redisAcquisitionMs=0.421301"
+    },
+    {
+      "size": 8,
+      "round": 3,
+      "articles": 8,
+      "traceId": "0a142819.1789630255769.359921011",
+      "io": "sql={request/article=1, article.tags/article_tag=8, article.author/user_info=8, request/global_conf=8, request/user_info=8}, redisCommands={article.statistics/hGetAll=8, request/sIsMember=8}, redisAcquisitions=16, redisAcquisitionMs=0.285"
+    }
+  ]
+}

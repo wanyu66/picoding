@@ -1,0 +1,37 @@
+[ {
+  "event_id" : "2cabd5b5-2ce0-483d-bf0c-17c4e4850a72",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 42,
+  "status" : "PENDING"
+}, {
+  "event_id" : "09b43621-781d-4fe2-95ba-8740976a88a4",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9b8ce8e5-b2a3-44fd-be54-82f0f4f96a98",
+  "event_type" : "CANCEL_PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "ff69dc87-fda1-4474-a573-2d572c8a743a",
+  "event_type" : "PRAISE",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "4e7f4256-b6e5-41e5-b5ff-5e9fa3e1941f",
+  "event_type" : "COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+}, {
+  "event_id" : "9c2c9119-f85f-47b4-8bd4-41b8a32fa71f",
+  "event_type" : "CANCEL_COLLECT",
+  "aggregate_type" : "ARTICLE",
+  "aggregate_id" : 43,
+  "status" : "PENDING"
+} ]

@@ -1,0 +1,1 @@
+{"command":"fixtures","batch":"search-smoke-s20260924-v1","status":"FAIL","created":[],"error":"mysql exited (1364); current transaction rolled back; inspect schema/privileges"}

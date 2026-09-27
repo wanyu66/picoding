@@ -10,6 +10,7 @@ import com.github.paicoding.forum.api.model.enums.HomeSelectEnum;
 import com.github.paicoding.forum.api.model.enums.OperateTypeEnum;
 import com.github.paicoding.forum.api.model.enums.PraiseStatEnum;
 import com.github.paicoding.forum.api.model.exception.ExceptionUtil;
+import com.github.paicoding.forum.api.model.exception.ForumException;
 import com.github.paicoding.forum.api.model.vo.PageListVo;
 import com.github.paicoding.forum.api.model.vo.PageParam;
 import com.github.paicoding.forum.api.model.vo.PageVo;
@@ -19,7 +20,9 @@ import com.github.paicoding.forum.api.model.vo.article.dto.SimpleArticleDTO;
 import com.github.paicoding.forum.api.model.vo.article.dto.TagDTO;
 import com.github.paicoding.forum.api.model.vo.constants.StatusEnum;
 import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
+import com.github.paicoding.forum.api.model.vo.user.dto.ArticleFootCountDTO;
 import com.github.paicoding.forum.core.senstive.SensitiveService;
+import com.github.paicoding.forum.core.cache.RequestIoStats;
 import com.github.paicoding.forum.core.util.ArticleUtil;
 import com.github.paicoding.forum.service.article.conveter.ArticleConverter;
 import com.github.paicoding.forum.service.article.repository.dao.ArticleDao;
@@ -51,6 +54,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -268,7 +272,7 @@ public class ArticleReadServiceImpl implements ArticleReadService {
     public List<ArticleDTO> queryTopArticlesByCategory(Long categoryId) {
         PageParam page = PageParam.newPageInstance(PageParam.DEFAULT_PAGE_NUM, PageParam.TOP_PAGE_SIZE);
         List<ArticleDO> articleDTOS = articleDao.listArticlesByCategoryId(categoryId, page);
-        return articleDTOS.stream().map(this::fillArticleRelatedInfo).collect(Collectors.toList());
+        return fillArticleRelatedInfo(articleDTOS);
     }
 
     @Override
@@ -403,8 +407,7 @@ public class ArticleReadServiceImpl implements ArticleReadService {
             return PageListVo.emptyVo();
         }
         List<ArticleDO> records = sortByIds(articleIds, articleDao.listByIds(articleIds));
-        List<ArticleDTO> result = records.stream()
-                .map(this::fillArticleRelatedInfo)
+        List<ArticleDTO> result = fillArticleRelatedInfo(records).stream()
                 .peek(article -> article.setSearchHit(highlights.get(article.getArticleId())))
                 .collect(Collectors.toList());
         return PageListVo.newVo(result, pageSize);
@@ -412,33 +415,64 @@ public class ArticleReadServiceImpl implements ArticleReadService {
 
     @Override
     public PageListVo<ArticleDTO> buildArticleListVo(List<ArticleDO> records, long pageSize) {
-        List<ArticleDTO> result = records.stream().map(this::fillArticleRelatedInfo).collect(Collectors.toList());
+        List<ArticleDTO> result = fillArticleRelatedInfo(records);
         return PageListVo.newVo(result, pageSize);
     }
 
     /**
      * 补全文章的阅读计数、作者、分类、标签等信息
      *
-     * @param record
+     * @param records
      * @return
      */
-    private ArticleDTO fillArticleRelatedInfo(ArticleDO record) {
+    private List<ArticleDTO> fillArticleRelatedInfo(List<ArticleDO> records) {
+        if (records.isEmpty()) return Collections.emptyList();
+        List<Long> articleIds = records.stream().map(ArticleDO::getId).distinct().collect(Collectors.toList());
+        List<Long> authorIds = records.stream().map(ArticleDO::getUserId).distinct().collect(Collectors.toList());
+        Map<Long, List<TagDTO>> tags = RequestIoStats.stage("article.tags",
+                () -> articleTagDao.queryArticleTagDetailsBatch(articleIds));
+        Map<Long, BaseUserInfoDTO> authors = RequestIoStats.stage("article.author",
+                () -> {
+                    try {
+                        return userService.batchQueryBasicUserInfo(authorIds);
+                    } catch (ForumException error) {
+                        if (error.getStatus().getCode() == StatusEnum.USER_NOT_EXISTS.getCode()) {
+                            throw ExceptionUtil.of(StatusEnum.USER_NOT_EXISTS, "userId=" + authorIds.get(0));
+                        }
+                        throw error;
+                    }
+                }).stream()
+                .collect(Collectors.toMap(BaseUserInfoDTO::getUserId, user -> user));
+        // Batch user lookup can return a partial result. Preserve the single-lookup failure.
+        for (Long authorId : authorIds) {
+            if (!authors.containsKey(authorId)) {
+                throw ExceptionUtil.of(StatusEnum.USER_NOT_EXISTS, "userId=" + authorId);
+            }
+        }
+        Set<Long> bypass = RequestIoStats.stage("article.sensitive",
+                () -> sensitiveBypassService.bypassAuthors(authors));
+        Map<Long, ArticleFootCountDTO> statistics = RequestIoStats.stage("article.statistics",
+                () -> countService.queryArticleStatisticInfoBatch(articleIds));
+        return records.stream().map(record -> fillArticleRelatedInfo(record, tags, authors, bypass, statistics))
+                .collect(Collectors.toList());
+    }
+
+    private ArticleDTO fillArticleRelatedInfo(ArticleDO record, Map<Long, List<TagDTO>> tags,
+                                             Map<Long, BaseUserInfoDTO> authors, Set<Long> bypass,
+                                             Map<Long, ArticleFootCountDTO> statistics) {
         ArticleDTO dto = ArticleConverter.toDto(record);
         // 分类信息
-        dto.getCategory().setCategory(com.github.paicoding.forum.core.cache.RequestIoStats.stage("article.category",
+        dto.getCategory().setCategory(RequestIoStats.stage("article.category",
                 () -> categoryService.queryCategoryName(record.getCategoryId())));
         // 标签列表
-        dto.setTags(com.github.paicoding.forum.core.cache.RequestIoStats.stage("article.tags",
-                () -> articleTagDao.queryArticleTagDetails(record.getId())));
+        dto.setTags(tags.getOrDefault(record.getId(), Collections.emptyList()));
         // 阅读计数统计
-        dto.setCount(com.github.paicoding.forum.core.cache.RequestIoStats.stage("article.statistics",
-                () -> countService.queryArticleStatisticInfo(record.getId())));
+        dto.setCount(statistics.get(record.getId()));
         // 作者信息
-        BaseUserInfoDTO author = com.github.paicoding.forum.core.cache.RequestIoStats.stage("article.author",
-                () -> userService.queryBasicUserInfo(dto.getAuthor()));
+        BaseUserInfoDTO author = authors.get(dto.getAuthor());
         dto.setAuthorName(author.getUserName());
         dto.setAuthorAvatar(author.getPhoto());
-        return sanitizeArticleForDisplay(dto);
+        return sanitizeArticleForDisplay(dto, bypass.contains(dto.getAuthor()));
     }
 
     @Override
@@ -452,7 +486,11 @@ public class ArticleReadServiceImpl implements ArticleReadService {
         if (article == null) {
             return null;
         }
-        if (shouldBypassSensitiveFilter(article.getAuthor())) {
+        return sanitizeArticleForDisplay(article, shouldBypassSensitiveFilter(article.getAuthor()));
+    }
+
+    private ArticleDTO sanitizeArticleForDisplay(ArticleDTO article, boolean bypass) {
+        if (bypass) {
             return article;
         }
         article.setTitle(sanitizeText(article.getTitle()));

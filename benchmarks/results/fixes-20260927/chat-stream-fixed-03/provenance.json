@@ -1,0 +1,28 @@
+{
+  "sources": {
+    "paicoding-api/src/main/java/com/github/paicoding/forum/api/model/vo/chat/ChatStreamEvent.java": "ba206597a738147ed20fe728b5bc3eea482c9c5b0ba98dde810519a4ebebeafe",
+    "paicoding-api/src/main/java/com/github/paicoding/forum/api/model/vo/chat/ChatStreamRequest.java": "f56c2f34c7239d9c6e367f3d4ce59032f81b1c5494946072d8930b9426a41784",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/llm/LLMRouter.java": "706205745437e47bff456e15f7b530c0669ed05c39297a6bcf9de1c60e89eea3",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/llm/LLMRouteProperties.java": "7a42a8a46865f785d2113f964d7fa5171dc74c517f10fb9124aad9b2f30948b1",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/llm/LLMUsageGuard.java": "a93824e645b812f11e472bb6daff5f4f1abde5a8fcc62fbd641fdc86c0152475",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/ChatFacade.java": "d8a97f6d7be5cc3a723fa88c665edd088b79e09d08c82075ebd6cd9cbc362f98",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/ChatServiceFactory.java": "7f64ee60771fec022cda9f0e4ee0744646438ba192139d19d4fc5cc6eabedcc1",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/AbsChatService.java": "c08378c727d17e8b73e1970e2d422472c3902cf7258df6542b2f672ef4e80e7a",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/ChatGenerationControl.java": "a9c3c6afe9deea50490e40a62c39c040bb4cc12dfa4a5dd115068a1690415766",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/ChatContextBudgeter.java": "d2c49fd23717bb3ab8d1411d90fa4927267ea9dc4b1f288656ec581dfe6c311a",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/impl/deepseek/DeepSeekIntegration.java": "0037bfb0d015d09fe3d2f44bb0dfd3764cec08f74f9da39e335ce14c67451f99",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/impl/deepseek/DeepSeekChatServiceImpl.java": "ae1cdabba6db6eecba4873a9e690899258ed7a3259631e8a93f0850e6c55076a",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/rest/ChatRestController.java": "b75babfbc0bc205ce6c9f6af0190652114e7267f04aac3e8d0727f1b77a04a30",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/helper/WsAnswerHelper.java": "2e2a8fdc3195e5afb4f99123d54d37bc89198622ae79c69c75c7766164fd7905",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/helper/ChatStreamSessionService.java": "1fa76d96121040e9c867b9bde8eb3add187fe7deb395512d7f6f912eb4821ca3",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/stomp/WsChatConfig.java": "30ea04e53e720b168adbac51db5ea67b90d2dd01c429282ce1f46331b21f4841",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/stomp/WsChatProperties.java": "a15696ee0704e1f6d0f0ca5b25a54a4a707277b64f11e48d3ef803444417161e",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/stomp/WsConnectionRegistry.java": "cb40bdd65b8e93116b2bee797e876cea15d9ef4c0683d9c09d16c2e2d5ebfb1a",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/stomp/AuthInChannelInterceptor.java": "05f280659beace3b14facbd1f2e32c3de01dc528fec9dfcf8f46f71db585e3dd",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/stomp/AuthOutChannelInterceptor.java": "f1a550479be03b7c016a19f7489a9d50ac7b3fe93cd5a0aa342316c051ddabf7",
+    "paicoding-core/src/main/java/com/github/paicoding/forum/core/cache/RedisClient.java": "edd4c690a079dba4e5d192e724a2a9676cf58f4e531e69694d6a21e96d1967e4",
+    "paicoding-core/src/main/java/com/github/paicoding/forum/core/ws/WebSocketResponseUtil.java": "9d212f6f84e406c0e537001d6d8235f7511b759dbc770617de700ebe71567dae",
+    "benchmarks/java/chat/ChatStreamBenchServer.java": "080ccb434ce5de4c0e4201bf54892e6e9ed4cc2ce19889fa86bb3c4d11a6df28",
+    "paicoding-ui/src/main/resources/templates/views/chat-home/index.html": "5b6c51aa2e03d47d1a165821958a61fc721d24321f24a10442dcd8b72276d9ad"
+  }
+}

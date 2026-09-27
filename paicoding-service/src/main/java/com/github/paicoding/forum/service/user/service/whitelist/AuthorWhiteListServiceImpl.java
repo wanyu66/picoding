@@ -13,6 +13,7 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -23,6 +24,7 @@ import java.util.stream.Collectors;
  * @date 2023/4/9
  */
 @Service
+@lombok.extern.slf4j.Slf4j
 public class AuthorWhiteListServiceImpl implements AuthorWhiteListService {
     /**
      * 实用 redis - set 来存储允许直接发文章的白名单
@@ -36,11 +38,37 @@ public class AuthorWhiteListServiceImpl implements AuthorWhiteListService {
     private ConfigDao configDao;
 
     @Override
+    public Set<Long> authorsInArticleWhiteList(Collection<Long> authorIds) {
+        Set<Long> allowed = new LinkedHashSet<>();
+        Set<Long> persisted = null;
+        for (Long authorId : new LinkedHashSet<>(authorIds)) {
+            if (authorId == null) continue;
+            try {
+                if (RedisClient.sIsMember(ARTICLE_WHITE_LIST, authorId)) {
+                    allowed.add(authorId);
+                    continue;
+                }
+            } catch (RuntimeException error) {
+                log.warn("author_whitelist_cache_failed fallback=database error={}", error.toString());
+            }
+            if (persisted == null) persisted = loadPersistedWhiteList();
+            if (persisted.contains(authorId)) allowed.add(authorId);
+        }
+        return allowed;
+    }
+
+    @Override
     public boolean authorInArticleWhiteList(Long authorId) {
         if (authorId == null) {
             return false;
         }
-        return RedisClient.sIsMember(ARTICLE_WHITE_LIST, authorId) || loadPersistedWhiteList().contains(authorId);
+        try {
+            if (RedisClient.sIsMember(ARTICLE_WHITE_LIST, authorId)) return true;
+        } catch (RuntimeException error) {
+            // The persisted allow-list remains authoritative when the cache is unavailable.
+            log.warn("author_whitelist_cache_failed fallback=database error={}", error.toString());
+        }
+        return loadPersistedWhiteList().contains(authorId);
     }
 
     /**

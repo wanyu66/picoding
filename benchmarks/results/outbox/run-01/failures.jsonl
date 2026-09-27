@@ -1,0 +1,1 @@
+{"type":"org.springframework.jdbc.CannotGetJdbcConnectionException","message":"Failed to obtain JDBC Connection; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure\n\nThe last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server."}

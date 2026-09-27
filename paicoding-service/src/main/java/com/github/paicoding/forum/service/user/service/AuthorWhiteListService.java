@@ -3,6 +3,8 @@ package com.github.paicoding.forum.service.user.service;
 import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
 
 import java.util.List;
+import java.util.Collection;
+import java.util.Set;
 
 /**
  * @author YiHui
@@ -18,6 +20,9 @@ public interface AuthorWhiteListService {
      * @return
      */
     boolean authorInArticleWhiteList(Long authorId);
+
+    /** Page-local membership; persisted configuration is loaded at most once. */
+    Set<Long> authorsInArticleWhiteList(Collection<Long> authorIds);
 
     /**
      * 获取所有的白名单用户

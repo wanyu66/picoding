@@ -1,0 +1,9 @@
+metric,baseline,fixed,unit
+streaming_passed,207,211,count
+streaming_failed,4,0,count
+normal_100_passed,96,100,count
+missing_expected_events,32,0,count
+normal_100_ttft_p95,257.3775000000005,422.97090000000026,ms
+normal_100_total_p95,576.1125000000011,786.9964999999975,ms
+test_exit_code,2,0,count
+cleanup_exit_code,0,0,count

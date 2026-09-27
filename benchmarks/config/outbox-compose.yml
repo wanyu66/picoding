@@ -1,0 +1,27 @@
+services:
+  mysql:
+    image: mysql@sha256:7dcddc01f13bab2f15cde676d44d01f61fc9f99fe7785e86196dfc07d358ae2b
+    environment:
+      MYSQL_ROOT_PASSWORD: ${BENCH_TEST_PASSWORD:?temporary test password required}
+      MYSQL_DATABASE: bench_outbox
+    ports: ['127.0.0.1:13416:3306']
+    labels:
+      paicoding.benchmark.run: ${BENCH_RUN:?run id required}
+    healthcheck:
+      test: ['CMD-SHELL', 'MYSQL_PWD=$$MYSQL_ROOT_PASSWORD mysql --protocol=TCP -h 127.0.0.1 -uroot bench_outbox -Nse "SELECT 1"']
+      interval: 2s
+      timeout: 3s
+      retries: 60
+  rabbit:
+    image: rabbitmq@sha256:eb5295d083325da5929a5ade766684d4019ffd2bce8bc7e43d6f9a05cafc8646
+    environment:
+      RABBITMQ_DEFAULT_USER: bench
+      RABBITMQ_DEFAULT_PASS: ${BENCH_TEST_PASSWORD:?temporary test password required}
+    ports: ['127.0.0.1:15782:5672']
+    labels:
+      paicoding.benchmark.run: ${BENCH_RUN:?run id required}
+    healthcheck:
+      test: ['CMD', 'rabbitmq-diagnostics', '-q', 'ping']
+      interval: 2s
+      timeout: 5s
+      retries: 60

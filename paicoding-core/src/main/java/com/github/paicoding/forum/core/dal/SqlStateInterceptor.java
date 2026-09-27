@@ -40,9 +40,6 @@ public class SqlStateInterceptor implements Interceptor {
     public Object intercept(Invocation invocation) throws Throwable {
         long time = System.currentTimeMillis();
         StatementHandler statementHandler = (StatementHandler) invocation.getTarget();
-        java.util.regex.Matcher table = java.util.regex.Pattern.compile("(?i)\\b(?:from|into|update)\\s+([a-zA-Z0-9_`]+)")
-                .matcher(statementHandler.getBoundSql().getSql());
-        com.github.paicoding.forum.core.cache.RequestIoStats.sql(table.find() ? table.group(1) : "other");
         String sql = buildSql(statementHandler);
         Object[] args = invocation.getArgs();
         String uname = "";

@@ -1,0 +1,70 @@
+[ {
+  "scenario" : "existing-like",
+  "concurrency" : 32,
+  "calls" : 64,
+  "successes" : 64,
+  "durationMs" : 2721.4481,
+  "outboxEvents" : 32,
+  "expectedEvents" : 1,
+  "state" : 1,
+  "expectedState" : 1,
+  "passed" : false
+}, {
+  "scenario" : "new-like",
+  "concurrency" : 32,
+  "calls" : 64,
+  "successes" : 33,
+  "durationMs" : 173.5702,
+  "outboxEvents" : 1,
+  "expectedEvents" : 1,
+  "state" : 1,
+  "expectedState" : 1,
+  "passed" : false
+}, {
+  "scenario" : "cancel-like",
+  "concurrency" : 32,
+  "calls" : 64,
+  "successes" : 64,
+  "durationMs" : 836.125,
+  "outboxEvents" : 32,
+  "expectedEvents" : 1,
+  "state" : 2,
+  "expectedState" : 2,
+  "passed" : false
+}, {
+  "scenario" : "relike",
+  "concurrency" : 32,
+  "calls" : 64,
+  "successes" : 64,
+  "durationMs" : 700.5602,
+  "outboxEvents" : 32,
+  "expectedEvents" : 1,
+  "state" : 1,
+  "expectedState" : 1,
+  "passed" : false
+}, {
+  "scenario" : "collect",
+  "concurrency" : 32,
+  "calls" : 64,
+  "successes" : 64,
+  "durationMs" : 580.8393,
+  "outboxEvents" : 32,
+  "expectedEvents" : 1,
+  "state" : 1,
+  "expectedState" : 1,
+  "passed" : false
+}, {
+  "scenario" : "cancel-collect",
+  "concurrency" : 32,
+  "calls" : 64,
+  "successes" : 64,
+  "durationMs" : 620.8842,
+  "outboxEvents" : 32,
+  "expectedEvents" : 1,
+  "state" : 2,
+  "expectedState" : 2,
+  "passed" : false
+}, {
+  "scenario" : "rollback",
+  "passed" : true
+} ]

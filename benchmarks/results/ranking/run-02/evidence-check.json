@@ -1,0 +1,154 @@
+{
+  "artifactChecksPassed": true,
+  "independentFixtureOracles": 28,
+  "businessFailures": [
+    "10-repeat_like",
+    "50-repeat_like",
+    "50-hot_member",
+    "100-repeat_like",
+    "200-repeat_like",
+    "200-hot_member"
+  ],
+  "checks": [
+    {
+      "scenario": "10-multi_user",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "10-repeat_like",
+      "independentOracleValid": true,
+      "passed": false
+    },
+    {
+      "scenario": "10-duplicate_event",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "10-like_cancel",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "10-collect_cancel",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "10-hot_member",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "10-redis_outage",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "50-multi_user",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "50-repeat_like",
+      "independentOracleValid": true,
+      "passed": false
+    },
+    {
+      "scenario": "50-duplicate_event",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "50-like_cancel",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "50-collect_cancel",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "50-hot_member",
+      "independentOracleValid": true,
+      "passed": false
+    },
+    {
+      "scenario": "50-redis_outage",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "100-multi_user",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "100-repeat_like",
+      "independentOracleValid": true,
+      "passed": false
+    },
+    {
+      "scenario": "100-duplicate_event",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "100-like_cancel",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "100-collect_cancel",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "100-hot_member",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "100-redis_outage",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "200-multi_user",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "200-repeat_like",
+      "independentOracleValid": true,
+      "passed": false
+    },
+    {
+      "scenario": "200-duplicate_event",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "200-like_cancel",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "200-collect_cancel",
+      "independentOracleValid": true,
+      "passed": true
+    },
+    {
+      "scenario": "200-hot_member",
+      "independentOracleValid": true,
+      "passed": false
+    },
+    {
+      "scenario": "200-redis_outage",
+      "independentOracleValid": true,
+      "passed": true
+    }
+  ]
+}

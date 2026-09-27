@@ -1,0 +1,31 @@
+{
+  "mysql" : "8.0.46",
+  "redis" : {
+    "listener0" : "name=tcp,bind=*,bind=-::*,port=6379",
+    "gcc_version" : "12.2.0",
+    "redis_build_id" : "1a00e0b8a22ff5bd",
+    "process_id" : "1",
+    "io_threads_active" : "0",
+    "executable" : "/data/redis-server",
+    "monotonic_clock" : "POSIX clock_gettime",
+    "server_time_usec" : "1790497161764107",
+    "os" : "Linux 6.6.87.2-microsoft-standard-WSL2 x86_64",
+    "uptime_in_seconds" : "30",
+    "configured_hz" : "10",
+    "redis_git_dirty" : "1",
+    "redis_git_sha1" : "00000000",
+    "config_file" : "",
+    "redis_mode" : "standalone",
+    "multiplexing_api" : "epoll",
+    "atomicvar_api" : "c11-builtin",
+    "run_id" : "a94ef680bdfac018b154b48faf620cafc669cce0",
+    "arch_bits" : "64",
+    "hz" : "10",
+    "redis_version" : "8.0.6",
+    "tcp_port" : "6379",
+    "lru_clock" : "12112265",
+    "uptime_in_days" : "0",
+    "process_supervised" : "no"
+  },
+  "timezone" : "Asia/Shanghai"
+}

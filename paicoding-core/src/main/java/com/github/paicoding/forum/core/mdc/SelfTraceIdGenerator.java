@@ -23,7 +23,8 @@ import java.util.stream.Collectors;
 public class SelfTraceIdGenerator {
     private final static Integer MIN_AUTO_NUMBER = 1000;
     private final static Integer MAX_AUTO_NUMBER = 10000;
-    private static volatile Integer autoIncreaseNumber = MIN_AUTO_NUMBER;
+    private static final java.util.concurrent.atomic.AtomicInteger autoIncreaseNumber =
+            new java.util.concurrent.atomic.AtomicInteger(MIN_AUTO_NUMBER);
 
     /**
      * <p>
@@ -73,12 +74,7 @@ public class SelfTraceIdGenerator {
      * @return 自增序列号
      */
     private static int getAutoIncreaseNumber() {
-        if (autoIncreaseNumber >= MAX_AUTO_NUMBER) {
-            autoIncreaseNumber = MIN_AUTO_NUMBER;
-            return autoIncreaseNumber;
-        } else {
-            return autoIncreaseNumber++;
-        }
+        return autoIncreaseNumber.getAndUpdate(value -> value + 1 >= MAX_AUTO_NUMBER ? MIN_AUTO_NUMBER : value + 1);
     }
 
     /**

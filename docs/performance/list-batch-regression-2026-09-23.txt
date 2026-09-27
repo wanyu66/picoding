@@ -1,0 +1,14 @@
+Captured from .runtime/list-batch-test-final.log on 2026-09-23.
+Scope: Java 8 regression; actual MyBatis/H2 and RedisTemplate diagnostics with mocked RedisConnection. Not live HTTP or latency evidence.
+
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.151 s - in com.github.paicoding.forum.core.cache.RedisCircuitBreakerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+LIST_BATCH size=1 before=sql={request/article=1, request/article_tag=1, request/user_info=2, request/global_conf=1}, redisCommands={request/hGetAll=1, request/sIsMember=1}, redisAcquisitions=2, redisAcquisitionMs=15.6567 after=sql={request/article=1, article.tags/article_tag=1, article.author/user_info=1, article.sensitive/global_conf=1}, redisCommands={article.sensitive/sIsMember=1, article.statistics/hGetAll=1}, redisAcquisitions=2, redisAcquisitionMs=0.171
+LIST_BATCH size=4 before=sql={request/article=1, request/article_tag=4, request/user_info=8, request/global_conf=4}, redisCommands={request/hGetAll=4, request/sIsMember=4}, redisAcquisitions=8, redisAcquisitionMs=0.5145 after=sql={request/article=1, article.tags/article_tag=1, article.author/user_info=1, article.sensitive/global_conf=1}, redisCommands={article.sensitive/sIsMember=1, article.statistics/hGetAll=4}, redisAcquisitions=2, redisAcquisitionMs=0.1624
+LIST_BATCH size=8 before=sql={request/article=1, request/article_tag=8, request/user_info=16, request/global_conf=8}, redisCommands={request/hGetAll=8, request/sIsMember=8}, redisAcquisitions=16, redisAcquisitionMs=1.413 after=sql={request/article=1, article.tags/article_tag=1, article.author/user_info=1, article.sensitive/global_conf=1}, redisCommands={article.sensitive/sIsMember=1, article.statistics/hGetAll=8}, redisAcquisitions=2, redisAcquisitionMs=0.1366
+LIST_BATCH distinctAuthors=8 after=sql={request/article=1, article.tags/article_tag=1, article.author/user_info=1, article.sensitive/global_conf=1}, redisCommands={article.sensitive/sIsMember=8, article.statistics/hGetAll=8}, redisAcquisitions=9, redisAcquisitionMs=0.1732
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.941 s - in com.github.paicoding.forum.service.article.service.impl.ArticleListBatchTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 s - in com.github.paicoding.forum.service.statistics.service.impl.CountServiceImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in com.github.paicoding.forum.service.user.service.whitelist.AuthorWhiteListFallbackTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS

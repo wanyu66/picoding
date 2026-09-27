@@ -1,0 +1,31 @@
+{
+  "found" : 16,
+  "passed" : 9,
+  "failed" : 7,
+  "skipped" : 0,
+  "durationMs" : 8410,
+  "concurrency" : 1,
+  "scope" : "loopback HTTP stub; mocked DAO and JDBC; transaction rollback not exercised",
+  "failures" : [ {
+    "test" : "deleteFailurePropagates()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown."
+  }, {
+    "test" : "syncFailurePropagates()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown."
+  }, {
+    "test" : "indexInitializationFailurePropagates()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown."
+  }, {
+    "test" : "timedOutResponseRejectsPartialHits()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.io.IOException to be thrown, but nothing was thrown."
+  }, {
+    "test" : "createEventFailureReachesConsumeBoundary()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown."
+  }, {
+    "test" : "failedShardResponseRejectsPartialHits()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.io.IOException to be thrown, but nothing was thrown."
+  }, {
+    "test" : "deleteEventFailureReachesConsumeBoundary()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown."
+  } ]
+}

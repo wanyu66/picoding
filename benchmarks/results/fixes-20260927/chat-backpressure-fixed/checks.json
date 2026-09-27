@@ -1,0 +1,16 @@
+{
+  "corePoolSize" : 4,
+  "maxPoolSize" : 10,
+  "queueCapacity" : 256,
+  "queueDepthAtSend" : 256,
+  "saturatedSendRejected" : false,
+  "handlerCalls" : 3,
+  "handlerThreads" : [ "0:main", "1:main", "2:main" ],
+  "callerThread" : "main",
+  "queuedTasksExecuted" : 256,
+  "shutdownRejected" : true,
+  "failures" : [ ],
+  "passed" : true,
+  "durationMs" : 5395.4102,
+  "realModelCalls" : 0
+}

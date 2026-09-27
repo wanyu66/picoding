@@ -10,7 +10,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -21,6 +24,17 @@ import java.util.Set;
  */
 @Repository
 public class ArticleTagDao extends ServiceImpl<ArticleTagMapper, ArticleTagDO> {
+    public Map<Long, List<TagDTO>> queryArticleTagDetailsBatch(Collection<Long> articleIds) {
+        if (articleIds.isEmpty()) return Collections.emptyMap();
+        Map<Long, List<TagDTO>> result = new LinkedHashMap<>();
+        baseMapper.listArticleTagDetailsBatch(articleIds).forEach(row -> {
+            TagDTO tag = new TagDTO();
+            tag.setTagId(row.getTagId());
+            tag.setTag(row.getTag());
+            result.computeIfAbsent(row.getArticleId(), id -> new ArrayList<>()).add(tag);
+        });
+        return result;
+    }
 
 
     /**

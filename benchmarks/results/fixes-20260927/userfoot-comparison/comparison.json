@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-09-27T08:20:15.487Z",
+  "baseline": "benchmarks/results/fixes-20260927/userfoot-baseline-01",
+  "current": "benchmarks/results/fixes-20260927/userfoot-fixed-01",
+  "evidenceChecksPassed": true,
+  "baselinePassed": 1,
+  "currentPassed": 7,
+  "totalCases": 7,
+  "comparisons": [
+    {
+      "scenario": "existing-like",
+      "calls": 64,
+      "concurrency": 32,
+      "baselineEvents": 32,
+      "currentEvents": 1,
+      "baselineErrors": 0,
+      "currentErrors": 0,
+      "baselinePassed": false,
+      "currentPassed": true
+    },
+    {
+      "scenario": "new-like",
+      "calls": 64,
+      "concurrency": 32,
+      "baselineEvents": 1,
+      "currentEvents": 1,
+      "baselineErrors": 31,
+      "currentErrors": 0,
+      "baselinePassed": false,
+      "currentPassed": true
+    },
+    {
+      "scenario": "cancel-like",
+      "calls": 64,
+      "concurrency": 32,
+      "baselineEvents": 32,
+      "currentEvents": 1,
+      "baselineErrors": 0,
+      "currentErrors": 0,
+      "baselinePassed": false,
+      "currentPassed": true
+    },
+    {
+      "scenario": "relike",
+      "calls": 64,
+      "concurrency": 32,
+      "baselineEvents": 32,
+      "currentEvents": 1,
+      "baselineErrors": 0,
+      "currentErrors": 0,
+      "baselinePassed": false,
+      "currentPassed": true
+    },
+    {
+      "scenario": "collect",
+      "calls": 64,
+      "concurrency": 32,
+      "baselineEvents": 32,
+      "currentEvents": 1,
+      "baselineErrors": 0,
+      "currentErrors": 0,
+      "baselinePassed": false,
+      "currentPassed": true
+    },
+    {
+      "scenario": "cancel-collect",
+      "calls": 64,
+      "concurrency": 32,
+      "baselineEvents": 32,
+      "currentEvents": 1,
+      "baselineErrors": 0,
+      "currentErrors": 0,
+      "baselinePassed": false,
+      "currentPassed": true
+    }
+  ],
+  "scope": "Same state transitions and assertions; real isolated MySQL service/mapper/outbox. No HTTP/Rabbit delivery or throughput gain claim."
+}

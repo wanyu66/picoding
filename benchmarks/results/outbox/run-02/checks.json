@@ -1,0 +1,79 @@
+[ {
+  "name" : "dedicated database",
+  "pass" : true,
+  "evidence" : "bench_outbox:13416"
+}, {
+  "name" : "new empty schema",
+  "pass" : true,
+  "evidence" : "no existing data permitted"
+}, {
+  "name" : "normal effects",
+  "pass" : true,
+  "evidence" : 32
+}, {
+  "name" : "business transaction rollback",
+  "pass" : true,
+  "evidence" : 0
+}, {
+  "name" : "outbox transaction rollback",
+  "pass" : true,
+  "evidence" : 0
+}, {
+  "name" : "committed DB + mandatory return retained FAILED",
+  "pass" : true,
+  "evidence" : 8
+}, {
+  "name" : "broker outage retained FAILED",
+  "pass" : true,
+  "evidence" : 8
+}, {
+  "name" : "real process death after commit before ACK",
+  "pass" : true,
+  "evidence" : 77
+}, {
+  "name" : "crash child committed business before ACK",
+  "pass" : true,
+  "evidence" : 8
+}, {
+  "name" : "duplicates cause only 32 writes",
+  "pass" : true,
+  "evidence" : 32
+}, {
+  "name" : "failed handlers rolled back effects and consume tokens",
+  "pass" : true,
+  "evidence" : 0
+}, {
+  "name" : "production retry attempts = 3 per poison event",
+  "pass" : true,
+  "evidence" : 24
+}, {
+  "name" : "96 committed events have one business write each",
+  "pass" : true,
+  "evidence" : [ {
+    "scenario" : "normal",
+    "writes" : 32
+  }, {
+    "scenario" : "send_failure",
+    "writes" : 8
+  }, {
+    "scenario" : "rabbit_outage",
+    "writes" : 8
+  }, {
+    "scenario" : "ack_crash",
+    "writes" : 8
+  }, {
+    "scenario" : "duplicate",
+    "writes" : 32
+  }, {
+    "scenario" : "dlq",
+    "writes" : 8
+  } ]
+}, {
+  "name" : "all consume tokens and publisher states complete",
+  "pass" : true,
+  "evidence" : 96
+}, {
+  "name" : "final DLQ drained by explicit compensation",
+  "pass" : true,
+  "evidence" : 0
+} ]

@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-24T11:35:57.700Z",
+  "states": [
+    {
+      "count": 2995,
+      "status": "PENDING"
+    },
+    {
+      "count": 7005,
+      "status": "SENT"
+    }
+  ]
+}

@@ -7,6 +7,49 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 class RedisCircuitBreakerTest {
     @Test
+    void defaultOpensOnFirstTimeoutAndRejectsFollowingOperations() {
+        RedisCircuitBreaker breaker = new RedisCircuitBreaker(new CacheProtectionProperties());
+        assertThatThrownBy(() -> breaker.execute(() -> {
+            throw new org.springframework.dao.QueryTimeoutException("command timeout");
+        })).isInstanceOf(org.springframework.dao.QueryTimeoutException.class);
+        assertThat(breaker.getState()).isEqualTo(RedisCircuitBreaker.State.OPEN);
+        java.util.concurrent.atomic.AtomicInteger calls = new java.util.concurrent.atomic.AtomicInteger();
+        assertThatThrownBy(() -> breaker.execute(calls::incrementAndGet))
+                .isInstanceOf(RedisCircuitBreaker.RedisCircuitOpenException.class);
+        assertThat(calls.get()).isZero();
+    }
+
+    @Test
+    void onlyOneRecoveryProbeRunsAndFailedProbeReopensCircuit() throws Exception {
+        RedisCircuitBreaker breaker = new RedisCircuitBreaker(new CacheProtectionProperties());
+        assertThatThrownBy(() -> breaker.execute(() -> {
+            throw new org.springframework.data.redis.RedisConnectionFailureException("down");
+        }));
+        org.springframework.test.util.ReflectionTestUtils.setField(breaker, "openUntil", System.currentTimeMillis() - 1);
+        java.util.concurrent.CountDownLatch entered = new java.util.concurrent.CountDownLatch(1);
+        java.util.concurrent.CountDownLatch release = new java.util.concurrent.CountDownLatch(1);
+        java.util.concurrent.ExecutorService executor = java.util.concurrent.Executors.newSingleThreadExecutor();
+        try {
+            java.util.concurrent.Future<?> probe = executor.submit(() -> breaker.execute(() -> {
+                entered.countDown();
+                try { release.await(5, java.util.concurrent.TimeUnit.SECONDS); }
+                catch (InterruptedException error) { Thread.currentThread().interrupt(); }
+                throw new org.springframework.dao.QueryTimeoutException("still down");
+            }));
+            assertThat(entered.await(5, java.util.concurrent.TimeUnit.SECONDS)).isTrue();
+            assertThatThrownBy(() -> breaker.execute(() -> "must not run"))
+                    .isInstanceOf(RedisCircuitBreaker.RedisCircuitOpenException.class);
+            release.countDown();
+            assertThatThrownBy(() -> probe.get(5, java.util.concurrent.TimeUnit.SECONDS))
+                    .hasCauseInstanceOf(org.springframework.dao.QueryTimeoutException.class);
+            assertThat(breaker.getState()).isEqualTo(RedisCircuitBreaker.State.OPEN);
+            org.springframework.test.util.ReflectionTestUtils.setField(breaker, "openUntil", System.currentTimeMillis() - 1);
+            assertThat(breaker.execute(() -> "recovered")).isEqualTo("recovered");
+            assertThat(breaker.getState()).isEqualTo(RedisCircuitBreaker.State.CLOSED);
+        } finally { release.countDown(); executor.shutdownNow(); }
+    }
+
+    @Test
     void opensAfterConfiguredFailuresAndFailsFast() {
         CacheProtectionProperties properties = new CacheProtectionProperties();
         properties.setBreakerFailureThreshold(2);

@@ -1,0 +1,18 @@
+{
+  "java": "1.8",
+  "recordedAt": "2026-09-24T14:26:51.7579401+08:00",
+  "sourceSha256": {
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/AbsChatService.java": "894B6A3789BE4166D76B0FFDF31FEF764845887C85B3F4D1601E273F6F6DDA98",
+    "scripts/load-test/run-model-stream-fault.ps1": "594C92624E5E29EFCB1D6758AB519881B53A64153EB8A1373076EEF2F9CC1807",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/ChatGenerationControl.java": "6662239A88817DAFBCEE52FE0759AE0B142E540D01C37B4E50E8333CAA6A00B3",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/llm/LLMRouter.java": "31FA6E075DBE3718E2F43A66A456CE55A0FA57BA760929B3AD059D397FEF7CC7",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/helper/ChatStreamSessionService.java": "CEBED4F850F658A0BCC764F86FA82A74B34FC8B577197795B87056102574F370",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/impl/deepseek/DeepSeekChatServiceImpl.java": "895B0BDF04788BB5BCC16A19EFB56E7877C3B5D865E6B892DC6AA7B7378E9B5C",
+    "paicoding-ui/src/main/resources/templates/views/chat-home/index.html": "5B6C51AA2E03D47D1A165821958A61FC721D24321F24A10442DCD8B72276D9AD",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/helper/WsAnswerHelper.java": "3BB5BC5E2D181368FA6E2CDDA3517375839CD0D8916060833EC259E26E414B17",
+    "paicoding-web/src/test/java/com/github/paicoding/forum/test/chat/ModelStreamFaultHarness.java": "5AA8F17712A8BD077A1F86878597AB11B32AC8AAE37F8E367EE7F7614676056E",
+    "scripts/load-test/test-model-stream-ui.cjs": "EC6D8BBE0FFB76888AAEA88CCF5FE5DE6C8E5DAABACE13169B8A63556B804008"
+  },
+  "dirtyWorkspace": true,
+  "commit": "318e5d08e149f2da80fb51af04890441bc497284"
+}

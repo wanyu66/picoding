@@ -1,0 +1,68 @@
+{
+  "esUrl": "http://127.0.0.1:9200",
+  "seed": 20260924,
+  "referenceTime": "2026-01-01T00:00:00.000Z",
+  "sizes": [
+    10000,
+    50000,
+    100000
+  ],
+  "concurrency": [
+    1,
+    4
+  ],
+  "warmupSeconds": 2,
+  "durationSeconds": 5,
+  "repetitions": 3,
+  "requestTimeoutMs": 30000,
+  "bulkSize": 200,
+  "queries": [
+    {
+      "id": "exact",
+      "query": "Java 并发编程 000001",
+      "category": "exact_title"
+    },
+    {
+      "id": "body",
+      "query": "validate recovery",
+      "category": "body_keyword"
+    },
+    {
+      "id": "pinyin",
+      "query": "bingfabiancheng",
+      "category": "pinyin"
+    },
+    {
+      "id": "typo",
+      "query": "elastcisearch",
+      "category": "typo"
+    },
+    {
+      "id": "hot",
+      "query": "Redis",
+      "category": "popular"
+    },
+    {
+      "id": "recent",
+      "query": "Spring",
+      "category": "recent"
+    },
+    {
+      "id": "zero",
+      "query": "zzzxnonexistentbenchmark",
+      "category": "no_answer"
+    }
+  ],
+  "paginationQuery": "body",
+  "paginationDepths": [
+    0,
+    90,
+    990,
+    4990,
+    9990
+  ],
+  "resultSizes": [
+    10,
+    50
+  ]
+}

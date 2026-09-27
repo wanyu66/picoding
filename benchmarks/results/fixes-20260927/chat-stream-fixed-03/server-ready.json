@@ -1,0 +1,12 @@
+{
+  "wsPort" : 53564,
+  "modelPort" : 53550,
+  "mockOnly" : true,
+  "chunkDelayMs" : 60,
+  "chunks" : 6,
+  "modelTimeoutMs" : 15000,
+  "auth" : "synthetic loopback principal",
+  "history" : "in-memory sink",
+  "okhttpMaxRequests" : 256,
+  "okhttpMaxRequestsPerHost" : 256
+}

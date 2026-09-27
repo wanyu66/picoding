@@ -1,0 +1,25 @@
+{
+  "gitRevision": "d2722a30f35a4cddf3304819467ae6d7c9d30f37",
+  "checks": [
+    {
+      "path": "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/service/userfoot/UserFootServiceImpl.java",
+      "sha256": "8ac7c2e979100d043411f3d55fdb8179b91dce22cd8cb2ac1e48e02512fd155c",
+      "passed": true
+    },
+    {
+      "path": "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/repository/dao/UserFootDao.java",
+      "sha256": "04aa96610f7813143cd440c1b7c33f2b1f1703e7aefe158b15da7639f5f732d1",
+      "passed": true
+    },
+    {
+      "path": "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java",
+      "sha256": "12c5522eb7d17c5691fa99f626bd916e94645292e5433c5f2d737f6762ea2426",
+      "passed": true
+    },
+    {
+      "path": "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventOutboxServiceImpl.java",
+      "sha256": "46895ffe60ead4802d1067cbb722c6b4b08ce2bcbffee4a08f87191e95a8648d",
+      "passed": true
+    }
+  ]
+}

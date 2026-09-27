@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "039b0af877d7b42b89419cb5",
+  "capturedAt": "2026-09-23T11:47:56.846Z",
+  "fixedDecayOrigin": "2026-09-23T11:47:56.846Z",
+  "corpusSha256": "2dadc4e01deef26a2b401e4cc213b3799e9c4850fa90ff68c8920f31e531a7b3",
+  "querySha256": "b871d1d0b59f8d42bd1d18a98fd2876c2ccfb231c0a116fb05e3e85269c3fab7",
+  "sourceIndex": "paicoding_article_v20260916165124894",
+  "documentCount": 8,
+  "queryCount": 64,
+  "intentCount": 34,
+  "judgmentsComplete": false,
+  "relevanceMetrics": null,
+  "candidateScope": "entire_corpus",
+  "candidatePairs": 512,
+  "variants": [
+    "a_fulltext",
+    "b_recall",
+    "c_heat_decay"
+  ],
+  "limits": [
+    "Human relevance judgments pending",
+    "Authored queries, not sampled traffic",
+    "Small local corpus is a pilot, not evidence of community-wide improvement",
+    "C adds only heat and time decay; production qualityScore is intentionally omitted",
+    "All variants share the existing Chinese and synonym analyzers"
+  ],
+  "queryBuilderSha256": "ef5b13b5b9116a88820c4864917137e5d08b71cfc2e15e7e91532c67d8da54ad",
+  "sourceServiceSha256": "5220744fca7e0c27d735e4791fa639f3f9ee6322592a9459ccca0e4a886b0ffd",
+  "operational": {
+    "a_fulltext": {
+      "queries": 64,
+      "emptyResults": 34,
+      "note": "Result availability only; not relevance quality or measured user CTR"
+    },
+    "b_recall": {
+      "queries": 64,
+      "emptyResults": 2,
+      "note": "Result availability only; not relevance quality or measured user CTR"
+    },
+    "c_heat_decay": {
+      "queries": 64,
+      "emptyResults": 2,
+      "note": "Result availability only; not relevance quality or measured user CTR"
+    }
+  },
+  "queryAuthorship": "Assistant-authored from corpus contents; not human search logs; requires curator review",
+  "runSha256": {
+    "a_fulltext": "1f065fa8a1525e17bd74ab6c3890cfa8a01c6eea6b305b874da3563c305ab4b8",
+    "b_recall": "f7e095ee917d5938deef4f887e7980be133a1b2a812820788703a41ff530f339",
+    "c_heat_decay": "ec5cd646bca760a76e6b973420a4f08cc492d3f29590b7d69e441857522e8b44"
+  },
+  "requestsSha256": "2ab40ea4e8315e8cfaf7a81d3dc0091da3b6b464254517fc32be8228c221b289"
+}

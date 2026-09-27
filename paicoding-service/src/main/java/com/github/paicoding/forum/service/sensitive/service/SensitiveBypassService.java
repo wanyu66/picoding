@@ -1,5 +1,9 @@
 package com.github.paicoding.forum.service.sensitive.service;
 
+import com.github.paicoding.forum.api.model.vo.user.dto.BaseUserInfoDTO;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * 敏感词处理豁免服务
  *
@@ -15,4 +19,7 @@ public interface SensitiveBypassService {
      * @return true 表示跳过敏感词处理
      */
     boolean shouldBypassByUserId(Long userId);
+
+    /** Reuse the page's author roles; no additional user lookup. */
+    Set<Long> bypassAuthors(Map<Long, BaseUserInfoDTO> authors);
 }

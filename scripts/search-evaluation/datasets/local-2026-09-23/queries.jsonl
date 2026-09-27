@@ -1,0 +1,64 @@
+{"id":"q01","query":"项目模块划分","category":"chinese","intent":"modules","need":"了解技术派各工程模块的职责和依赖","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q02","query":"技术派本地部署","category":"chinese","intent":"deployment","need":"寻找技术派本地运行和部署说明","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q03","query":"用户注册登录","category":"chinese","intent":"login","need":"了解社区注册登录的设计","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q04","query":"用户权限管理","category":"chinese","intent":"permissions","need":"了解社区权限管理及相关库表","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q05","query":"文章点赞收藏","category":"chinese","intent":"interactions","need":"了解文章点赞和收藏的业务设计","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q06","query":"评论模块库表设计","category":"chinese","intent":"comments","need":"寻找评论模块和评论表的设计","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q07","query":"消息通知方案","category":"chinese","intent":"notifications","need":"了解社区消息通知的实现方案","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q08","query":"图片上传设计","category":"chinese","intent":"uploads","need":"了解图片上传模块的设计","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q09","query":"Java进阶之路PDF","category":"chinese","intent":"java-guide","need":"寻找 Java 进阶之路小册的介绍和获取方式","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q10","query":"如何加入技术派知识星球","category":"chinese","intent":"community","need":"了解技术派知识星球的内容与加入方式","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q11","query":"分布式主备架构","category":"chinese","intent":"failover","need":"理解主备架构和故障切换","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q12","query":"CAP定理","category":"chinese","intent":"cap","need":"了解分布式系统 CAP 定理","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q13","query":"Raft共识算法","category":"chinese","intent":"raft","need":"了解 Raft 共识算法","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q14","query":"两阶段提交协议","category":"chinese","intent":"commit","need":"了解 2PC 两阶段提交协议","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q15","query":"一致性哈希算法","category":"chinese","intent":"hashing","need":"了解一致性哈希算法","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q16","query":"分布式事务","category":"chinese","intent":"transactions","need":"了解分布式事务的方案","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q17","query":"布隆过滤器","category":"chinese","intent":"bloom","need":"了解布隆过滤器的原理或用途","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q18","query":"分布式系统八个谬误","category":"chinese","intent":"fallacies","need":"了解分布式系统常见的八个错误假设","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q19","query":"网络不可靠怎么办","category":"chinese","intent":"network","need":"了解分布式网络故障的应对方法","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q20","query":"分布式性能指标","category":"chinese","intent":"metrics","need":"了解吞吐量、延迟、可用性等衡量指标","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q21","query":"jishupai bendibushu","category":"pinyin","intent":"deployment","need":"寻找技术派本地运行和部署说明","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q22","query":"yonghu quanxian guanli","category":"pinyin","intent":"permissions","need":"了解社区权限管理及相关库表","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q23","query":"pinglun","category":"pinyin","intent":"comments","need":"寻找评论模块和评论表的设计","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q24","query":"xiaoxitongzhi","category":"pinyin","intent":"notifications","need":"了解社区消息通知的实现方案","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q25","query":"tupian shangchuan","category":"pinyin","intent":"uploads","need":"了解图片上传模块的设计","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q26","query":"java jinjie zhilu","category":"pinyin","intent":"java-guide","need":"寻找 Java 进阶之路小册的介绍和获取方式","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q27","query":"zhubeijiagou","category":"pinyin","intent":"failover","need":"理解主备架构和故障切换","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q28","query":"yizhixing hash","category":"pinyin","intent":"hashing","need":"了解一致性哈希算法","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q29","query":"fenbushishiwu","category":"pinyin","intent":"transactions","need":"了解分布式事务的方案","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q30","query":"bulongguolvqi","category":"pinyin","intent":"bloom","need":"了解布隆过滤器的原理或用途","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q31","query":"wangluo bukekao","category":"pinyin","intent":"network","need":"了解分布式网络故障的应对方法","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q32","query":"xingnengzhibiao","category":"pinyin","intent":"metrics","need":"了解吞吐量、延迟、可用性等衡量指标","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q33","query":"技木派本地部署","category":"typo","intent":"deployment","need":"寻找技术派本地运行和部署说明","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q34","query":"分步式主备架构","category":"typo","intent":"failover","need":"理解主备架构和故障切换","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q35","query":"CAP定里","category":"typo","intent":"cap","need":"了解分布式系统 CAP 定理","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q36","query":"Raft算发","category":"typo","intent":"raft","need":"了解 Raft 共识算法","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q37","query":"一致性哈稀","category":"typo","intent":"hashing","need":"了解一致性哈希算法","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q38","query":"分布式事物","category":"typo","intent":"transactions","need":"了解分布式事务的方案","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q39","query":"布隆过虑器","category":"typo","intent":"bloom","need":"了解布隆过滤器的原理或用途","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q40","query":"Elastcsearch","category":"typo","intent":"search","need":"了解社区搜索引擎的用途与设计","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q41","query":"Redsi缓存","category":"typo","intent":"cache","need":"了解缓存技术在系统中的作用","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q42","query":"Jvaa进阶之路","category":"typo","intent":"java-guide","need":"寻找 Java 进阶之路小册的介绍和获取方式","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q43","query":"用户权现管理","category":"typo","intent":"permissions","need":"了解社区权限管理及相关库表","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q44","query":"消习通知","category":"typo","intent":"notifications","need":"了解社区消息通知的实现方案","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q45","query":"缓存","category":"synonym","intent":"cache","need":"了解缓存技术在系统中的作用","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q46","query":"cache","category":"synonym","intent":"cache","need":"了解缓存技术在系统中的作用","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q47","query":"消息队列","category":"synonym","intent":"mq","need":"了解消息队列的用途","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q48","query":"mq","category":"synonym","intent":"mq","need":"了解消息队列的用途","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q49","query":"java虚拟机","category":"synonym","intent":"jvm","need":"寻找 Java 虚拟机的学习资料","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q50","query":"jvm","category":"synonym","intent":"jvm","need":"寻找 Java 虚拟机的学习资料","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q51","query":"搜索引擎","category":"synonym","intent":"search","need":"了解社区搜索引擎的用途与设计","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q52","query":"elasticsearch","category":"synonym","intent":"search","need":"了解社区搜索引擎的用途与设计","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q53","query":"命令查询职责分离","category":"synonym","intent":"cqrs","need":"了解命令查询职责分离模式","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q54","query":"CQRS","category":"synonym","intent":"cqrs","need":"了解命令查询职责分离模式","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q55","query":"数据库","category":"synonym","intent":"database","need":"了解社区数据库表的设计","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q56","query":"db","category":"synonym","intent":"database","need":"了解社区数据库表的设计","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q57","query":"量子纠错表面码阈值","category":"no_answer_candidate","intent":"absent-quantum","need":"寻找量子纠错表面码阈值的技术说明","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q58","query":"CRISPR脱靶检测实验","category":"no_answer_candidate","intent":"absent-crispr","need":"寻找 CRISPR 脱靶检测的实验方法","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q59","query":"四川泡菜发酵盐度","category":"no_answer_candidate","intent":"absent-food","need":"寻找制作四川泡菜的盐度和发酵参数","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q60","query":"猫咪慢性肾病诊断","category":"no_answer_candidate","intent":"absent-vet","need":"寻找猫慢性肾病的诊断知识","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q61","query":"火星土壤光谱分析","category":"no_answer_candidate","intent":"absent-mars","need":"寻找火星土壤的光谱分析资料","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q62","query":"Blender流体烘焙","category":"no_answer_candidate","intent":"absent-blender","need":"寻找 Blender 流体模拟和烘焙教程","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q63","query":"Rust借用检查器生命周期","category":"no_answer_candidate","intent":"absent-rust","need":"寻找 Rust 借用检查与生命周期的讲解","split":"test","source":"authored_from_local_corpus_not_traffic_logs"}
+{"id":"q64","query":"Cilium eBPF NetworkPolicy","category":"no_answer_candidate","intent":"absent-cilium","need":"寻找 Cilium eBPF 网络策略的配置和原理","split":"dev","source":"authored_from_local_corpus_not_traffic_logs"}

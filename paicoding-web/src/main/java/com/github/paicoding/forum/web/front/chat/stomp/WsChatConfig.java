@@ -18,6 +18,9 @@ import org.springframework.web.socket.config.annotation.WebSocketTransportRegist
 import org.springframework.web.socket.server.HandshakeHandler;
 import org.springframework.web.socket.server.support.HttpSessionHandshakeInterceptor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+
+import java.util.concurrent.RejectedExecutionException;
 
 @Configuration
 @EnableWebSocketMessageBroker
@@ -57,9 +60,23 @@ public class WsChatConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void configureClientInboundChannel(ChannelRegistration registration) {
-        registration.taskExecutor().corePoolSize(4).maxPoolSize(10)
-                .queueCapacity(properties.getOutboundQueueCapacity()).keepAliveSeconds(60);
+        registration.taskExecutor(wsInboundExecutor());
         registration.interceptors(channelInInterceptor());
+    }
+
+    private ThreadPoolTaskExecutor wsInboundExecutor() {
+        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        executor.setCorePoolSize(4);
+        executor.setMaxPoolSize(10);
+        executor.setQueueCapacity(properties.getOutboundQueueCapacity());
+        executor.setKeepAliveSeconds(60);
+        executor.setThreadNamePrefix("ws-inbound-");
+        executor.setRejectedExecutionHandler((task, pool) -> {
+            if (pool.isShutdown()) throw new RejectedExecutionException("WebSocket inbound executor is shut down");
+            // 队列饱和时由发送线程执行，施加背压，避免一帧只投递给部分订阅者后断连。
+            task.run();
+        });
+        return executor;
     }
 
     @Override

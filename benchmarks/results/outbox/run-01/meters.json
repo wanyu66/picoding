@@ -1,0 +1,66 @@
+[ {
+  "name" : "paicoding.notification.push",
+  "tags" : "[tag(result=failure)]",
+  "statistic" : "COUNT",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.domain.backlog",
+  "tags" : "[]",
+  "statistic" : "VALUE",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.notification.push",
+  "tags" : "[tag(result=success)]",
+  "statistic" : "COUNT",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.publisher.confirm",
+  "tags" : "[tag(result=ack)]",
+  "statistic" : "COUNT",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.publisher.confirm",
+  "tags" : "[tag(result=nack)]",
+  "statistic" : "COUNT",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.publisher.returned",
+  "tags" : "[]",
+  "statistic" : "COUNT",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.domain.consume_delay",
+  "tags" : "[]",
+  "statistic" : "COUNT",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.domain.consume_delay",
+  "tags" : "[]",
+  "statistic" : "TOTAL_TIME",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.domain.consume_delay",
+  "tags" : "[]",
+  "statistic" : "MAX",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.domain.retries",
+  "tags" : "[]",
+  "statistic" : "COUNT",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.rabbitmq.domain.dead_letters",
+  "tags" : "[]",
+  "statistic" : "VALUE",
+  "value" : 0.0
+}, {
+  "name" : "paicoding.notification.push.success_ratio",
+  "tags" : "[]",
+  "statistic" : "VALUE",
+  "value" : 1.0
+}, {
+  "name" : "paicoding.rabbitmq.domain.dead_lettered_total",
+  "tags" : "[]",
+  "statistic" : "COUNT",
+  "value" : 0.0
+} ]

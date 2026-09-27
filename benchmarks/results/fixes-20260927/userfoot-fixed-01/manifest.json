@@ -1,0 +1,22 @@
+{
+  "mode": "current",
+  "run": "bench-foot-1790497117363",
+  "startedAt": "2026-09-27T08:18:37.363Z",
+  "concurrency": 32,
+  "callsPerScenario": 64,
+  "environment": {
+    "node": "v24.15.0",
+    "os": "10.0.26100",
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCpus": 24,
+    "memoryBytes": 16944848896
+  },
+  "sourceHashes": {
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/service/userfoot/UserFootServiceImpl.java": "9af275401385c233adfff3b58b3dd0b6efb4f3401ff1a9175fc4a1772cdfac7c",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/repository/dao/UserFootDao.java": "4abe5dbc0e75ed9f4eb2e108c88c8f9fc7ed31245f793b7f8baa5be025c3fe35",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java": "ee1c5242b045c9e261530e15b554fc4102aa07f60e8553933e864e88cad11afa",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventOutboxServiceImpl.java": "46895ffe60ead4802d1067cbb722c6b4b08ce2bcbffee4a08f87191e95a8648d",
+    "benchmarks/java/userfoot/UserFootConcurrencyHarness.java": "1936496dc4d68daaca494816495c5a1c7e9232f75eae82538cbff18efed28882"
+  },
+  "scope": "Actual UserFoot/MyBatis/Spring transaction/Outbox SQL on dedicated MySQL; no Rabbit or HTTP; no performance improvement claim."
+}

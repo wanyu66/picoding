@@ -1,0 +1,288 @@
+[ {
+  "index" : 0,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.9267
+}, {
+  "index" : 1,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.2915
+}, {
+  "index" : 2,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.4325
+}, {
+  "index" : 3,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 139.9009
+}, {
+  "index" : 4,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.7387
+}, {
+  "index" : 5,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 145.5332
+}, {
+  "index" : 6,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.199
+}, {
+  "index" : 7,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.6884
+}, {
+  "index" : 8,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.5175
+}, {
+  "index" : 9,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 145.1575
+}, {
+  "index" : 10,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.6721
+}, {
+  "index" : 11,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.6236
+}, {
+  "index" : 12,
+  "ok" : true,
+  "ms" : 48.1799
+}, {
+  "index" : 13,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.3852
+}, {
+  "index" : 14,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.0056
+}, {
+  "index" : 15,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 148.598
+}, {
+  "index" : 16,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.7973
+}, {
+  "index" : 17,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 144.9732
+}, {
+  "index" : 18,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.3216
+}, {
+  "index" : 19,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.6117
+}, {
+  "index" : 20,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 139.8346
+}, {
+  "index" : 21,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 145.5243
+}, {
+  "index" : 22,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.1854
+}, {
+  "index" : 23,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.3536
+}, {
+  "index" : 24,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 139.767
+}, {
+  "index" : 25,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 146.5733
+}, {
+  "index" : 26,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.2536
+}, {
+  "index" : 27,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.2677
+}, {
+  "index" : 28,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.0876
+}, {
+  "index" : 29,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 144.704
+}, {
+  "index" : 30,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 140.12
+}, {
+  "index" : 31,
+  "ok" : false,
+  "error" : "DuplicateKeyException: \r\n### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\r\n### The error may exist in com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java (best guess)\r\n### The error may involve com.github.paicoding.forum.service.user.repository.mapper.UserFootMapper.insert-Inline\r\n### The error occurred while setting parameters\r\n### SQL: INSERT INTO user_foot  ( user_id, document_id, document_type, document_user_id,    praise_stat )  VALUES  ( ?, ?, ?, ?,    ? )\r\n### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'\n; Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1-43-1' for key 'user_foot.idx_user_doucument'",
+  "ms" : 145.6477
+}, {
+  "index" : 32,
+  "ok" : true,
+  "ms" : 24.9559
+}, {
+  "index" : 33,
+  "ok" : true,
+  "ms" : 23.1105
+}, {
+  "index" : 34,
+  "ok" : true,
+  "ms" : 24.5743
+}, {
+  "index" : 35,
+  "ok" : true,
+  "ms" : 25.054
+}, {
+  "index" : 36,
+  "ok" : true,
+  "ms" : 22.9753
+}, {
+  "index" : 37,
+  "ok" : true,
+  "ms" : 21.5167
+}, {
+  "index" : 38,
+  "ok" : true,
+  "ms" : 24.6162
+}, {
+  "index" : 39,
+  "ok" : true,
+  "ms" : 24.8669
+}, {
+  "index" : 40,
+  "ok" : true,
+  "ms" : 24.6201
+}, {
+  "index" : 41,
+  "ok" : true,
+  "ms" : 21.3237
+}, {
+  "index" : 42,
+  "ok" : true,
+  "ms" : 23.3698
+}, {
+  "index" : 43,
+  "ok" : true,
+  "ms" : 25.8954
+}, {
+  "index" : 44,
+  "ok" : true,
+  "ms" : 9.1434
+}, {
+  "index" : 45,
+  "ok" : true,
+  "ms" : 23.1505
+}, {
+  "index" : 46,
+  "ok" : true,
+  "ms" : 23.133
+}, {
+  "index" : 47,
+  "ok" : true,
+  "ms" : 17.1782
+}, {
+  "index" : 48,
+  "ok" : true,
+  "ms" : 24.7533
+}, {
+  "index" : 49,
+  "ok" : true,
+  "ms" : 22.6708
+}, {
+  "index" : 50,
+  "ok" : true,
+  "ms" : 23.0956
+}, {
+  "index" : 51,
+  "ok" : true,
+  "ms" : 23.2314
+}, {
+  "index" : 52,
+  "ok" : true,
+  "ms" : 23.1086
+}, {
+  "index" : 53,
+  "ok" : true,
+  "ms" : 21.1051
+}, {
+  "index" : 54,
+  "ok" : true,
+  "ms" : 24.761
+}, {
+  "index" : 55,
+  "ok" : true,
+  "ms" : 23.1156
+}, {
+  "index" : 56,
+  "ok" : true,
+  "ms" : 23.4276
+}, {
+  "index" : 57,
+  "ok" : true,
+  "ms" : 19.9254
+}, {
+  "index" : 58,
+  "ok" : true,
+  "ms" : 23.1975
+}, {
+  "index" : 59,
+  "ok" : true,
+  "ms" : 22.936
+}, {
+  "index" : 60,
+  "ok" : true,
+  "ms" : 23.3301
+}, {
+  "index" : 61,
+  "ok" : true,
+  "ms" : 21.039
+}, {
+  "index" : 62,
+  "ok" : true,
+  "ms" : 23.1762
+}, {
+  "index" : 63,
+  "ok" : true,
+  "ms" : 20.8732
+} ]

@@ -1,0 +1,1928 @@
+[
+  {
+    "scenario": "warmup",
+    "latencySource": "mock",
+    "concurrency": 1,
+    "peakClientInFlight": 1,
+    "sessions": 1,
+    "passed": 1,
+    "failed": 0,
+    "durationMs": 1529.3014000000003,
+    "ttftP50Ms": 314.28590000000077,
+    "ttftP95Ms": 314.28590000000077,
+    "ttftP99Ms": 314.28590000000077,
+    "totalP95Ms": 510.85709999999926,
+    "totalP99Ms": 510.85709999999926,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 0,
+    "recoverySuccessRate": null,
+    "modelCalls": 1,
+    "rawCalls": [
+      {
+        "startMs": 9086.3075,
+        "endMs": 9469.8311,
+        "question": "normal:warmup-10001",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      }
+    ]
+  },
+  {
+    "scenario": "normal-1",
+    "latencySource": "mock",
+    "concurrency": 1,
+    "peakClientInFlight": 1,
+    "sessions": 1,
+    "passed": 1,
+    "failed": 0,
+    "durationMs": 872.6275999999998,
+    "ttftP50Ms": 100.02809999999954,
+    "ttftP95Ms": 100.02809999999954,
+    "ttftP99Ms": 100.02809999999954,
+    "totalP95Ms": 424.1273999999994,
+    "totalP99Ms": 424.1273999999994,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 0,
+    "recoverySuccessRate": null,
+    "modelCalls": 1,
+    "rawCalls": [
+      {
+        "startMs": 9970.536,
+        "endMs": 10348.9329,
+        "question": "normal:normal-1-10002",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      }
+    ]
+  },
+  {
+    "scenario": "normal-10",
+    "latencySource": "mock",
+    "concurrency": 10,
+    "peakClientInFlight": 10,
+    "sessions": 10,
+    "passed": 10,
+    "failed": 0,
+    "durationMs": 919.6225999999988,
+    "ttftP50Ms": 114.14549999999872,
+    "ttftP95Ms": 129.51560000000063,
+    "ttftP99Ms": 129.51560000000063,
+    "totalP95Ms": 443.9218000000001,
+    "totalP99Ms": 443.9218000000001,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 0,
+    "recoverySuccessRate": null,
+    "modelCalls": 10,
+    "rawCalls": [
+      {
+        "startMs": 10840.1247,
+        "endMs": 11208.0073,
+        "question": "normal:normal-10-10008",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10844.7641,
+        "endMs": 11223.1532,
+        "question": "normal:normal-10-10007",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10844.7682,
+        "endMs": 11223.1644,
+        "question": "normal:normal-10-10005",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10844.966,
+        "endMs": 11223.1544,
+        "question": "normal:normal-10-10009",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10861.0313,
+        "endMs": 11238.6324,
+        "question": "normal:normal-10-10003",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10861.5397,
+        "endMs": 11238.6839,
+        "question": "normal:normal-10-10006",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10861.7354,
+        "endMs": 11238.6419,
+        "question": "normal:normal-10-10010",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10861.7579,
+        "endMs": 11238.6429,
+        "question": "normal:normal-10-10004",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10874.7385,
+        "endMs": 11253.8289,
+        "question": "normal:normal-10-10012",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 10874.8095,
+        "endMs": 11253.8325,
+        "question": "normal:normal-10-10011",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      }
+    ]
+  },
+  {
+    "scenario": "normal-50",
+    "latencySource": "mock",
+    "concurrency": 50,
+    "peakClientInFlight": 50,
+    "sessions": 50,
+    "passed": 50,
+    "failed": 0,
+    "durationMs": 1155.4062999999987,
+    "ttftP50Ms": 205.66319999999905,
+    "ttftP95Ms": 310.97359999999753,
+    "ttftP99Ms": 311.80509999999776,
+    "totalP95Ms": 622.1215999999986,
+    "totalP99Ms": 633.605599999999,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 0,
+    "recoverySuccessRate": null,
+    "modelCalls": 50,
+    "rawCalls": [
+      {
+        "startMs": 11823.3318,
+        "endMs": 12218.2546,
+        "question": "normal:normal-50-10013",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11823.373,
+        "endMs": 12203.0625,
+        "question": "normal:normal-50-10016",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11824.1605,
+        "endMs": 12203.0633,
+        "question": "normal:normal-50-10015",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11825.356,
+        "endMs": 12203.0645,
+        "question": "normal:normal-50-10017",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11840.5433,
+        "endMs": 12232.9569,
+        "question": "normal:normal-50-10019",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11841.7117,
+        "endMs": 12233.0833,
+        "question": "normal:normal-50-10020",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11842.0182,
+        "endMs": 12218.2745,
+        "question": "normal:normal-50-10018",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11843.0001,
+        "endMs": 12233.0611,
+        "question": "normal:normal-50-10022",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11858.9981,
+        "endMs": 12250.0765,
+        "question": "normal:normal-50-10023",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11859.4647,
+        "endMs": 12264.4356,
+        "question": "normal:normal-50-10021",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11860.2176,
+        "endMs": 12264.5073,
+        "question": "normal:normal-50-10014",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11860.606,
+        "endMs": 12264.7518,
+        "question": "normal:normal-50-10026",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11878.458,
+        "endMs": 12264.3942,
+        "question": "normal:normal-50-10025",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11878.9847,
+        "endMs": 12264.4616,
+        "question": "normal:normal-50-10024",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11879.2622,
+        "endMs": 12249.2906,
+        "question": "normal:normal-50-10027",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11887.0519,
+        "endMs": 12264.7532,
+        "question": "normal:normal-50-10028",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11895.6876,
+        "endMs": 12264.5826,
+        "question": "normal:normal-50-10031",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11897.1126,
+        "endMs": 12264.7404,
+        "question": "normal:normal-50-10029",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11897.1186,
+        "endMs": 12264.7794,
+        "question": "normal:normal-50-10030",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11902.9363,
+        "endMs": 12310.6575,
+        "question": "normal:normal-50-10032",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11917.8468,
+        "endMs": 12310.3732,
+        "question": "normal:normal-50-10035",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11917.9427,
+        "endMs": 12326.8493,
+        "question": "normal:normal-50-10034",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11918.2285,
+        "endMs": 12326.7728,
+        "question": "normal:normal-50-10033",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11922.5595,
+        "endMs": 12310.5575,
+        "question": "normal:normal-50-10036",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11935.027,
+        "endMs": 12327.0349,
+        "question": "normal:normal-50-10037",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11938.2962,
+        "endMs": 12310.3732,
+        "question": "normal:normal-50-10039",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11939.8403,
+        "endMs": 12326.6379,
+        "question": "normal:normal-50-10038",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11945.2094,
+        "endMs": 12326.9969,
+        "question": "normal:normal-50-10041",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11953.3438,
+        "endMs": 12340.7461,
+        "question": "normal:normal-50-10040",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11957.7594,
+        "endMs": 12327.115,
+        "question": "normal:normal-50-10042",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11960.444,
+        "endMs": 12342.277,
+        "question": "normal:normal-50-10045",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11967.9224,
+        "endMs": 12372.9713,
+        "question": "normal:normal-50-10044",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11970.1455,
+        "endMs": 12356.555,
+        "question": "normal:normal-50-10043",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11974.7887,
+        "endMs": 12357.2436,
+        "question": "normal:normal-50-10047",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11977.1609,
+        "endMs": 12357.2082,
+        "question": "normal:normal-50-10046",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11986.0592,
+        "endMs": 12356.7806,
+        "question": "normal:normal-50-10048",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11988.374,
+        "endMs": 12371.8816,
+        "question": "normal:normal-50-10049",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11994.9734,
+        "endMs": 12371.7375,
+        "question": "normal:normal-50-10050",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 11999.7366,
+        "endMs": 12388.1851,
+        "question": "normal:normal-50-10051",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12005.5403,
+        "endMs": 12388.1803,
+        "question": "normal:normal-50-10052",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12005.6786,
+        "endMs": 12371.7194,
+        "question": "normal:normal-50-10053",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12013.8069,
+        "endMs": 12388.261,
+        "question": "normal:normal-50-10054",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12014.4975,
+        "endMs": 12388.3798,
+        "question": "normal:normal-50-10055",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12024.5245,
+        "endMs": 12401.553,
+        "question": "normal:normal-50-10056",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12026.2073,
+        "endMs": 12401.4945,
+        "question": "normal:normal-50-10058",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12031.6787,
+        "endMs": 12403.1658,
+        "question": "normal:normal-50-10059",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12032.3828,
+        "endMs": 12401.4779,
+        "question": "normal:normal-50-10060",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12045.2371,
+        "endMs": 12433.4312,
+        "question": "normal:normal-50-10057",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12045.3216,
+        "endMs": 12418.7438,
+        "question": "normal:normal-50-10062",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 12049.8141,
+        "endMs": 12418.6674,
+        "question": "normal:normal-50-10061",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      }
+    ]
+  },
+  {
+    "scenario": "normal-100",
+    "latencySource": "mock",
+    "concurrency": 100,
+    "peakClientInFlight": 100,
+    "sessions": 100,
+    "passed": 100,
+    "failed": 0,
+    "durationMs": 1647.3716000000022,
+    "ttftP50Ms": 213.59900000000198,
+    "ttftP95Ms": 422.97090000000026,
+    "ttftP99Ms": 461.143799999998,
+    "totalP95Ms": 786.9964999999975,
+    "totalP99Ms": 831.5102000000006,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 0,
+    "recoverySuccessRate": null,
+    "modelCalls": 100,
+    "rawCalls": [
+      {
+        "startMs": 13243.001,
+        "endMs": 13664.362,
+        "question": "normal:normal-100-10065",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13246.3062,
+        "endMs": 13680.0857,
+        "question": "normal:normal-100-10066",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13247.0561,
+        "endMs": 13680.0417,
+        "question": "normal:normal-100-10063",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13247.5955,
+        "endMs": 13679.9775,
+        "question": "normal:normal-100-10064",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13268.9471,
+        "endMs": 13710.6278,
+        "question": "normal:normal-100-10068",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13272.3777,
+        "endMs": 13710.7494,
+        "question": "normal:normal-100-10155",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13274.6038,
+        "endMs": 13695.2248,
+        "question": "normal:normal-100-10152",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13274.828,
+        "endMs": 13694.9263,
+        "question": "normal:normal-100-10071",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13274.8283,
+        "endMs": 13695.1352,
+        "question": "normal:normal-100-10072",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13275.206,
+        "endMs": 13710.9976,
+        "question": "normal:normal-100-10073",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13278.5307,
+        "endMs": 13710.1584,
+        "question": "normal:normal-100-10067",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13278.5304,
+        "endMs": 13710.462,
+        "question": "normal:normal-100-10162",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13279.4546,
+        "endMs": 13710.8812,
+        "question": "normal:normal-100-10070",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13281.8408,
+        "endMs": 13715.3755,
+        "question": "normal:normal-100-10069",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13281.9518,
+        "endMs": 13711.8589,
+        "question": "normal:normal-100-10154",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13281.9602,
+        "endMs": 13712.3697,
+        "question": "normal:normal-100-10153",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13292.5189,
+        "endMs": 13711.8906,
+        "question": "normal:normal-100-10074",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13296.7257,
+        "endMs": 13711.7624,
+        "question": "normal:normal-100-10079",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13296.9069,
+        "endMs": 13711.399,
+        "question": "normal:normal-100-10077",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13297.038,
+        "endMs": 13711.4696,
+        "question": "normal:normal-100-10076",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13297.3383,
+        "endMs": 13712.1441,
+        "question": "normal:normal-100-10080",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13298.3015,
+        "endMs": 13713.4253,
+        "question": "normal:normal-100-10078",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13298.3262,
+        "endMs": 13713.7778,
+        "question": "normal:normal-100-10075",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13302.6242,
+        "endMs": 13726.0599,
+        "question": "normal:normal-100-10082",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13302.8586,
+        "endMs": 13725.9257,
+        "question": "normal:normal-100-10083",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13302.8636,
+        "endMs": 13726.2822,
+        "question": "normal:normal-100-10081",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13317.4348,
+        "endMs": 13741.1124,
+        "question": "normal:normal-100-10084",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13317.7605,
+        "endMs": 13756.7784,
+        "question": "normal:normal-100-10085",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13317.7677,
+        "endMs": 13756.5577,
+        "question": "normal:normal-100-10087",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13319.6175,
+        "endMs": 13755.46,
+        "question": "normal:normal-100-10086",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13319.6195,
+        "endMs": 13740.9801,
+        "question": "normal:normal-100-10088",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13319.6405,
+        "endMs": 13755.8289,
+        "question": "normal:normal-100-10090",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13319.6483,
+        "endMs": 13757.0175,
+        "question": "normal:normal-100-10089",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13322.0731,
+        "endMs": 13755.4708,
+        "question": "normal:normal-100-10091",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13323.7895,
+        "endMs": 13755.5093,
+        "question": "normal:normal-100-10092",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13324.2749,
+        "endMs": 13755.4924,
+        "question": "normal:normal-100-10093",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13332.407,
+        "endMs": 13756.2484,
+        "question": "normal:normal-100-10094",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13333.8335,
+        "endMs": 13770.4426,
+        "question": "normal:normal-100-10096",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13333.8692,
+        "endMs": 13787.8924,
+        "question": "normal:normal-100-10095",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13333.9275,
+        "endMs": 13770.0924,
+        "question": "normal:normal-100-10101",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13334.0458,
+        "endMs": 13787.5667,
+        "question": "normal:normal-100-10099",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13336.3507,
+        "endMs": 13770.1608,
+        "question": "normal:normal-100-10098",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13336.7015,
+        "endMs": 13770.3422,
+        "question": "normal:normal-100-10100",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13336.9043,
+        "endMs": 13770.382,
+        "question": "normal:normal-100-10097",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13340.8576,
+        "endMs": 13770.5407,
+        "question": "normal:normal-100-10102",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13340.8729,
+        "endMs": 13790.6315,
+        "question": "normal:normal-100-10103",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13353.4682,
+        "endMs": 13786.4456,
+        "question": "normal:normal-100-10106",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13353.5721,
+        "endMs": 13788.6436,
+        "question": "normal:normal-100-10105",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13355.0195,
+        "endMs": 13788.8742,
+        "question": "normal:normal-100-10104",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13357.4176,
+        "endMs": 13789.0643,
+        "question": "normal:normal-100-10107",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13360.9837,
+        "endMs": 13804.0104,
+        "question": "normal:normal-100-10109",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13361.1137,
+        "endMs": 13788.2509,
+        "question": "normal:normal-100-10108",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13361.6688,
+        "endMs": 13788.2565,
+        "question": "normal:normal-100-10111",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13361.9907,
+        "endMs": 13788.4826,
+        "question": "normal:normal-100-10110",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13363.9898,
+        "endMs": 13804.861,
+        "question": "normal:normal-100-10112",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13364.0306,
+        "endMs": 13804.3394,
+        "question": "normal:normal-100-10113",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13372.5553,
+        "endMs": 13787.9992,
+        "question": "normal:normal-100-10115",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13375.3635,
+        "endMs": 13803.3309,
+        "question": "normal:normal-100-10114",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13377.0023,
+        "endMs": 13845.6391,
+        "question": "normal:normal-100-10116",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13377.6296,
+        "endMs": 13835.5696,
+        "question": "normal:normal-100-10118",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13378.3614,
+        "endMs": 13804.6934,
+        "question": "normal:normal-100-10119",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13380.7628,
+        "endMs": 13844.2296,
+        "question": "normal:normal-100-10120",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13380.771,
+        "endMs": 13834.27,
+        "question": "normal:normal-100-10117",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13381.5101,
+        "endMs": 13834.3219,
+        "question": "normal:normal-100-10121",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13383.2227,
+        "endMs": 13844.845,
+        "question": "normal:normal-100-10123",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13385.557,
+        "endMs": 13834.4665,
+        "question": "normal:normal-100-10122",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13412.5292,
+        "endMs": 13867.8256,
+        "question": "normal:normal-100-10126",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13412.8969,
+        "endMs": 13867.4144,
+        "question": "normal:normal-100-10127",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13416.2696,
+        "endMs": 13868.6333,
+        "question": "normal:normal-100-10124",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13416.9349,
+        "endMs": 13868.4702,
+        "question": "normal:normal-100-10125",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13418.8414,
+        "endMs": 13867.593,
+        "question": "normal:normal-100-10128",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13418.8471,
+        "endMs": 13867.3865,
+        "question": "normal:normal-100-10129",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13423.0605,
+        "endMs": 13867.953,
+        "question": "normal:normal-100-10130",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13423.9596,
+        "endMs": 13868.2306,
+        "question": "normal:normal-100-10131",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13424.1177,
+        "endMs": 13868.3737,
+        "question": "normal:normal-100-10132",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13424.8781,
+        "endMs": 13868.138,
+        "question": "normal:normal-100-10133",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13447.0125,
+        "endMs": 13881.5691,
+        "question": "normal:normal-100-10134",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13454.8994,
+        "endMs": 13896.3663,
+        "question": "normal:normal-100-10136",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13458.7534,
+        "endMs": 13913.137,
+        "question": "normal:normal-100-10139",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13458.7542,
+        "endMs": 13929.3428,
+        "question": "normal:normal-100-10135",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13458.9835,
+        "endMs": 13915.0325,
+        "question": "normal:normal-100-10141",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13459.1672,
+        "endMs": 13913.2626,
+        "question": "normal:normal-100-10138",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13463.8809,
+        "endMs": 13913.7601,
+        "question": "normal:normal-100-10140",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13464.719,
+        "endMs": 13913.9021,
+        "question": "normal:normal-100-10143",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13466.0791,
+        "endMs": 13913.729,
+        "question": "normal:normal-100-10142",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13466.0791,
+        "endMs": 13914.2352,
+        "question": "normal:normal-100-10137",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13536.5975,
+        "endMs": 13987.6354,
+        "question": "normal:normal-100-10144",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13557.2414,
+        "endMs": 13988.0844,
+        "question": "normal:normal-100-10145",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13557.3268,
+        "endMs": 13987.4896,
+        "question": "normal:normal-100-10146",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13557.5527,
+        "endMs": 14017.9755,
+        "question": "normal:normal-100-10147",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13573.5317,
+        "endMs": 14002.7477,
+        "question": "normal:normal-100-10149",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13574.9468,
+        "endMs": 14017.6962,
+        "question": "normal:normal-100-10150",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13575.612,
+        "endMs": 14017.6986,
+        "question": "normal:normal-100-10151",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13575.9831,
+        "endMs": 14018.1504,
+        "question": "normal:normal-100-10148",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13579.6894,
+        "endMs": 14017.6986,
+        "question": "normal:normal-100-10156",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13579.8294,
+        "endMs": 14018.0793,
+        "question": "normal:normal-100-10157",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13618.0759,
+        "endMs": 14048.4948,
+        "question": "normal:normal-100-10158",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13628.5802,
+        "endMs": 14048.7123,
+        "question": "normal:normal-100-10159",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13629.5226,
+        "endMs": 14064.1771,
+        "question": "normal:normal-100-10161",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 13631.0594,
+        "endMs": 14064.4836,
+        "question": "normal:normal-100-10160",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      }
+    ]
+  },
+  {
+    "scenario": "cancel",
+    "latencySource": "mock",
+    "concurrency": 10,
+    "peakClientInFlight": 10,
+    "sessions": 10,
+    "passed": 10,
+    "failed": 0,
+    "durationMs": 720.7357999999986,
+    "ttftP50Ms": 115.15539999999964,
+    "ttftP95Ms": 116.52809999999954,
+    "ttftP99Ms": 116.52809999999954,
+    "totalP95Ms": 259.08469999999943,
+    "totalP99Ms": 259.08469999999943,
+    "cancelP95Ms": 14.917600000000675,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 0,
+    "recoverySuccessRate": null,
+    "modelCalls": 10,
+    "rawCalls": [
+      {
+        "startMs": 14590.0715,
+        "endMs": 14850.1708,
+        "question": "cancel:cancel-10164",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14850.1696
+      },
+      {
+        "startMs": 14590.0715,
+        "endMs": 14849.7823,
+        "question": "cancel:cancel-10168",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14849.78
+      },
+      {
+        "startMs": 14590.0714,
+        "endMs": 14849.7851,
+        "question": "cancel:cancel-10163",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14849.7838
+      },
+      {
+        "startMs": 14590.0716,
+        "endMs": 14849.7824,
+        "question": "cancel:cancel-10166",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14849.7791
+      },
+      {
+        "startMs": 14590.0715,
+        "endMs": 14849.782,
+        "question": "cancel:cancel-10167",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14849.7789
+      },
+      {
+        "startMs": 14592.5908,
+        "endMs": 14850.078,
+        "question": "cancel:cancel-10170",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14850.0769
+      },
+      {
+        "startMs": 14592.6622,
+        "endMs": 14865.2695,
+        "question": "cancel:cancel-10171",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14865.2658
+      },
+      {
+        "startMs": 14592.7144,
+        "endMs": 14849.7886,
+        "question": "cancel:cancel-10172",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14849.7875
+      },
+      {
+        "startMs": 14592.7908,
+        "endMs": 14850.113,
+        "question": "cancel:cancel-10165",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14850.1099
+      },
+      {
+        "startMs": 14592.8662,
+        "endMs": 14850.1475,
+        "question": "cancel:cancel-10169",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 14850.1465
+      }
+    ]
+  },
+  {
+    "scenario": "reconnect",
+    "latencySource": "mock",
+    "concurrency": 10,
+    "peakClientInFlight": 10,
+    "sessions": 10,
+    "passed": 10,
+    "failed": 0,
+    "durationMs": 1294.0345000000016,
+    "ttftP50Ms": 86.11700000000201,
+    "ttftP95Ms": 87.12510000000111,
+    "ttftP99Ms": 87.12510000000111,
+    "totalP95Ms": 778.2157000000007,
+    "totalP99Ms": 778.2157000000007,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 1,
+    "recoverySuccessRate": 1,
+    "modelCalls": 10,
+    "rawCalls": [
+      {
+        "startMs": 15340.4635,
+        "endMs": 15754.3025,
+        "question": "reconnect:reconnect-10175",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15340.509,
+        "endMs": 15754.3033,
+        "question": "reconnect:reconnect-10180",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15340.5156,
+        "endMs": 15739.6728,
+        "question": "reconnect:reconnect-10177",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15340.5454,
+        "endMs": 15754.7087,
+        "question": "reconnect:reconnect-10173",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15340.5553,
+        "endMs": 15754.3313,
+        "question": "reconnect:reconnect-10176",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15340.8169,
+        "endMs": 15754.3044,
+        "question": "reconnect:reconnect-10178",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15341.7546,
+        "endMs": 15709.7357,
+        "question": "reconnect:reconnect-10181",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15341.7885,
+        "endMs": 15709.5024,
+        "question": "reconnect:reconnect-10174",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15341.9651,
+        "endMs": 15709.483,
+        "question": "reconnect:reconnect-10182",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 15342.0963,
+        "endMs": 15739.4973,
+        "question": "reconnect:reconnect-10179",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      }
+    ]
+  },
+  {
+    "scenario": "duplicate_replay",
+    "latencySource": "mock",
+    "concurrency": 10,
+    "peakClientInFlight": 10,
+    "sessions": 10,
+    "passed": 10,
+    "failed": 0,
+    "durationMs": 970.1693000000014,
+    "ttftP50Ms": 105.41579999999885,
+    "ttftP95Ms": 106.189699999999,
+    "ttftP99Ms": 106.189699999999,
+    "totalP95Ms": 447.21380000000136,
+    "totalP99Ms": 447.21380000000136,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 160,
+    "recoverySuccessRate": null,
+    "modelCalls": 10,
+    "rawCalls": [
+      {
+        "startMs": 16619.8093,
+        "endMs": 17003.8464,
+        "question": "duplicate_replay:duplicate_replay-10188",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16619.8092,
+        "endMs": 17003.9641,
+        "question": "duplicate_replay:duplicate_replay-10191",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16620.7901,
+        "endMs": 17003.7796,
+        "question": "duplicate_replay:duplicate_replay-10192",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16621.3872,
+        "endMs": 17003.2938,
+        "question": "duplicate_replay:duplicate_replay-10184",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16623.1055,
+        "endMs": 17004.0599,
+        "question": "duplicate_replay:duplicate_replay-10187",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16626.1556,
+        "endMs": 17004.0807,
+        "question": "duplicate_replay:duplicate_replay-10183",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16626.6668,
+        "endMs": 17018.7265,
+        "question": "duplicate_replay:duplicate_replay-10190",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16626.9076,
+        "endMs": 17003.5017,
+        "question": "duplicate_replay:duplicate_replay-10185",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16626.9841,
+        "endMs": 17003.7007,
+        "question": "duplicate_replay:duplicate_replay-10189",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 16627.2092,
+        "endMs": 17003.5341,
+        "question": "duplicate_replay:duplicate_replay-10186",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      }
+    ]
+  },
+  {
+    "scenario": "duplicate_done",
+    "latencySource": "mock",
+    "concurrency": 10,
+    "peakClientInFlight": 10,
+    "sessions": 10,
+    "passed": 10,
+    "failed": 0,
+    "durationMs": 904.2043999999987,
+    "ttftP50Ms": 101.23019999999815,
+    "ttftP95Ms": 114.21800000000076,
+    "ttftP99Ms": 114.21800000000076,
+    "totalP95Ms": 426.626400000001,
+    "totalP99Ms": 426.626400000001,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 0,
+    "recoverySuccessRate": null,
+    "modelCalls": 10,
+    "rawCalls": [
+      {
+        "startMs": 17599.8018,
+        "endMs": 17972.5581,
+        "question": "duplicate_done:duplicate_done-10199",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17599.8019,
+        "endMs": 17987.6272,
+        "question": "duplicate_done:duplicate_done-10197",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17601.8872,
+        "endMs": 17971.948,
+        "question": "duplicate_done:duplicate_done-10196",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17602.3476,
+        "endMs": 17987.2317,
+        "question": "duplicate_done:duplicate_done-10201",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17603.7694,
+        "endMs": 17988.1308,
+        "question": "duplicate_done:duplicate_done-10195",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17604.5972,
+        "endMs": 17987.3771,
+        "question": "duplicate_done:duplicate_done-10194",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17605.4617,
+        "endMs": 17988.0331,
+        "question": "duplicate_done:duplicate_done-10198",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17607.1855,
+        "endMs": 17988.0357,
+        "question": "duplicate_done:duplicate_done-10200",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17607.9059,
+        "endMs": 17987.5848,
+        "question": "duplicate_done:duplicate_done-10193",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      },
+      {
+        "startMs": 17608.0314,
+        "endMs": 17987.7774,
+        "question": "duplicate_done:duplicate_done-10202",
+        "provider": "primary",
+        "chunks": 6,
+        "done": true
+      }
+    ]
+  },
+  {
+    "scenario": "timeout",
+    "latencySource": "mock",
+    "concurrency": 10,
+    "peakClientInFlight": 10,
+    "sessions": 10,
+    "passed": 10,
+    "failed": 0,
+    "durationMs": 1765.364800000003,
+    "ttftP50Ms": 82.6935999999987,
+    "ttftP95Ms": 84.1260000000002,
+    "ttftP99Ms": 84.1260000000002,
+    "totalP95Ms": 1272.7513,
+    "totalP99Ms": 1272.7513,
+    "cancelP95Ms": null,
+    "messageLoss": 0,
+    "duplicateAccepted": 0,
+    "duplicatesSuppressed": 0,
+    "recoverySuccessRate": null,
+    "modelCalls": 10,
+    "rawCalls": [
+      {
+        "startMs": 18489.9521,
+        "endMs": 19773.5866,
+        "question": "timeout:timeout-10205",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19773.5821
+      },
+      {
+        "startMs": 18489.9522,
+        "endMs": 19742.4259,
+        "question": "timeout:timeout-10203",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19742.4209
+      },
+      {
+        "startMs": 18489.9521,
+        "endMs": 19774.1326,
+        "question": "timeout:timeout-10206",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19774.1198
+      },
+      {
+        "startMs": 18490.4742,
+        "endMs": 19774.1277,
+        "question": "timeout:timeout-10208",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19774.126
+      },
+      {
+        "startMs": 18491.7188,
+        "endMs": 19742.7965,
+        "question": "timeout:timeout-10204",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19742.7935
+      },
+      {
+        "startMs": 18492.7261,
+        "endMs": 19773.6275,
+        "question": "timeout:timeout-10209",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19773.6267
+      },
+      {
+        "startMs": 18492.79,
+        "endMs": 19773.6348,
+        "question": "timeout:timeout-10207",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19773.6335
+      },
+      {
+        "startMs": 18492.9188,
+        "endMs": 19804.7583,
+        "question": "timeout:timeout-10210",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19804.7534
+      },
+      {
+        "startMs": 18492.9617,
+        "endMs": 19804.7583,
+        "question": "timeout:timeout-10211",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19804.7531
+      },
+      {
+        "startMs": 18494.836,
+        "endMs": 19804.7714,
+        "question": "timeout:timeout-10212",
+        "provider": "primary",
+        "chunks": 3,
+        "disconnectMs": 19804.77
+      }
+    ]
+  }
+]

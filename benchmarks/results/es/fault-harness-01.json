@@ -1,0 +1,133 @@
+[ {
+  "case" : "socket_timeout",
+  "timeoutMs" : 1500,
+  "page" : 1,
+  "durationMs" : [ 46.069, 0.4524, 0.2564 ],
+  "nullResults" : [ true, true, true ],
+  "mysqlDaoCalls" : 1,
+  "stubRequests" : 0,
+  "expectedFallback" : true,
+  "pass" : true,
+  "runtimeStatus" : {
+    "state" : "ES_UNAVAILABLE",
+    "message" : "Elasticsearch request failures were detected; MySQL title fallback is active while retries continue",
+    "indexCoverageComplete" : true,
+    "rebuildInProgress" : false,
+    "circuitOpen" : false,
+    "consecutiveFailures" : 4,
+    "circuitOpenUntil" : null,
+    "lastFailureTime" : 1790318526800,
+    "lastFailure" : "NullPointerException"
+  },
+  "scope" : "real search/read services; loopback HTTP fault; DAO mocked empty; sync bootstrap disabled; Redis absent"
+}, {
+  "case" : "connection_refused",
+  "timeoutMs" : 1500,
+  "page" : 1,
+  "durationMs" : [ 0.4367, 0.3274, 0.3713 ],
+  "nullResults" : [ true, true, true ],
+  "mysqlDaoCalls" : 1,
+  "stubRequests" : 0,
+  "expectedFallback" : true,
+  "pass" : true,
+  "runtimeStatus" : {
+    "state" : "ES_UNAVAILABLE",
+    "message" : "Elasticsearch request failures were detected; MySQL title fallback is active while retries continue",
+    "indexCoverageComplete" : true,
+    "rebuildInProgress" : false,
+    "circuitOpen" : false,
+    "consecutiveFailures" : 4,
+    "circuitOpenUntil" : null,
+    "lastFailureTime" : 1790318526821,
+    "lastFailure" : "NullPointerException"
+  },
+  "scope" : "real search/read services; loopback HTTP fault; DAO mocked empty; sync bootstrap disabled; Redis absent"
+}, {
+  "case" : "es_timed_out",
+  "timeoutMs" : 1500,
+  "page" : 1,
+  "durationMs" : [ 0.3751, 0.4081, 0.2371 ],
+  "nullResults" : [ true, true, true ],
+  "mysqlDaoCalls" : 1,
+  "stubRequests" : 0,
+  "expectedFallback" : true,
+  "pass" : true,
+  "runtimeStatus" : {
+    "state" : "ES_UNAVAILABLE",
+    "message" : "Elasticsearch request failures were detected; MySQL title fallback is active while retries continue",
+    "indexCoverageComplete" : true,
+    "rebuildInProgress" : false,
+    "circuitOpen" : false,
+    "consecutiveFailures" : 4,
+    "circuitOpenUntil" : null,
+    "lastFailureTime" : 1790318526837,
+    "lastFailure" : "NullPointerException"
+  },
+  "scope" : "real search/read services; loopback HTTP fault; DAO mocked empty; sync bootstrap disabled; Redis absent"
+}, {
+  "case" : "failed_shard",
+  "timeoutMs" : 1500,
+  "page" : 1,
+  "durationMs" : [ 0.7615, 0.7493, 0.1979 ],
+  "nullResults" : [ true, true, true ],
+  "mysqlDaoCalls" : 1,
+  "stubRequests" : 0,
+  "expectedFallback" : true,
+  "pass" : true,
+  "runtimeStatus" : {
+    "state" : "ES_UNAVAILABLE",
+    "message" : "Elasticsearch request failures were detected; MySQL title fallback is active while retries continue",
+    "indexCoverageComplete" : true,
+    "rebuildInProgress" : false,
+    "circuitOpen" : false,
+    "consecutiveFailures" : 4,
+    "circuitOpenUntil" : null,
+    "lastFailureTime" : 1790318526855,
+    "lastFailure" : "NullPointerException"
+  },
+  "scope" : "real search/read services; loopback HTTP fault; DAO mocked empty; sync bootstrap disabled; Redis absent"
+}, {
+  "case" : "cursor_missing",
+  "timeoutMs" : 1500,
+  "page" : 2,
+  "durationMs" : [ 0.3823, 0.2043, 0.1536 ],
+  "nullResults" : [ true, true, true ],
+  "mysqlDaoCalls" : 1,
+  "stubRequests" : 0,
+  "expectedFallback" : false,
+  "pass" : false,
+  "runtimeStatus" : {
+    "state" : "ES_UNAVAILABLE",
+    "message" : "Elasticsearch request failures were detected; MySQL title fallback is active while retries continue",
+    "indexCoverageComplete" : true,
+    "rebuildInProgress" : false,
+    "circuitOpen" : false,
+    "consecutiveFailures" : 4,
+    "circuitOpenUntil" : null,
+    "lastFailureTime" : 1790318526871,
+    "lastFailure" : "NullPointerException"
+  },
+  "scope" : "real search/read services; loopback HTTP fault; DAO mocked empty; sync bootstrap disabled; Redis absent"
+}, {
+  "case" : "page_over_limit",
+  "timeoutMs" : 1500,
+  "page" : 51,
+  "durationMs" : [ 0.3852, 0.1226, 0.0838 ],
+  "nullResults" : [ false, false, false ],
+  "mysqlDaoCalls" : 0,
+  "stubRequests" : 0,
+  "expectedFallback" : false,
+  "pass" : true,
+  "runtimeStatus" : {
+    "state" : "ES_NORMAL",
+    "message" : "Elasticsearch is serving searches normally",
+    "indexCoverageComplete" : true,
+    "rebuildInProgress" : false,
+    "circuitOpen" : false,
+    "consecutiveFailures" : 0,
+    "circuitOpenUntil" : null,
+    "lastFailureTime" : null,
+    "lastFailure" : null
+  },
+  "scope" : "real search/read services; loopback HTTP fault; DAO mocked empty; sync bootstrap disabled; Redis absent"
+} ]

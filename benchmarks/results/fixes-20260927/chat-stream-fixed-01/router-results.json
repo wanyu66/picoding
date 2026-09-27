@@ -1,0 +1,622 @@
+[
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 195.54539999999906,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 197.56920000000173,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 190.90810000000056,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 183.14040000000023,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 184.52889999999752,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 181.16820000000007,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 183.63709999999992,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 197.86599999999817,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 181.73929999999746,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "timeout",
+    "latencySource": "mock",
+    "durationMs": 183.39340000000084,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 7.707799999996496,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 7.727599999998347,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 9.804400000000896,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 7.08270000000266,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 6.042300000000978,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 6.708999999998923,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 7.930999999996857,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 6.267499999998108,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 8,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "unavailable",
+    "latencySource": "mock",
+    "durationMs": 7.242000000002008,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 5.698199999998906,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 10.497199999997974,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 12.41439999999784,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 11.036000000000058,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 9.60109999999986,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 8.073700000000827,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 9.387699999999313,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 6.547800000000279,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 4.687099999999191,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "template",
+    "latencySource": "mock",
+    "durationMs": 4.228299999998853,
+    "primaryCalls": 2,
+    "backupCalls": 1,
+    "results": [
+      "template:MOCK_TEMPLATE"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 22.20209999999861,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 11.603100000000268,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 17.66019999999844,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 12.772799999998824,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 14.345799999999144,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 12.450099999998201,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 9.38090000000011,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 13.294699999998556,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 9.789499999998952,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  },
+  {
+    "mode": "circuit",
+    "latencySource": "mock",
+    "durationMs": 22.478500000001077,
+    "primaryCalls": 2,
+    "backupCalls": 3,
+    "results": [
+      "backup:MOCK_OK",
+      "backup:MOCK_OK",
+      "backup:MOCK_OK"
+    ],
+    "error": null,
+    "attemptTimeoutMs": 80,
+    "totalTimeoutMs": 350,
+    "maxTotalAttempts": 3,
+    "passed": true
+  }
+]

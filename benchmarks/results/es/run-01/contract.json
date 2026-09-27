@@ -1,0 +1,2036 @@
+{
+  "indexDefinition" : {
+    "settings" : {
+      "number_of_shards" : 1,
+      "number_of_replicas" : 0,
+      "analysis" : {
+        "filter" : {
+          "pai_stop" : {
+            "type" : "stop",
+            "stopwords" : [ "的", "了", "和", "是", "在", "与", "及", "或", "一个", "如何" ]
+          },
+          "pai_synonym" : {
+            "type" : "synonym_graph",
+            "lenient" : true,
+            "synonyms" : [ "java虚拟机,jvm", "数据库,db", "缓存,cache", "消息队列,mq", "人工智能,ai", "搜索引擎,elasticsearch,es", "微服务,microservice", "前端,frontend", "后端,backend" ]
+          },
+          "pai_pinyin" : {
+            "type" : "pinyin",
+            "keep_full_pinyin" : true,
+            "keep_joined_full_pinyin" : true,
+            "keep_first_letter" : true,
+            "keep_original" : true,
+            "limit_first_letter_length" : 32,
+            "remove_duplicated_term" : true
+          }
+        },
+        "analyzer" : {
+          "pai_zh_index" : {
+            "type" : "custom",
+            "tokenizer" : "ik_max_word",
+            "filter" : [ "lowercase", "pai_stop" ]
+          },
+          "pai_zh_search" : {
+            "type" : "custom",
+            "tokenizer" : "ik_smart",
+            "filter" : [ "lowercase", "pai_stop", "pai_synonym" ]
+          },
+          "pai_pinyin_index" : {
+            "type" : "custom",
+            "tokenizer" : "ik_smart",
+            "filter" : [ "lowercase", "pai_pinyin" ]
+          },
+          "pai_pinyin_search" : {
+            "type" : "custom",
+            "tokenizer" : "keyword",
+            "filter" : [ "lowercase", "pai_pinyin" ]
+          }
+        }
+      }
+    },
+    "mappings" : {
+      "properties" : {
+        "articleId" : {
+          "type" : "long"
+        },
+        "authorId" : {
+          "type" : "long"
+        },
+        "authorName" : {
+          "type" : "text",
+          "analyzer" : "pai_zh_index",
+          "search_analyzer" : "pai_zh_search",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            },
+            "pinyin" : {
+              "type" : "text",
+              "analyzer" : "pai_pinyin_index",
+              "search_analyzer" : "pai_pinyin_search"
+            }
+          }
+        },
+        "title" : {
+          "type" : "text",
+          "analyzer" : "pai_zh_index",
+          "search_analyzer" : "pai_zh_search",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            },
+            "pinyin" : {
+              "type" : "text",
+              "analyzer" : "pai_pinyin_index",
+              "search_analyzer" : "pai_pinyin_search"
+            }
+          }
+        },
+        "shortTitle" : {
+          "type" : "text",
+          "analyzer" : "pai_zh_index",
+          "search_analyzer" : "pai_zh_search",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            },
+            "pinyin" : {
+              "type" : "text",
+              "analyzer" : "pai_pinyin_index",
+              "search_analyzer" : "pai_pinyin_search"
+            }
+          }
+        },
+        "urlSlug" : {
+          "type" : "keyword",
+          "ignore_above" : 256
+        },
+        "summary" : {
+          "type" : "text",
+          "analyzer" : "pai_zh_index",
+          "search_analyzer" : "pai_zh_search",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            },
+            "pinyin" : {
+              "type" : "text",
+              "analyzer" : "pai_pinyin_index",
+              "search_analyzer" : "pai_pinyin_search"
+            }
+          }
+        },
+        "content" : {
+          "type" : "text",
+          "analyzer" : "pai_zh_index",
+          "search_analyzer" : "pai_zh_search",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            },
+            "pinyin" : {
+              "type" : "text",
+              "analyzer" : "pai_pinyin_index",
+              "search_analyzer" : "pai_pinyin_search"
+            }
+          }
+        },
+        "titleExact" : {
+          "type" : "wildcard"
+        },
+        "shortTitleExact" : {
+          "type" : "wildcard"
+        },
+        "summaryExact" : {
+          "type" : "wildcard"
+        },
+        "contentExact" : {
+          "type" : "wildcard"
+        },
+        "qualityScore" : {
+          "type" : "long"
+        },
+        "readCount" : {
+          "type" : "long"
+        },
+        "praiseCount" : {
+          "type" : "long"
+        },
+        "createTime" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+        },
+        "status" : {
+          "type" : "integer"
+        },
+        "deleted" : {
+          "type" : "integer"
+        },
+        "officalStat" : {
+          "type" : "integer"
+        },
+        "toppingStat" : {
+          "type" : "integer"
+        },
+        "creamStat" : {
+          "type" : "integer"
+        },
+        "columnIds" : {
+          "type" : "long"
+        },
+        "updateTime" : {
+          "type" : "date",
+          "format" : "yyyy-MM-dd HH:mm:ss||strict_date_optional_time||epoch_millis"
+        }
+      }
+    }
+  },
+  "queries" : {
+    "exact" : {
+      "size" : 10,
+      "track_total_hits" : true,
+      "query" : {
+        "function_score" : {
+          "query" : {
+            "bool" : {
+              "must" : [ {
+                "bool" : {
+                  "should" : [ {
+                    "match_phrase" : {
+                      "title" : {
+                        "query" : "Java 并发编程 000001",
+                        "slop" : 0,
+                        "boost" : 16.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "title" : {
+                        "query" : "Java 并发编程 000001",
+                        "max_expansions" : 50,
+                        "boost" : 11.2
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title" : {
+                        "query" : "Java 并发编程 000001",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 8.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title.pinyin" : {
+                        "query" : "Java 并发编程 000001",
+                        "operator" : "and",
+                        "boost" : 6.4
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "titleExact" : {
+                        "value" : "*Java 并发编程 000001*",
+                        "case_insensitive" : true,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "shortTitle" : {
+                        "query" : "Java 并发编程 000001",
+                        "slop" : 0,
+                        "boost" : 10.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "shortTitle" : {
+                        "query" : "Java 并发编程 000001",
+                        "max_expansions" : 50,
+                        "boost" : 7.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle" : {
+                        "query" : "Java 并发编程 000001",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 5.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle.pinyin" : {
+                        "query" : "Java 并发编程 000001",
+                        "operator" : "and",
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "shortTitleExact" : {
+                        "value" : "*Java 并发编程 000001*",
+                        "case_insensitive" : true,
+                        "boost" : 1.75
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "summary" : {
+                        "query" : "Java 并发编程 000001",
+                        "slop" : 0,
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "summary" : {
+                        "query" : "Java 并发编程 000001",
+                        "max_expansions" : 50,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary" : {
+                        "query" : "Java 并发编程 000001",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary.pinyin" : {
+                        "query" : "Java 并发编程 000001",
+                        "operator" : "and",
+                        "boost" : 1.6
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "summaryExact" : {
+                        "value" : "*Java 并发编程 000001*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "content" : {
+                        "query" : "Java 并发编程 000001",
+                        "slop" : 0,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "content" : {
+                        "query" : "Java 并发编程 000001",
+                        "max_expansions" : 50,
+                        "boost" : 1.4
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content" : {
+                        "query" : "Java 并发编程 000001",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 1.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content.pinyin" : {
+                        "query" : "Java 并发编程 000001",
+                        "operator" : "and",
+                        "boost" : 0.8
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "contentExact" : {
+                        "value" : "*Java 并发编程 000001*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  } ],
+                  "minimum_should_match" : 1
+                }
+              } ],
+              "filter" : [ {
+                "term" : {
+                  "deleted" : 0
+                }
+              }, {
+                "term" : {
+                  "status" : 1
+                }
+              } ]
+            }
+          },
+          "functions" : [ {
+            "field_value_factor" : {
+              "field" : "qualityScore",
+              "modifier" : "sqrt",
+              "factor" : 1.0,
+              "missing" : 0.0
+            },
+            "weight" : 2.0
+          }, {
+            "field_value_factor" : {
+              "field" : "readCount",
+              "modifier" : "log1p",
+              "factor" : 0.08,
+              "missing" : 0.0
+            },
+            "weight" : 0.8
+          }, {
+            "field_value_factor" : {
+              "field" : "praiseCount",
+              "modifier" : "log1p",
+              "factor" : 0.3,
+              "missing" : 0.0
+            },
+            "weight" : 1.2
+          }, {
+            "gauss" : {
+              "createTime" : {
+                "origin" : "now",
+                "scale" : "30d",
+                "offset" : "7d",
+                "decay" : 0.5
+              }
+            },
+            "weight" : 1.5
+          } ],
+          "score_mode" : "sum",
+          "boost_mode" : "sum",
+          "max_boost" : 20
+        }
+      },
+      "_source" : [ "articleId", "title", "shortTitle", "summary", "content" ],
+      "sort" : [ {
+        "_score" : {
+          "order" : "desc"
+        }
+      }, {
+        "createTime" : {
+          "order" : "desc",
+          "unmapped_type" : "date"
+        }
+      }, {
+        "articleId" : {
+          "order" : "desc",
+          "unmapped_type" : "long"
+        }
+      } ],
+      "highlight" : {
+        "pre_tags" : [ "__PAI_HIGHLIGHT_START__" ],
+        "post_tags" : [ "__PAI_HIGHLIGHT_END__" ],
+        "fragment_size" : 160,
+        "number_of_fragments" : 3,
+        "fields" : {
+          "title" : { },
+          "shortTitle" : { },
+          "summary" : { },
+          "content" : { }
+        }
+      }
+    },
+    "body" : {
+      "size" : 10,
+      "track_total_hits" : true,
+      "query" : {
+        "function_score" : {
+          "query" : {
+            "bool" : {
+              "must" : [ {
+                "bool" : {
+                  "should" : [ {
+                    "match_phrase" : {
+                      "title" : {
+                        "query" : "validate recovery",
+                        "slop" : 0,
+                        "boost" : 16.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "title" : {
+                        "query" : "validate recovery",
+                        "max_expansions" : 50,
+                        "boost" : 11.2
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title" : {
+                        "query" : "validate recovery",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 8.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title.pinyin" : {
+                        "query" : "validate recovery",
+                        "operator" : "and",
+                        "boost" : 6.4
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "titleExact" : {
+                        "value" : "*validate recovery*",
+                        "case_insensitive" : true,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "shortTitle" : {
+                        "query" : "validate recovery",
+                        "slop" : 0,
+                        "boost" : 10.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "shortTitle" : {
+                        "query" : "validate recovery",
+                        "max_expansions" : 50,
+                        "boost" : 7.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle" : {
+                        "query" : "validate recovery",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 5.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle.pinyin" : {
+                        "query" : "validate recovery",
+                        "operator" : "and",
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "shortTitleExact" : {
+                        "value" : "*validate recovery*",
+                        "case_insensitive" : true,
+                        "boost" : 1.75
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "summary" : {
+                        "query" : "validate recovery",
+                        "slop" : 0,
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "summary" : {
+                        "query" : "validate recovery",
+                        "max_expansions" : 50,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary" : {
+                        "query" : "validate recovery",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary.pinyin" : {
+                        "query" : "validate recovery",
+                        "operator" : "and",
+                        "boost" : 1.6
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "summaryExact" : {
+                        "value" : "*validate recovery*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "content" : {
+                        "query" : "validate recovery",
+                        "slop" : 0,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "content" : {
+                        "query" : "validate recovery",
+                        "max_expansions" : 50,
+                        "boost" : 1.4
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content" : {
+                        "query" : "validate recovery",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 1.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content.pinyin" : {
+                        "query" : "validate recovery",
+                        "operator" : "and",
+                        "boost" : 0.8
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "contentExact" : {
+                        "value" : "*validate recovery*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  } ],
+                  "minimum_should_match" : 1
+                }
+              } ],
+              "filter" : [ {
+                "term" : {
+                  "deleted" : 0
+                }
+              }, {
+                "term" : {
+                  "status" : 1
+                }
+              } ]
+            }
+          },
+          "functions" : [ {
+            "field_value_factor" : {
+              "field" : "qualityScore",
+              "modifier" : "sqrt",
+              "factor" : 1.0,
+              "missing" : 0.0
+            },
+            "weight" : 2.0
+          }, {
+            "field_value_factor" : {
+              "field" : "readCount",
+              "modifier" : "log1p",
+              "factor" : 0.08,
+              "missing" : 0.0
+            },
+            "weight" : 0.8
+          }, {
+            "field_value_factor" : {
+              "field" : "praiseCount",
+              "modifier" : "log1p",
+              "factor" : 0.3,
+              "missing" : 0.0
+            },
+            "weight" : 1.2
+          }, {
+            "gauss" : {
+              "createTime" : {
+                "origin" : "now",
+                "scale" : "30d",
+                "offset" : "7d",
+                "decay" : 0.5
+              }
+            },
+            "weight" : 1.5
+          } ],
+          "score_mode" : "sum",
+          "boost_mode" : "sum",
+          "max_boost" : 20
+        }
+      },
+      "_source" : [ "articleId", "title", "shortTitle", "summary", "content" ],
+      "sort" : [ {
+        "_score" : {
+          "order" : "desc"
+        }
+      }, {
+        "createTime" : {
+          "order" : "desc",
+          "unmapped_type" : "date"
+        }
+      }, {
+        "articleId" : {
+          "order" : "desc",
+          "unmapped_type" : "long"
+        }
+      } ],
+      "highlight" : {
+        "pre_tags" : [ "__PAI_HIGHLIGHT_START__" ],
+        "post_tags" : [ "__PAI_HIGHLIGHT_END__" ],
+        "fragment_size" : 160,
+        "number_of_fragments" : 3,
+        "fields" : {
+          "title" : { },
+          "shortTitle" : { },
+          "summary" : { },
+          "content" : { }
+        }
+      }
+    },
+    "pinyin" : {
+      "size" : 10,
+      "track_total_hits" : true,
+      "query" : {
+        "function_score" : {
+          "query" : {
+            "bool" : {
+              "must" : [ {
+                "bool" : {
+                  "should" : [ {
+                    "match_phrase" : {
+                      "title" : {
+                        "query" : "bingfabiancheng",
+                        "slop" : 0,
+                        "boost" : 16.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "title" : {
+                        "query" : "bingfabiancheng",
+                        "max_expansions" : 50,
+                        "boost" : 11.2
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title" : {
+                        "query" : "bingfabiancheng",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 8.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title.pinyin" : {
+                        "query" : "bingfabiancheng",
+                        "operator" : "and",
+                        "boost" : 6.4
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "titleExact" : {
+                        "value" : "*bingfabiancheng*",
+                        "case_insensitive" : true,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "shortTitle" : {
+                        "query" : "bingfabiancheng",
+                        "slop" : 0,
+                        "boost" : 10.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "shortTitle" : {
+                        "query" : "bingfabiancheng",
+                        "max_expansions" : 50,
+                        "boost" : 7.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle" : {
+                        "query" : "bingfabiancheng",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 5.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle.pinyin" : {
+                        "query" : "bingfabiancheng",
+                        "operator" : "and",
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "shortTitleExact" : {
+                        "value" : "*bingfabiancheng*",
+                        "case_insensitive" : true,
+                        "boost" : 1.75
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "summary" : {
+                        "query" : "bingfabiancheng",
+                        "slop" : 0,
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "summary" : {
+                        "query" : "bingfabiancheng",
+                        "max_expansions" : 50,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary" : {
+                        "query" : "bingfabiancheng",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary.pinyin" : {
+                        "query" : "bingfabiancheng",
+                        "operator" : "and",
+                        "boost" : 1.6
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "summaryExact" : {
+                        "value" : "*bingfabiancheng*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "content" : {
+                        "query" : "bingfabiancheng",
+                        "slop" : 0,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "content" : {
+                        "query" : "bingfabiancheng",
+                        "max_expansions" : 50,
+                        "boost" : 1.4
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content" : {
+                        "query" : "bingfabiancheng",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 1.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content.pinyin" : {
+                        "query" : "bingfabiancheng",
+                        "operator" : "and",
+                        "boost" : 0.8
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "contentExact" : {
+                        "value" : "*bingfabiancheng*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  } ],
+                  "minimum_should_match" : 1
+                }
+              } ],
+              "filter" : [ {
+                "term" : {
+                  "deleted" : 0
+                }
+              }, {
+                "term" : {
+                  "status" : 1
+                }
+              } ]
+            }
+          },
+          "functions" : [ {
+            "field_value_factor" : {
+              "field" : "qualityScore",
+              "modifier" : "sqrt",
+              "factor" : 1.0,
+              "missing" : 0.0
+            },
+            "weight" : 2.0
+          }, {
+            "field_value_factor" : {
+              "field" : "readCount",
+              "modifier" : "log1p",
+              "factor" : 0.08,
+              "missing" : 0.0
+            },
+            "weight" : 0.8
+          }, {
+            "field_value_factor" : {
+              "field" : "praiseCount",
+              "modifier" : "log1p",
+              "factor" : 0.3,
+              "missing" : 0.0
+            },
+            "weight" : 1.2
+          }, {
+            "gauss" : {
+              "createTime" : {
+                "origin" : "now",
+                "scale" : "30d",
+                "offset" : "7d",
+                "decay" : 0.5
+              }
+            },
+            "weight" : 1.5
+          } ],
+          "score_mode" : "sum",
+          "boost_mode" : "sum",
+          "max_boost" : 20
+        }
+      },
+      "_source" : [ "articleId", "title", "shortTitle", "summary", "content" ],
+      "sort" : [ {
+        "_score" : {
+          "order" : "desc"
+        }
+      }, {
+        "createTime" : {
+          "order" : "desc",
+          "unmapped_type" : "date"
+        }
+      }, {
+        "articleId" : {
+          "order" : "desc",
+          "unmapped_type" : "long"
+        }
+      } ],
+      "highlight" : {
+        "pre_tags" : [ "__PAI_HIGHLIGHT_START__" ],
+        "post_tags" : [ "__PAI_HIGHLIGHT_END__" ],
+        "fragment_size" : 160,
+        "number_of_fragments" : 3,
+        "fields" : {
+          "title" : { },
+          "shortTitle" : { },
+          "summary" : { },
+          "content" : { }
+        }
+      }
+    },
+    "typo" : {
+      "size" : 10,
+      "track_total_hits" : true,
+      "query" : {
+        "function_score" : {
+          "query" : {
+            "bool" : {
+              "must" : [ {
+                "bool" : {
+                  "should" : [ {
+                    "match_phrase" : {
+                      "title" : {
+                        "query" : "elastcisearch",
+                        "slop" : 0,
+                        "boost" : 16.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "title" : {
+                        "query" : "elastcisearch",
+                        "max_expansions" : 50,
+                        "boost" : 11.2
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title" : {
+                        "query" : "elastcisearch",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 8.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title.pinyin" : {
+                        "query" : "elastcisearch",
+                        "operator" : "and",
+                        "boost" : 6.4
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "titleExact" : {
+                        "value" : "*elastcisearch*",
+                        "case_insensitive" : true,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "shortTitle" : {
+                        "query" : "elastcisearch",
+                        "slop" : 0,
+                        "boost" : 10.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "shortTitle" : {
+                        "query" : "elastcisearch",
+                        "max_expansions" : 50,
+                        "boost" : 7.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle" : {
+                        "query" : "elastcisearch",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 5.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle.pinyin" : {
+                        "query" : "elastcisearch",
+                        "operator" : "and",
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "shortTitleExact" : {
+                        "value" : "*elastcisearch*",
+                        "case_insensitive" : true,
+                        "boost" : 1.75
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "summary" : {
+                        "query" : "elastcisearch",
+                        "slop" : 0,
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "summary" : {
+                        "query" : "elastcisearch",
+                        "max_expansions" : 50,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary" : {
+                        "query" : "elastcisearch",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary.pinyin" : {
+                        "query" : "elastcisearch",
+                        "operator" : "and",
+                        "boost" : 1.6
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "summaryExact" : {
+                        "value" : "*elastcisearch*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "content" : {
+                        "query" : "elastcisearch",
+                        "slop" : 0,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "content" : {
+                        "query" : "elastcisearch",
+                        "max_expansions" : 50,
+                        "boost" : 1.4
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content" : {
+                        "query" : "elastcisearch",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 1.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content.pinyin" : {
+                        "query" : "elastcisearch",
+                        "operator" : "and",
+                        "boost" : 0.8
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "contentExact" : {
+                        "value" : "*elastcisearch*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  } ],
+                  "minimum_should_match" : 1
+                }
+              } ],
+              "filter" : [ {
+                "term" : {
+                  "deleted" : 0
+                }
+              }, {
+                "term" : {
+                  "status" : 1
+                }
+              } ]
+            }
+          },
+          "functions" : [ {
+            "field_value_factor" : {
+              "field" : "qualityScore",
+              "modifier" : "sqrt",
+              "factor" : 1.0,
+              "missing" : 0.0
+            },
+            "weight" : 2.0
+          }, {
+            "field_value_factor" : {
+              "field" : "readCount",
+              "modifier" : "log1p",
+              "factor" : 0.08,
+              "missing" : 0.0
+            },
+            "weight" : 0.8
+          }, {
+            "field_value_factor" : {
+              "field" : "praiseCount",
+              "modifier" : "log1p",
+              "factor" : 0.3,
+              "missing" : 0.0
+            },
+            "weight" : 1.2
+          }, {
+            "gauss" : {
+              "createTime" : {
+                "origin" : "now",
+                "scale" : "30d",
+                "offset" : "7d",
+                "decay" : 0.5
+              }
+            },
+            "weight" : 1.5
+          } ],
+          "score_mode" : "sum",
+          "boost_mode" : "sum",
+          "max_boost" : 20
+        }
+      },
+      "_source" : [ "articleId", "title", "shortTitle", "summary", "content" ],
+      "sort" : [ {
+        "_score" : {
+          "order" : "desc"
+        }
+      }, {
+        "createTime" : {
+          "order" : "desc",
+          "unmapped_type" : "date"
+        }
+      }, {
+        "articleId" : {
+          "order" : "desc",
+          "unmapped_type" : "long"
+        }
+      } ],
+      "highlight" : {
+        "pre_tags" : [ "__PAI_HIGHLIGHT_START__" ],
+        "post_tags" : [ "__PAI_HIGHLIGHT_END__" ],
+        "fragment_size" : 160,
+        "number_of_fragments" : 3,
+        "fields" : {
+          "title" : { },
+          "shortTitle" : { },
+          "summary" : { },
+          "content" : { }
+        }
+      }
+    },
+    "hot" : {
+      "size" : 10,
+      "track_total_hits" : true,
+      "query" : {
+        "function_score" : {
+          "query" : {
+            "bool" : {
+              "must" : [ {
+                "bool" : {
+                  "should" : [ {
+                    "match_phrase" : {
+                      "title" : {
+                        "query" : "Redis",
+                        "slop" : 0,
+                        "boost" : 16.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "title" : {
+                        "query" : "Redis",
+                        "max_expansions" : 50,
+                        "boost" : 11.2
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title" : {
+                        "query" : "Redis",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 8.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title.pinyin" : {
+                        "query" : "Redis",
+                        "operator" : "and",
+                        "boost" : 6.4
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "titleExact" : {
+                        "value" : "*Redis*",
+                        "case_insensitive" : true,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "shortTitle" : {
+                        "query" : "Redis",
+                        "slop" : 0,
+                        "boost" : 10.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "shortTitle" : {
+                        "query" : "Redis",
+                        "max_expansions" : 50,
+                        "boost" : 7.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle" : {
+                        "query" : "Redis",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 5.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle.pinyin" : {
+                        "query" : "Redis",
+                        "operator" : "and",
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "shortTitleExact" : {
+                        "value" : "*Redis*",
+                        "case_insensitive" : true,
+                        "boost" : 1.75
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "summary" : {
+                        "query" : "Redis",
+                        "slop" : 0,
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "summary" : {
+                        "query" : "Redis",
+                        "max_expansions" : 50,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary" : {
+                        "query" : "Redis",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary.pinyin" : {
+                        "query" : "Redis",
+                        "operator" : "and",
+                        "boost" : 1.6
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "summaryExact" : {
+                        "value" : "*Redis*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "content" : {
+                        "query" : "Redis",
+                        "slop" : 0,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "content" : {
+                        "query" : "Redis",
+                        "max_expansions" : 50,
+                        "boost" : 1.4
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content" : {
+                        "query" : "Redis",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 1.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content.pinyin" : {
+                        "query" : "Redis",
+                        "operator" : "and",
+                        "boost" : 0.8
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "contentExact" : {
+                        "value" : "*Redis*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  } ],
+                  "minimum_should_match" : 1
+                }
+              } ],
+              "filter" : [ {
+                "term" : {
+                  "deleted" : 0
+                }
+              }, {
+                "term" : {
+                  "status" : 1
+                }
+              } ]
+            }
+          },
+          "functions" : [ {
+            "field_value_factor" : {
+              "field" : "qualityScore",
+              "modifier" : "sqrt",
+              "factor" : 1.0,
+              "missing" : 0.0
+            },
+            "weight" : 2.0
+          }, {
+            "field_value_factor" : {
+              "field" : "readCount",
+              "modifier" : "log1p",
+              "factor" : 0.08,
+              "missing" : 0.0
+            },
+            "weight" : 0.8
+          }, {
+            "field_value_factor" : {
+              "field" : "praiseCount",
+              "modifier" : "log1p",
+              "factor" : 0.3,
+              "missing" : 0.0
+            },
+            "weight" : 1.2
+          }, {
+            "gauss" : {
+              "createTime" : {
+                "origin" : "now",
+                "scale" : "30d",
+                "offset" : "7d",
+                "decay" : 0.5
+              }
+            },
+            "weight" : 1.5
+          } ],
+          "score_mode" : "sum",
+          "boost_mode" : "sum",
+          "max_boost" : 20
+        }
+      },
+      "_source" : [ "articleId", "title", "shortTitle", "summary", "content" ],
+      "sort" : [ {
+        "_score" : {
+          "order" : "desc"
+        }
+      }, {
+        "createTime" : {
+          "order" : "desc",
+          "unmapped_type" : "date"
+        }
+      }, {
+        "articleId" : {
+          "order" : "desc",
+          "unmapped_type" : "long"
+        }
+      } ],
+      "highlight" : {
+        "pre_tags" : [ "__PAI_HIGHLIGHT_START__" ],
+        "post_tags" : [ "__PAI_HIGHLIGHT_END__" ],
+        "fragment_size" : 160,
+        "number_of_fragments" : 3,
+        "fields" : {
+          "title" : { },
+          "shortTitle" : { },
+          "summary" : { },
+          "content" : { }
+        }
+      }
+    },
+    "recent" : {
+      "size" : 10,
+      "track_total_hits" : true,
+      "query" : {
+        "function_score" : {
+          "query" : {
+            "bool" : {
+              "must" : [ {
+                "bool" : {
+                  "should" : [ {
+                    "match_phrase" : {
+                      "title" : {
+                        "query" : "Spring",
+                        "slop" : 0,
+                        "boost" : 16.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "title" : {
+                        "query" : "Spring",
+                        "max_expansions" : 50,
+                        "boost" : 11.2
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title" : {
+                        "query" : "Spring",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 8.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title.pinyin" : {
+                        "query" : "Spring",
+                        "operator" : "and",
+                        "boost" : 6.4
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "titleExact" : {
+                        "value" : "*Spring*",
+                        "case_insensitive" : true,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "shortTitle" : {
+                        "query" : "Spring",
+                        "slop" : 0,
+                        "boost" : 10.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "shortTitle" : {
+                        "query" : "Spring",
+                        "max_expansions" : 50,
+                        "boost" : 7.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle" : {
+                        "query" : "Spring",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 5.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle.pinyin" : {
+                        "query" : "Spring",
+                        "operator" : "and",
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "shortTitleExact" : {
+                        "value" : "*Spring*",
+                        "case_insensitive" : true,
+                        "boost" : 1.75
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "summary" : {
+                        "query" : "Spring",
+                        "slop" : 0,
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "summary" : {
+                        "query" : "Spring",
+                        "max_expansions" : 50,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary" : {
+                        "query" : "Spring",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary.pinyin" : {
+                        "query" : "Spring",
+                        "operator" : "and",
+                        "boost" : 1.6
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "summaryExact" : {
+                        "value" : "*Spring*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "content" : {
+                        "query" : "Spring",
+                        "slop" : 0,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "content" : {
+                        "query" : "Spring",
+                        "max_expansions" : 50,
+                        "boost" : 1.4
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content" : {
+                        "query" : "Spring",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 1.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content.pinyin" : {
+                        "query" : "Spring",
+                        "operator" : "and",
+                        "boost" : 0.8
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "contentExact" : {
+                        "value" : "*Spring*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  } ],
+                  "minimum_should_match" : 1
+                }
+              } ],
+              "filter" : [ {
+                "term" : {
+                  "deleted" : 0
+                }
+              }, {
+                "term" : {
+                  "status" : 1
+                }
+              } ]
+            }
+          },
+          "functions" : [ {
+            "field_value_factor" : {
+              "field" : "qualityScore",
+              "modifier" : "sqrt",
+              "factor" : 1.0,
+              "missing" : 0.0
+            },
+            "weight" : 2.0
+          }, {
+            "field_value_factor" : {
+              "field" : "readCount",
+              "modifier" : "log1p",
+              "factor" : 0.08,
+              "missing" : 0.0
+            },
+            "weight" : 0.8
+          }, {
+            "field_value_factor" : {
+              "field" : "praiseCount",
+              "modifier" : "log1p",
+              "factor" : 0.3,
+              "missing" : 0.0
+            },
+            "weight" : 1.2
+          }, {
+            "gauss" : {
+              "createTime" : {
+                "origin" : "now",
+                "scale" : "30d",
+                "offset" : "7d",
+                "decay" : 0.5
+              }
+            },
+            "weight" : 1.5
+          } ],
+          "score_mode" : "sum",
+          "boost_mode" : "sum",
+          "max_boost" : 20
+        }
+      },
+      "_source" : [ "articleId", "title", "shortTitle", "summary", "content" ],
+      "sort" : [ {
+        "_score" : {
+          "order" : "desc"
+        }
+      }, {
+        "createTime" : {
+          "order" : "desc",
+          "unmapped_type" : "date"
+        }
+      }, {
+        "articleId" : {
+          "order" : "desc",
+          "unmapped_type" : "long"
+        }
+      } ],
+      "highlight" : {
+        "pre_tags" : [ "__PAI_HIGHLIGHT_START__" ],
+        "post_tags" : [ "__PAI_HIGHLIGHT_END__" ],
+        "fragment_size" : 160,
+        "number_of_fragments" : 3,
+        "fields" : {
+          "title" : { },
+          "shortTitle" : { },
+          "summary" : { },
+          "content" : { }
+        }
+      }
+    },
+    "zero" : {
+      "size" : 10,
+      "track_total_hits" : true,
+      "query" : {
+        "function_score" : {
+          "query" : {
+            "bool" : {
+              "must" : [ {
+                "bool" : {
+                  "should" : [ {
+                    "match_phrase" : {
+                      "title" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "slop" : 0,
+                        "boost" : 16.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "title" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "max_expansions" : 50,
+                        "boost" : 11.2
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 8.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "title.pinyin" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "operator" : "and",
+                        "boost" : 6.4
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "titleExact" : {
+                        "value" : "*zzzxnonexistentbenchmark*",
+                        "case_insensitive" : true,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "shortTitle" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "slop" : 0,
+                        "boost" : 10.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "shortTitle" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "max_expansions" : 50,
+                        "boost" : 7.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 5.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "shortTitle.pinyin" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "operator" : "and",
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "shortTitleExact" : {
+                        "value" : "*zzzxnonexistentbenchmark*",
+                        "case_insensitive" : true,
+                        "boost" : 1.75
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "summary" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "slop" : 0,
+                        "boost" : 4.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "summary" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "max_expansions" : 50,
+                        "boost" : 2.8
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "summary.pinyin" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "operator" : "and",
+                        "boost" : 1.6
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "summaryExact" : {
+                        "value" : "*zzzxnonexistentbenchmark*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  }, {
+                    "match_phrase" : {
+                      "content" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "slop" : 0,
+                        "boost" : 2.0
+                      }
+                    }
+                  }, {
+                    "match_phrase_prefix" : {
+                      "content" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "max_expansions" : 50,
+                        "boost" : 1.4
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "operator" : "and",
+                        "fuzziness" : "AUTO",
+                        "prefix_length" : 1,
+                        "max_expansions" : 50,
+                        "boost" : 1.0
+                      }
+                    }
+                  }, {
+                    "match" : {
+                      "content.pinyin" : {
+                        "query" : "zzzxnonexistentbenchmark",
+                        "operator" : "and",
+                        "boost" : 0.8
+                      }
+                    }
+                  }, {
+                    "wildcard" : {
+                      "contentExact" : {
+                        "value" : "*zzzxnonexistentbenchmark*",
+                        "case_insensitive" : true
+                      }
+                    }
+                  } ],
+                  "minimum_should_match" : 1
+                }
+              } ],
+              "filter" : [ {
+                "term" : {
+                  "deleted" : 0
+                }
+              }, {
+                "term" : {
+                  "status" : 1
+                }
+              } ]
+            }
+          },
+          "functions" : [ {
+            "field_value_factor" : {
+              "field" : "qualityScore",
+              "modifier" : "sqrt",
+              "factor" : 1.0,
+              "missing" : 0.0
+            },
+            "weight" : 2.0
+          }, {
+            "field_value_factor" : {
+              "field" : "readCount",
+              "modifier" : "log1p",
+              "factor" : 0.08,
+              "missing" : 0.0
+            },
+            "weight" : 0.8
+          }, {
+            "field_value_factor" : {
+              "field" : "praiseCount",
+              "modifier" : "log1p",
+              "factor" : 0.3,
+              "missing" : 0.0
+            },
+            "weight" : 1.2
+          }, {
+            "gauss" : {
+              "createTime" : {
+                "origin" : "now",
+                "scale" : "30d",
+                "offset" : "7d",
+                "decay" : 0.5
+              }
+            },
+            "weight" : 1.5
+          } ],
+          "score_mode" : "sum",
+          "boost_mode" : "sum",
+          "max_boost" : 20
+        }
+      },
+      "_source" : [ "articleId", "title", "shortTitle", "summary", "content" ],
+      "sort" : [ {
+        "_score" : {
+          "order" : "desc"
+        }
+      }, {
+        "createTime" : {
+          "order" : "desc",
+          "unmapped_type" : "date"
+        }
+      }, {
+        "articleId" : {
+          "order" : "desc",
+          "unmapped_type" : "long"
+        }
+      } ],
+      "highlight" : {
+        "pre_tags" : [ "__PAI_HIGHLIGHT_START__" ],
+        "post_tags" : [ "__PAI_HIGHLIGHT_END__" ],
+        "fragment_size" : 160,
+        "number_of_fragments" : 3,
+        "fields" : {
+          "title" : { },
+          "shortTitle" : { },
+          "summary" : { },
+          "content" : { }
+        }
+      }
+    }
+  }
+}

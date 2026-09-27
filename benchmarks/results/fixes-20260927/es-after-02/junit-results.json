@@ -1,0 +1,10 @@
+{
+  "found" : 16,
+  "passed" : 16,
+  "failed" : 0,
+  "skipped" : 0,
+  "durationMs" : 8859,
+  "concurrency" : 1,
+  "scope" : "loopback HTTP stub; mocked DAO and JDBC; transaction rollback not exercised",
+  "failures" : [ ]
+}

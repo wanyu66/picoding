@@ -47,7 +47,10 @@ public class WsAnswerHelper {
         try {
             java.util.function.Consumer<ChatRecordsVo> callback = vo -> {
                 if (waitingTip(vo)) return;
-                if (terminal(vo)) {
+                if (vo != null && StringUtils.isNotBlank(vo.getErrorCode())) {
+                    streamSessions.fail(generation, vo, vo.getErrorCode(), vo.getErrorMessage(), true);
+                    generationControl.complete(generation.getGenerationId());
+                } else if (terminal(vo)) {
                     streamSessions.complete(generation, vo);
                     generationControl.complete(generation.getGenerationId());
                 } else streamSessions.delta(generation, vo);

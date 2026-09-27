@@ -1,0 +1,365 @@
+{
+  "initial": [
+    {
+      "version": 2,
+      "event": "started",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 1,
+      "terminal": false,
+      "partial": false,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497226893,
+      "payload": null
+    },
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 2,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497226970,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|",
+            "answerTime": "2026年09月27日 16:20:26",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 3,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227046,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 4,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227122,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    }
+  ],
+  "replay": [
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 5,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227181,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|chunk04|",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 6,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227244,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 7,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227318,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "event": "completed",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 8,
+      "terminal": true,
+      "partial": false,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227322,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 1,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|\n",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM_END"
+          }
+        ]
+      }
+    }
+  ],
+  "replayAgain": [
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 5,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227181,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|chunk04|",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 6,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227244,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "event": "delta",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 7,
+      "terminal": false,
+      "partial": true,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227318,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 0,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM"
+          }
+        ]
+      }
+    },
+    {
+      "version": 2,
+      "event": "completed",
+      "requestId": "reconnect-10173",
+      "generationId": "3be27c1a6bd54166aa39d93017d1e501",
+      "chatId": "reconnect-10173",
+      "seq": 8,
+      "terminal": true,
+      "partial": false,
+      "retryable": false,
+      "errorCode": null,
+      "errorMessage": null,
+      "serverTime": 1790497227322,
+      "payload": {
+        "source": "DEEP_SEEK",
+        "maxCnt": 10000,
+        "usedCnt": 1,
+        "errorCode": null,
+        "errorMessage": null,
+        "records": [
+          {
+            "chatUid": "a7afa03639ce412499e37cadd66b1f7c",
+            "question": "reconnect:reconnect-10173",
+            "questionTime": "2026年09月27日 16:20:26",
+            "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|\n",
+            "answerTime": "2026年09月27日 16:20:27",
+            "answerType": "STREAM_END"
+          }
+        ]
+      }
+    }
+  ],
+  "expected": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+}

@@ -1,0 +1,17 @@
+{
+  "status": {
+    "code": 0,
+    "msg": "OK"
+  },
+  "result": {
+    "state": "MYSQL_TITLE_FALLBACK",
+    "message": "Elasticsearch index coverage is incomplete; MySQL title fallback is active",
+    "indexCoverageComplete": false,
+    "rebuildInProgress": false,
+    "circuitOpen": false,
+    "consecutiveFailures": 0,
+    "circuitOpenUntil": null,
+    "lastFailureTime": null,
+    "lastFailure": null
+  }
+}

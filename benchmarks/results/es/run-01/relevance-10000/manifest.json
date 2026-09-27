@@ -1,0 +1,13 @@
+{
+  "experimentId": "bench_es_1790318236224-10000",
+  "corpusSha256": "197f22d0e04350aca29d08f7e83edb0e9f718966308cebd7d1144b26055f9512",
+  "documentCount": 10000,
+  "queryCount": 7,
+  "candidateScope": "pooled_top20",
+  "candidatePairs": 211,
+  "variants": [
+    "A",
+    "B"
+  ],
+  "authorship": "assistant authored synthetic pilot; human grades pending"
+}

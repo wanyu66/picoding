@@ -1,0 +1,11 @@
+{
+  "sources": {
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/rank/service/impl/UserActivityRankServiceImpl.java": "f8580e537b2f0afec76f7b4c1687eeab8c2ff4a5a86cdf79bee8a455dc94a508",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/rank/service/model/ActivityScoreBo.java": "134f151f2772cba80788cbe5819ff097d6b57b8a45804944b6621c1ee94a300e",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/rank/repository/dao/ActivityRankEventDao.java": "7a1f1f4bfd7d819ba5977e22faf91debabf280b647a5f5db703e473eaf638653",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/rank/repository/mapper/ActivityRankEventMapper.java": "3f8c4c505827434e7068dcf05074ea61e51edeb31af08dd296b06d2d25481478",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/rank/repository/entity/ActivityRankEventDO.java": "f956cc7b2e2b99e27e442c83af51a7c100e15d2d87abb33d79290669c4d707f5",
+    "paicoding-core/src/main/java/com/github/paicoding/forum/core/cache/RedisClient.java": "edd4c690a079dba4e5d192e724a2a9676cf58f4e531e69694d6a21e96d1967e4",
+    "benchmarks/java/ranking/RankingHarness.java": "a9d7d32b85518524e13eac2cf7180825cc0dda47cd6538159937d3c4487b2da1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "selection": "requests completed between task.startTime and task.finishTime inclusive",
+  "startTime": 1790321148211,
+  "finishTime": 1790321185714,
+  "samples": 215,
+  "successes": 215,
+  "errors": 0,
+  "errorRate": 0,
+  "seconds": 37.503,
+  "qps": 5.732874703357065,
+  "successQps": 5.732874703357065,
+  "p50Ms": 675.9669000000067,
+  "p95Ms": 757.1241000000009,
+  "p99Ms": 782.1062999999995,
+  "meanMs": 680.0671739534883,
+  "meanEsTookMs": 672.2651162790697
+}

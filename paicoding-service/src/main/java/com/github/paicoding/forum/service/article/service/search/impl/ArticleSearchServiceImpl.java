@@ -560,7 +560,7 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
         }
         try {
             if (!ensureIndex()) {
-                return;
+                throw new IllegalStateException("article search index is unavailable");
             }
             ArticleSearchDocumentDTO document = articleDao.queryArticleSearchDocument(articleId);
             if (document == null
@@ -576,6 +576,8 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
             }
         } catch (Exception e) {
             log.warn("failed to sync article search index, articleId={}", articleId, e);
+            // The event consumer must roll back its consume marker and retry failed index writes.
+            throw new IllegalStateException("failed to sync article search index, articleId=" + articleId, e);
         }
     }
 
@@ -595,9 +597,11 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
         } catch (ResponseException e) {
             if (e.getResponse().getStatusLine().getStatusCode() != HttpStatus.SC_NOT_FOUND) {
                 log.warn("failed to delete article search document, articleId={}", articleId, e);
+                throw new IllegalStateException("failed to delete article search document, articleId=" + articleId, e);
             }
         } catch (Exception e) {
             log.warn("failed to delete article search document, articleId={}", articleId, e);
+            throw new IllegalStateException("failed to delete article search document, articleId=" + articleId, e);
         }
     }
 
@@ -702,6 +706,14 @@ public class ArticleSearchServiceImpl implements ArticleSearchService {
 
     private ArticleSearchResult parseSearchResponse(String keyword, String responseBody) throws IOException {
         Map<String, Object> root = objectMapper.readValue(responseBody, MAP_TYPE);
+        // HTTP 200 may contain incomplete hits. Use the existing failure/fallback path before caching them.
+        if (Boolean.TRUE.equals(root.get("timed_out"))) {
+            throw new IOException("article search response timed_out=true");
+        }
+        Long failedShards = asLong(castMap(root.get("_shards")).get("failed"));
+        if (failedShards != null && failedShards > 0) {
+            throw new IOException("article search response contains failed shards: " + failedShards);
+        }
         Map<String, Object> hitsNode = castMap(root.get("hits"));
         List<Map<String, Object>> hits = castList(hitsNode.get("hits"));
 

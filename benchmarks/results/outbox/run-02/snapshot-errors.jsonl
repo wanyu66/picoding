@@ -1,0 +1,3 @@
+{"table":"domain_event_outbox","error":"com.fasterxml.jackson.databind.exc.InvalidDefinitionException"}
+{"table":"domain_event_consume","error":"com.fasterxml.jackson.databind.exc.InvalidDefinitionException"}
+{"table":"bench_effect","error":"com.fasterxml.jackson.databind.exc.InvalidDefinitionException"}

@@ -22,9 +22,14 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * 计数服务，后续计数相关的可以考虑基于redis来做
@@ -132,8 +137,35 @@ public class CountServiceImpl implements CountService {
             log.debug("article_statistics_db_fallback articleId={}", articleId, error);
             return queryArticleCountInfoByArticleId(articleId);
         }
-        ArticleFootCountDTO info = new ArticleFootCountDTO();
         if (ans.isEmpty()) return queryArticleCountInfoByArticleId(articleId);
+        return articleStatistics(ans);
+    }
+
+    @Override
+    public Map<Long, ArticleFootCountDTO> queryArticleStatisticInfoBatch(Collection<Long> articleIds) {
+        List<Long> ids = new ArrayList<>(new LinkedHashSet<>(articleIds));
+        Map<Long, ArticleFootCountDTO> result = new LinkedHashMap<>();
+        if (ids.isEmpty()) return result;
+        List<Map<String, Integer>> cached;
+        try {
+            cached = RedisClient.hGetAllBatch(ids.stream()
+                    .map(id -> CountConstants.ARTICLE_STATISTIC_INFO + id)
+                    .collect(Collectors.toList()), Integer.class);
+        } catch (RuntimeException error) {
+            log.debug("article_statistics_batch_db_fallback", error);
+            ids.forEach(id -> result.put(id, queryArticleCountInfoByArticleId(id)));
+            return result;
+        }
+        for (int i = 0; i < ids.size(); i++) {
+            Long id = ids.get(i);
+            Map<String, Integer> values = cached.get(i);
+            result.put(id, values.isEmpty() ? queryArticleCountInfoByArticleId(id) : articleStatistics(values));
+        }
+        return result;
+    }
+
+    private ArticleFootCountDTO articleStatistics(Map<String, Integer> ans) {
+        ArticleFootCountDTO info = new ArticleFootCountDTO();
         info.setPraiseCount(ans.getOrDefault(CountConstants.PRAISE_COUNT, 0));
         info.setCollectionCount(ans.getOrDefault(CountConstants.COLLECTION_COUNT, 0));
         info.setCommentCount(ans.getOrDefault(CountConstants.COMMENT_COUNT, 0));

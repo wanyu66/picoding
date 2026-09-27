@@ -1,0 +1,21 @@
+Java 8 regression, 2026-09-23.
+Real Spring Boot Redis auto-configuration and Lettuce TCP transport against an isolated RESP fixture; H2 durable read outbox. Not live HTTP/MySQL latency evidence.
+
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 s - in com.github.paicoding.forum.core.cache.RedisCircuitBreakerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+DETAIL_REDIS phase=first-connection-refused elapsedMs=1627 sql={request/article_read_outbox.insert=1}, redisCommands={}, redisAcquisitions=1, redisAcquisitionMs=1578.2981
+DETAIL_REDIS phase=open elapsedMs=2 sql={request/article_read_outbox.insert=1}, redisCommands={}, redisAcquisitions=0, redisAcquisitionMs=0.0
+DETAIL_REDIS phase=first-handshake-timeout elapsedMs=314 sql={request/article_read_outbox.insert=1}, redisCommands={}, redisAcquisitions=1, redisAcquisitionMs=301.188
+DETAIL_REDIS phase=first-command-timeout elapsedMs=309 sql={request/article_read_outbox.insert=1}, redisCommands={request/hGetAll=1}, redisAcquisitions=1, redisAcquisitionMs=23.2296
+DETAIL_REDIS phase=open elapsedMs=3 sql={request/article_read_outbox.insert=1}, redisCommands={}, redisAcquisitions=0, redisAcquisitionMs=0.0
+DETAIL_REDIS phase=open elapsedMs=2 sql={request/article_read_outbox.insert=1}, redisCommands={}, redisAcquisitions=0, redisAcquisitionMs=0.0
+DETAIL_REDIS phase=recovered elapsedMs=186 sql={request/article_read_outbox.insert=1}, redisCommands={request/hGetAll=1, request/sIsMember=1}, redisAcquisitions=2, redisAcquisitionMs=0.0686
+DETAIL_REDIS phase=recovered elapsedMs=3 sql={request/article_read_outbox.insert=1}, redisCommands={request/hGetAll=1, request/sIsMember=1}, redisAcquisitions=2, redisAcquisitionMs=0.0572
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.121 s - in com.github.paicoding.forum.service.article.service.impl.ArticleDetailRedisFallbackTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.684 s - in com.github.paicoding.forum.service.article.service.impl.ArticleListBatchTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s - in com.github.paicoding.forum.service.statistics.service.impl.CountServiceImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in com.github.paicoding.forum.service.statistics.service.impl.DurableReadCountServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in com.github.paicoding.forum.service.statistics.service.impl.DurableReadCountTransactionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in com.github.paicoding.forum.service.user.service.whitelist.AuthorWhiteListFallbackTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS

@@ -1,0 +1,95 @@
+{
+  "startedAt": "2026-09-27T08:19:58.720Z",
+  "finishedAt": "2026-09-27T08:20:41.551Z",
+  "durationMs": 42831,
+  "command": [
+    "node",
+    "benchmarks/scripts/run-es-fixes.mjs",
+    "benchmarks/results/fixes-20260927/es-after-02"
+  ],
+  "implementationSource": "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/impl/ArticleSearchServiceImpl.java",
+  "os": {
+    "type": "Windows_NT",
+    "release": "10.0.26100",
+    "arch": "x64",
+    "cpu": "Intel(R) Core(TM) i7-14650HX"
+  },
+  "javaVersion": "openjdk version \"1.8.0_492\"\r\nOpenJDK Runtime Environment Corretto-8.492.09.2 (build 1.8.0_492-b09)\r\nOpenJDK 64-Bit Server VM Corretto-8.492.09.2 (build 25.492-b09, mixed mode)\r\n",
+  "nodeVersion": "v24.15.0",
+  "concurrency": 1,
+  "scope": "local disposable HTTP endpoints and mocks only; no existing DB/index/Redis accessed",
+  "files": {
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/impl/ArticleSearchServiceImpl.java": "0a8d6d006927f6d537735671db70174f2532a40590f4303e9fe9c5d457c6da96",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/impl/ArticleReadServiceImpl.java": "7ab76b8d7845bf8e617b4e96b8b1c1c86a4c1c29d071b83a9fe9930abab9ab4e",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/ArticleSearchDomainEventConsumer.java": "1dfc4452cf1b553105ab66a5999a0a07c39f9a243f03c94f5bfa402b05d18f96",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventConsumeService.java": "42d806f705ad261fe75615027cc44f3070edef6b71c6d9916f9dafeccc95eae6",
+    "paicoding-service/src/test/java/com/github/paicoding/forum/service/article/service/search/impl/ArticleSearchServiceImplTest.java": "0d7b526d94062eb49024099f66f5e7b7733671637807d46077af27b72f33b24b",
+    "benchmarks/java/SearchFaultHarness.java": "2ff597f31c0bf15413c6dd61c7c9298e1fe3350d16818737720b75b5cd81573a",
+    "benchmarks/java/es/SearchFailureRegressionTest.java": "faf586d06217dbf034cdcd681530659bee59d1ddffe95fc1974837b0ee6dd08f",
+    "benchmarks/java/es/EsRegressionRunner.java": "93b795aa22cc355d1ee6017705b7dc73db0b87ef83d80aad60d2650af34e6ad0",
+    "benchmarks/scripts/run-es-fixes.mjs": "aa4f6eea41b233a806de9927cc5fc932892cc9a0ffeddd00e0e994f6ba937ed4",
+    "benchmarks/config/es-logback.xml": "310c23e16dc1b25438cfb701e5384642dcc54632165d339d5ab41004814fb623"
+  },
+  "commands": [
+    {
+      "executable": "D:\\Downloads\\paicoding\\.runtime\\java8\\bin\\java.exe",
+      "args": [
+        "-version"
+      ],
+      "exitCode": 0,
+      "durationMs": 102,
+      "log": "java-version.txt"
+    },
+    {
+      "executable": "D:\\Downloads\\paicoding\\.runtime\\java8\\bin\\jar.exe",
+      "args": [
+        "cfm",
+        "D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\build\\classpath.jar",
+        "D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\build\\MANIFEST.MF"
+      ],
+      "exitCode": 0,
+      "durationMs": 185,
+      "log": "jar.log"
+    },
+    {
+      "executable": "D:\\Downloads\\paicoding\\.runtime\\java8\\bin\\javac.exe",
+      "args": [
+        "-J-Dfile.encoding=UTF-8",
+        "@D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\build\\javac.args"
+      ],
+      "exitCode": 0,
+      "durationMs": 7470,
+      "log": "compile.log"
+    },
+    {
+      "executable": "D:\\Downloads\\paicoding\\.runtime\\java8\\bin\\java.exe",
+      "args": [
+        "-Dfile.encoding=UTF-8",
+        "-Dlogback.configurationFile=benchmarks/config/es-logback.xml",
+        "-cp",
+        "D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\build;D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\build\\classpath.jar",
+        "EsRegressionRunner",
+        "D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\junit-results.json"
+      ],
+      "exitCode": 0,
+      "durationMs": 9781,
+      "log": "junit.log"
+    },
+    {
+      "executable": "D:\\Downloads\\paicoding\\.runtime\\java8\\bin\\java.exe",
+      "args": [
+        "-Dfile.encoding=UTF-8",
+        "-Dlogback.configurationFile=benchmarks/config/es-logback.xml",
+        "-cp",
+        "D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\build;D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\build\\classpath.jar",
+        "SearchFaultHarness",
+        "D:\\Downloads\\paicoding\\benchmarks\\results\\fixes-20260927\\es-after-02\\fault-results.json"
+      ],
+      "exitCode": 1,
+      "durationMs": 25246,
+      "log": "fault.log"
+    }
+  ],
+  "exitCode": 1,
+  "cleanup": "JVM finally blocks close every local HTTP server and ES client. Build files are local to this run; raw evidence retained."
+}

@@ -1,0 +1,212 @@
+{
+  "run": "bench-ob-1790336133911",
+  "harnessPass": true,
+  "rawIntegrityPass": true,
+  "assertionsPassed": 15,
+  "assertionsTotal": 15,
+  "attemptedEventCreation": 104,
+  "committedEvents": 96,
+  "rolledBackEvents": 8,
+  "finalBusinessSucceeded": 96,
+  "automaticBusinessSucceeded": 88,
+  "automaticSuccessRate": 0.9166666666666666,
+  "assistedFinalSuccessRate": 1,
+  "unprocessedBeforeDlqReplay": 8,
+  "finalUnprocessed": 0,
+  "publishRetryCount": 16,
+  "consumerRetryCount": 16,
+  "brokerDeliveries": 176,
+  "duplicateDeliveries": 80,
+  "brokerRedeliveries": 8,
+  "deduplicatedInvocations": 72,
+  "businessWrites": 96,
+  "duplicateBusinessWrites": 0,
+  "idempotencyEvents": 40,
+  "idempotencyCorrectEvents": 40,
+  "idempotencyCorrectRate": 1,
+  "deadLetterArrivals": 8,
+  "deadLetterRemaining": 0,
+  "monitorConsumerRetries": 16,
+  "durationMs": 44032,
+  "endToEnd": {
+    "meanMs": 3377.3125,
+    "p50Ms": 1286,
+    "p95Ms": 22179,
+    "maxMs": 22326
+  },
+  "recoveries": [
+    {
+      "scenario": "send_failure",
+      "mode": "production publishPending; natural retry due time",
+      "startMs": 1790336163263,
+      "finishMs": 1790336165478,
+      "recoveryMs": 2215
+    },
+    {
+      "scenario": "rabbit_outage",
+      "mode": "container restart + production publisher compensation",
+      "startMs": 1790336183762,
+      "finishMs": 1790336188839,
+      "recoveryMs": 5077
+    },
+    {
+      "scenario": "ack_crash",
+      "mode": "new listener receives broker redeliveries",
+      "startMs": 1790336194333,
+      "finishMs": 1790336194461,
+      "recoveryMs": 128
+    },
+    {
+      "scenario": "dlq",
+      "mode": "explicit benchmark DLQ replay; NOT existing automatic compensation",
+      "startMs": 1790336201541,
+      "finishMs": 1790336201706,
+      "recoveryMs": 165
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "normal",
+      "attempted": 32,
+      "committed": 32,
+      "success": 32,
+      "listenerAttempts": 32,
+      "brokerDeliveries": 32,
+      "duplicateDeliveries": 0,
+      "duplicateBusinessWrites": 0,
+      "deadLetterArrivals": 0,
+      "meanMs": 1003.09375,
+      "p50Ms": 1008,
+      "p95Ms": 1602,
+      "maxMs": 1638
+    },
+    {
+      "scenario": "rollback",
+      "attempted": 8,
+      "committed": 0,
+      "success": 0,
+      "listenerAttempts": 0,
+      "brokerDeliveries": 0,
+      "duplicateDeliveries": 0,
+      "duplicateBusinessWrites": 0,
+      "deadLetterArrivals": 0,
+      "meanMs": null,
+      "p50Ms": null,
+      "p95Ms": null,
+      "maxMs": null
+    },
+    {
+      "scenario": "send_failure",
+      "attempted": 8,
+      "committed": 8,
+      "success": 8,
+      "listenerAttempts": 8,
+      "brokerDeliveries": 8,
+      "duplicateDeliveries": 0,
+      "duplicateBusinessWrites": 0,
+      "deadLetterArrivals": 0,
+      "meanMs": 2242.625,
+      "p50Ms": 2346,
+      "p95Ms": 2492,
+      "maxMs": 2492
+    },
+    {
+      "scenario": "rabbit_outage",
+      "attempted": 8,
+      "committed": 8,
+      "success": 8,
+      "listenerAttempts": 8,
+      "brokerDeliveries": 8,
+      "duplicateDeliveries": 0,
+      "duplicateBusinessWrites": 0,
+      "deadLetterArrivals": 0,
+      "meanMs": 22202.375,
+      "p50Ms": 22179,
+      "p95Ms": 22326,
+      "maxMs": 22326
+    },
+    {
+      "scenario": "ack_crash",
+      "attempted": 8,
+      "committed": 8,
+      "success": 8,
+      "listenerAttempts": 16,
+      "brokerDeliveries": 16,
+      "duplicateDeliveries": 8,
+      "duplicateBusinessWrites": 0,
+      "deadLetterArrivals": 0,
+      "meanMs": 3792.5,
+      "p50Ms": 3776,
+      "p95Ms": 4007,
+      "maxMs": 4007
+    },
+    {
+      "scenario": "duplicate",
+      "attempted": 32,
+      "committed": 32,
+      "success": 32,
+      "listenerAttempts": 96,
+      "brokerDeliveries": 96,
+      "duplicateDeliveries": 64,
+      "duplicateBusinessWrites": 0,
+      "deadLetterArrivals": 0,
+      "meanMs": 901.46875,
+      "p50Ms": 907,
+      "p95Ms": 1534,
+      "maxMs": 1587
+    },
+    {
+      "scenario": "dlq",
+      "attempted": 8,
+      "committed": 8,
+      "success": 8,
+      "listenerAttempts": 32,
+      "brokerDeliveries": 16,
+      "duplicateDeliveries": 8,
+      "duplicateBusinessWrites": 0,
+      "deadLetterArrivals": 8,
+      "meanMs": 4672,
+      "p50Ms": 4640,
+      "p95Ms": 4706,
+      "maxMs": 4706
+    }
+  ],
+  "integrity": [
+    {
+      "name": "business sources and Outbox identifiers agree",
+      "pass": true
+    },
+    {
+      "name": "96 committed events; 8 deliberately rolled back excluded",
+      "pass": true
+    },
+    {
+      "name": "raw effects match final checkpoint",
+      "pass": true
+    },
+    {
+      "name": "retry instrumentation agrees with production monitor",
+      "pass": true
+    },
+    {
+      "name": "actual DLQ x-death rejection captured",
+      "pass": true
+    },
+    {
+      "name": "DLQ is not counted as success before compensation",
+      "pass": true
+    },
+    {
+      "name": "40 events in committed duplicate/crash scenarios",
+      "pass": true
+    },
+    {
+      "name": "duplicate and crash scenarios have real repeat deliveries",
+      "pass": true
+    },
+    {
+      "name": "all effects belong to committed source events",
+      "pass": true
+    }
+  ]
+}

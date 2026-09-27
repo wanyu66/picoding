@@ -1,0 +1,16 @@
+[ {
+  "id" : 901,
+  "event_id" : "10-duplicate_event:same-event",
+  "original_event_id" : null,
+  "cancelled_by_event_id" : null,
+  "user_id" : 1,
+  "action_type" : "praise",
+  "target_id" : "42",
+  "score_delta" : 2,
+  "event_time" : [ 2026, 9, 27, 16, 19, 16, 99000000 ],
+  "day_bucket" : "20260927",
+  "month_bucket" : "202609",
+  "redis_applied" : 1,
+  "create_time" : 1790468370000,
+  "update_time" : 1790468370000
+} ]

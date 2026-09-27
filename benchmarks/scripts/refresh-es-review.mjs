@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {createRequire} from 'node:module';
+import {reviewNeeds} from './es-review-intents.mjs';
+const require=createRequire(import.meta.url),{buildReviewPage}=require('../../scripts/search-evaluation/review-page.js');
+const dir=path.resolve(process.argv[2]);
+const lines=p=>fs.readFileSync(path.join(dir,p),'utf8').trim().split(/\r?\n/).filter(Boolean).map(JSON.parse);
+const judgments=lines('judgments.pending.jsonl');
+if(judgments.some(x=>x.review.status!=='pending'||Object.values(x.relevance).some(v=>v!==null)))throw Error('Refuse to rewrite any reviewed data');
+for(const q of judgments)q.need=reviewNeeds[q.id];
+const documents=lines('candidates.jsonl').map(d=>({...d,source:{...d.source,summary:d.source.summary+'\n[测试元数据] 阅读='+d.source.readCount+' 点赞='+d.source.praiseCount+' 发布时间='+d.source.createTime}}));
+const manifest=JSON.parse(fs.readFileSync(path.join(dir,'manifest.json'),'utf8'));
+fs.copyFileSync(path.join(dir,'review.html'),path.join(dir,'review.initial.html'),fs.constants.COPYFILE_EXCL);
+fs.writeFileSync(path.join(dir,'judgments.template.jsonl'),judgments.map(JSON.stringify).join('\n')+'\n',{flag:'wx'});
+fs.writeFileSync(path.join(dir,'review.html'),buildReviewPage({manifest,judgments,documents}).replace('篇真实文章','篇合成测试文章').replace('条语料驱动查询','条人工待审查询'));
+console.log('Added explicit query intents to pending review template; original pending JSONL and HTML preserved.');

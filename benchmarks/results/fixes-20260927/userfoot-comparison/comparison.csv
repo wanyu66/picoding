@@ -1,0 +1,7 @@
+scenario,calls,concurrency,baselineEvents,currentEvents,baselineErrors,currentErrors,baselinePassed,currentPassed
+existing-like,64,32,32,1,0,0,false,true
+new-like,64,32,1,1,31,0,false,true
+cancel-like,64,32,32,1,0,0,false,true
+relike,64,32,32,1,0,0,false,true
+collect,64,32,32,1,0,0,false,true
+cancel-collect,64,32,32,1,0,0,false,true

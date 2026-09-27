@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-25T06:06:39.231Z",
+  "http": 200,
+  "body": {
+    "status": {
+      "code": 0,
+      "msg": "OK"
+    },
+    "result": {
+      "state": "MYSQL_TITLE_FALLBACK",
+      "message": "Elasticsearch index coverage is incomplete; MySQL title fallback is active",
+      "indexCoverageComplete": false,
+      "rebuildInProgress": false,
+      "circuitOpen": false,
+      "consecutiveFailures": 0,
+      "circuitOpenUntil": null,
+      "lastFailureTime": null,
+      "lastFailure": null
+    }
+  }
+}

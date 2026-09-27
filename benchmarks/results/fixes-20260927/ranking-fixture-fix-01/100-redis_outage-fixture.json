@@ -1,0 +1,801 @@
+[ [ ], [ {
+  "id" : "100-redis_outage:event-0",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 1,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-1",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 2,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-2",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 3,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-3",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 4,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-4",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 5,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-5",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 6,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-6",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 7,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-7",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 8,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-8",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 9,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-9",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 10,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-10",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 11,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-11",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 12,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-12",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 13,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-13",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 14,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-14",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 15,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-15",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 16,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-16",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 17,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-17",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 18,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-18",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 19,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-19",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 20,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-20",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 21,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-21",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 22,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-22",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 23,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-23",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 24,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-24",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 25,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-25",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 26,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-26",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 27,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-27",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 28,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-28",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 29,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-29",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 30,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-30",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 31,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-31",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 32,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-32",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 33,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-33",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 34,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-34",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 35,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-35",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 36,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-36",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 37,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-37",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 38,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-38",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 39,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-39",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 40,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-40",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 41,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-41",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 42,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-42",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 43,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-43",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 44,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-44",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 45,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-45",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 46,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-46",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 47,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-47",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 48,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-48",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 49,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-49",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 50,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-50",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 51,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-51",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 52,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-52",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 53,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-53",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 54,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-54",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 55,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-55",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 56,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-56",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 57,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-57",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 58,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-58",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 59,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-59",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 60,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-60",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 61,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-61",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 62,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-62",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 63,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-63",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 64,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-64",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 65,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-65",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 66,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-66",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 67,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-67",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 68,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-68",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 69,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-69",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 70,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-70",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 71,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-71",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 72,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-72",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 73,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-73",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 74,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-74",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 75,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-75",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 76,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-76",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 77,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-77",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 78,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-78",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 79,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-79",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 80,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-80",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 81,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-81",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 82,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-82",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 83,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-83",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 84,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-84",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 85,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-85",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 86,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-86",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 87,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-87",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 88,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-88",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 89,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-89",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 90,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-90",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 91,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-91",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 92,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-92",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 93,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-93",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 94,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-94",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 95,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-95",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 96,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-96",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 97,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-97",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 98,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-98",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 99,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+}, {
+  "id" : "100-redis_outage:event-99",
+  "original" : null,
+  "action" : "praise",
+  "uid" : 100,
+  "article" : 42,
+  "time" : 1790497156099,
+  "active" : true
+} ] ]

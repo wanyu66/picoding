@@ -1,0 +1,15 @@
+{
+  "at" : 1790336162796,
+  "outboxEvents" : 32,
+  "businessSourceRows" : 32,
+  "successEvents" : 32,
+  "businessWrites" : 32,
+  "consumeRows" : 32,
+  "outboxStates" : [ {
+    "status" : "SENT",
+    "count" : 32,
+    "retry_count" : 0
+  } ],
+  "dlqReady" : 0,
+  "queueReady" : 0
+}

@@ -1,0 +1,79 @@
+{
+  "at": "2026-09-24T11:36:24.769Z",
+  "metrics": [
+    {
+      "metric": "jvm.info",
+      "status": 404,
+      "body": null
+    },
+    {
+      "metric": "paicoding.rabbitmq.domain.backlog",
+      "status": 200,
+      "body": {
+        "name": "paicoding.rabbitmq.domain.backlog",
+        "description": null,
+        "baseUnit": null,
+        "measurements": [
+          {
+            "statistic": "VALUE",
+            "value": 6163
+          }
+        ],
+        "availableTags": [
+          {
+            "tag": "application",
+            "values": [
+              "paicoding"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "metric": "paicoding.rabbitmq.domain.dead_letters",
+      "status": 200,
+      "body": {
+        "name": "paicoding.rabbitmq.domain.dead_letters",
+        "description": null,
+        "baseUnit": null,
+        "measurements": [
+          {
+            "statistic": "VALUE",
+            "value": 0
+          }
+        ],
+        "availableTags": [
+          {
+            "tag": "application",
+            "values": [
+              "paicoding"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "metric": "paicoding.rabbitmq.domain.retries",
+      "status": 200,
+      "body": {
+        "name": "paicoding.rabbitmq.domain.retries",
+        "description": null,
+        "baseUnit": null,
+        "measurements": [
+          {
+            "statistic": "COUNT",
+            "value": 0
+          }
+        ],
+        "availableTags": [
+          {
+            "tag": "application",
+            "values": [
+              "paicoding"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

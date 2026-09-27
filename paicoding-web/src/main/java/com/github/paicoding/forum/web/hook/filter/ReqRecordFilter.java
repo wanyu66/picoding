@@ -74,15 +74,21 @@ public class ReqRecordFilter implements Filter {
 
     private final GlobalInitService globalInitService;
 
-    @org.springframework.beans.factory.annotation.Value("${observability.request-io.enabled:false}")
-    private boolean requestIoEnabled;
+    private final boolean requestIoEnabled;
 
     private final StatisticsSettingService statisticsSettingService;
 
     public ReqRecordFilter(GlobalInitService globalInitService,
                            StatisticsSettingService statisticsSettingService) {
+        this(globalInitService, statisticsSettingService, false);
+    }
+
+    public ReqRecordFilter(GlobalInitService globalInitService,
+                           StatisticsSettingService statisticsSettingService,
+                           boolean requestIoEnabled) {
         this.globalInitService = globalInitService;
         this.statisticsSettingService = statisticsSettingService;
+        this.requestIoEnabled = requestIoEnabled;
     }
 
     @Override

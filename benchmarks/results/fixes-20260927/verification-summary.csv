@@ -1,0 +1,7 @@
+phase,baselinePassed,passed,total,failed
+article-offline,,11,11,0
+es-junit,9,16,16,0
+es-network-fault,3,5,6,1
+ranking,30,32,40,8
+userfoot,1,7,7,0
+chat-stream,207,211,211,0

@@ -13,7 +13,7 @@ public class CacheProtectionProperties {
     private int refreshThreads = 4;
     private int refreshQueueCapacity = 500;
     private int preheatBatchSize = 200;
-    private int breakerFailureThreshold = 5;
+    private int breakerFailureThreshold = 1;
     private long breakerOpenSeconds = 30L;
     private int hotKeyThreshold = 100;
     private long hotKeyWindowSeconds = 60L;

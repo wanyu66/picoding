@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "browser": "Microsoft Edge / Playwright",
+  "source": "extracted production template functions",
+  "dropAfterChunk": 3,
+  "resumeCursor": 4,
+  "finalAnswer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|",
+  "renderedAnswerElements": 1,
+  "duplicateReplayExtraElements": 0,
+  "stopClickCommand": "cancel",
+  "replayRenderMs": 20.036399999999958,
+  "scope": "DOM and STOMP command contract; no actual authenticated WebSocket connection"
+}

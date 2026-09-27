@@ -1,0 +1,13 @@
+✔ B preserves actual Java DSL except explicitly frozen date and requested size (2.5572ms)
+✔ A isolates strategy without changing projection, filters, sort or highlights (0.3523ms)
+✔ pagination uses exactly one of offset and cursor and never mutates contract (0.6036ms)
+✔ throughput includes drain time, errors are not silently removed from latency (0.2122ms)
+✔ deterministic prefixes and generated quality score match documented production formula (4.2331ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 155.5466

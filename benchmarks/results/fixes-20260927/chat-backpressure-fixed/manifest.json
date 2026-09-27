@@ -1,0 +1,20 @@
+{
+  "mode": "working-tree-fixed",
+  "revision": null,
+  "source": "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/stomp/WsChatConfig.java",
+  "sourceSha256": "4c58f545a52d807102b1514ded1d20c3713240543469b79e15032509bdd86001",
+  "harness": "benchmarks/java/chat/ChatInboundBackpressureCheck.java",
+  "harnessSha256": "32d062885e3ac0a959f0c685fa1bd4bc7899574fcc439d246ebfd122e68b27bb",
+  "startedAt": "2026-09-27T08:15:39.115Z",
+  "finishedAt": "2026-09-27T08:15:45.129Z",
+  "environment": {
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCpus": 24,
+    "memoryBytes": 16944848896,
+    "os": "10.0.26100",
+    "node": "v24.15.0"
+  },
+  "realModelCalls": 0,
+  "testExitCode": 0,
+  "cleanup": "Executor shut down in finally; no external services, database or model API"
+}

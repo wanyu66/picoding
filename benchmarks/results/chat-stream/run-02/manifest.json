@@ -1,0 +1,20 @@
+{
+  "run": "bench-chat-1790338668732",
+  "startedAt": "2026-09-25T12:17:48.732Z",
+  "mode": "mock-only",
+  "realModelCalls": 0,
+  "concurrency": [
+    1,
+    10,
+    50,
+    100
+  ],
+  "faultSessions": 10,
+  "environment": {
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logicalCpus": 24,
+    "memoryBytes": 16944848896,
+    "os": "10.0.26100",
+    "node": "v24.15.0"
+  }
+}

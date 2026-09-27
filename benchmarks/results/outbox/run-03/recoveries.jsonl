@@ -1,0 +1,4 @@
+{"scenario":"send_failure","mode":"production publishPending; natural retry due time","startMs":1790336163263,"finishMs":1790336165478}
+{"scenario":"rabbit_outage","mode":"container restart + production publisher compensation","startMs":1790336183762,"finishMs":1790336188839}
+{"scenario":"ack_crash","mode":"new listener receives broker redeliveries","startMs":1790336194333,"finishMs":1790336194461}
+{"scenario":"dlq","mode":"explicit benchmark DLQ replay; NOT existing automatic compensation","startMs":1790336201541,"finishMs":1790336201706}

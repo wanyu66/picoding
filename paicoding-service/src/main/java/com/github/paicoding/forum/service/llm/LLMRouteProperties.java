@@ -15,6 +15,9 @@ public class LLMRouteProperties {
     private Map<LLMScene, Route> routes = new EnumMap<>(LLMScene.class);
     private int maxRetries = 1;
     private long timeoutMs = 10000;
+    /** Shared by primary and fallback, including retries. */
+    private long totalTimeoutMs = 40000;
+    private int maxTotalAttempts = 4;
     private int circuitFailureThreshold = 3;
     private long circuitOpenSeconds = 30;
     private int perMinute = 10;
@@ -38,6 +41,8 @@ public class LLMRouteProperties {
         private String fallbackModel;
         private Long timeoutMs;
         private Integer maxRetries;
+        private Long totalTimeoutMs;
+        private Integer maxTotalAttempts;
         private Double inputCostPerMillion = 0D;
         private Double outputCostPerMillion = 0D;
     }

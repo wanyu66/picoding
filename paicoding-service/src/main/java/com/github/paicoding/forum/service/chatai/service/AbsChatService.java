@@ -287,32 +287,40 @@ public abstract class AbsChatService implements ChatService {
         final long started = System.nanoTime();
         final AtomicLong firstToken = new AtomicLong();
         final AtomicBoolean observed = new AtomicBoolean();
+        final AtomicBoolean terminalDelivered = new AtomicBoolean();
         AiChatStatEnum needReturn;
         try {
             needReturn = doAsyncAnswer(user, newRes, (ans, vo) -> {
-            try {
-                firstToken.compareAndSet(0L, System.nanoTime());
-                if (ans == AiChatStatEnum.END) {
-                    // 只有最后一个会话，即ai的回答结束，才需要进行持久化，并计数
-                    processAfterSuccessedAnswered(user, newRes);
-                } else if (ans == AiChatStatEnum.ERROR) {
-                    // 执行异常，更新AI模型
-                    SpringUtil.getBean(ChatFacade.class).refreshAiSourceCache(Sets.newHashSet(source()));
-                }
-            } catch (Exception e) {
-                // 历史记录、计数或模型刷新失败不能吞掉已经生成的流式终态。
-                log.error("AI 异步回答后处理失败, source={}, user={}, state={}", source(), user, ans, e);
-            } finally {
-                // ai异步返回结果之后，我们将结果推送给前端用户
-                try {
-                    consumer.accept(newRes);
-                } finally {
-                    if (ans == AiChatStatEnum.END || ans == AiChatStatEnum.ERROR) {
-                        observeAsync(newRes, started, firstToken.get(), ans, null, observed);
-                        permit.close();
+                synchronized (newRes) {
+                    boolean terminal = ans == AiChatStatEnum.END || ans == AiChatStatEnum.ERROR;
+                    if (terminal ? !terminalDelivered.compareAndSet(false, true) : terminalDelivered.get()) return;
+                    if (ans == AiChatStatEnum.ERROR && StringUtils.isBlank(newRes.getErrorCode())) {
+                        newRes.setErrorCode("MODEL_ERROR").setErrorMessage("模型调用失败，已保留部分输出");
+                    }
+                    try {
+                        firstToken.compareAndSet(0L, System.nanoTime());
+                        if (ans == AiChatStatEnum.END) {
+                            // 只有最后一个会话，即ai的回答结束，才需要进行持久化，并计数
+                            processAfterSuccessedAnswered(user, newRes);
+                        } else if (ans == AiChatStatEnum.ERROR) {
+                            // 执行异常，更新AI模型
+                            SpringUtil.getBean(ChatFacade.class).refreshAiSourceCache(Sets.newHashSet(source()));
+                        }
+                    } catch (Exception e) {
+                        // 历史记录、计数或模型刷新失败不能吞掉已经生成的流式终态。
+                        log.error("AI 异步回答后处理失败, source={}, user={}, state={}", source(), user, ans, e);
+                    } finally {
+                        // ai异步返回结果之后，我们将结果推送给前端用户
+                        try {
+                            consumer.accept(newRes);
+                        } finally {
+                            if (ans == AiChatStatEnum.END || ans == AiChatStatEnum.ERROR) {
+                                observeAsync(newRes, started, firstToken.get(), ans, null, observed);
+                                permit.close();
+                            }
+                        }
                     }
                 }
-            }
             });
         } catch (RuntimeException e) {
             observeAsync(newRes, started, firstToken.get(), AiChatStatEnum.ERROR, e, observed);

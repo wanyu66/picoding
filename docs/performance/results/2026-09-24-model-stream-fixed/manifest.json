@@ -1,0 +1,21 @@
+{
+  "sourceSha256": {
+    "scripts/load-test/test-model-stream-ui.cjs": "EC6D8BBE0FFB76888AAEA88CCF5FE5DE6C8E5DAABACE13169B8A63556B804008",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/helper/ChatStreamSessionService.java": "1FA76D96121040E9C867B9BDE8EB3ADD187FE7DEB395512D7F6F912EB4821CA3",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/AbsChatService.java": "C08378C727D17E8B73E1970E2D422472C3902CF7258DF6542B2F672EF4E80E7A",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/llm/LLMRouteProperties.java": "7A42A8A46865F785D2113F964D7FA5171DC74C517F10FB9124AAD9B2F30948B1",
+    "paicoding-api/src/main/java/com/github/paicoding/forum/api/model/vo/chat/ChatRecordsVo.java": "E4810C6049AF34E540C210B0F8E5767D776788077E29EDA14DEF579FC5E9F6F9",
+    "scripts/load-test/run-model-stream-fault.ps1": "594C92624E5E29EFCB1D6758AB519881B53A64153EB8A1373076EEF2F9CC1807",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/helper/WsAnswerHelper.java": "2E2A8FDC3195E5AFB4F99123D54D37BC89198622AE79C69C75C7766164FD7905",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/impl/deepseek/DeepSeekChatServiceImpl.java": "AE1CDABBA6DB6EECBA4873A9E690899258ED7A3259631E8A93F0850E6C55076A",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/chatai/service/ChatGenerationControl.java": "A9C3C6AFE9DEEA50490E40A62C39C040BB4CC12DFA4A5DD115068A1690415766",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/llm/LLMRequest.java": "8CDD4BFC61557AAB34B9F6B0F734D7067255DD4FC347C9DE74CD5B5473623DE3",
+    "paicoding-web/src/test/java/com/github/paicoding/forum/test/chat/ModelStreamFaultHarness.java": "74FF44A60561661D3E1B32DDDE1191F60C9D334109B611412D1F02F2E59B7958",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/llm/LLMRouter.java": "706205745437E47BFF456E15F7B530C0669ED05C39297A6BCF9DE1C60E89EEA3"
+  },
+  "passedCases": 14,
+  "realModelRequests": 0,
+  "recordedAt": "2026-09-24T14:47:44.5933746+08:00",
+  "java": "1.8",
+  "dirtyWorkspace": true
+}

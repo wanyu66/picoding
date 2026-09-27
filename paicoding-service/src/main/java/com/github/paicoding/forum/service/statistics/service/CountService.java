@@ -3,6 +3,9 @@ package com.github.paicoding.forum.service.statistics.service;
 import com.github.paicoding.forum.api.model.vo.user.dto.ArticleFootCountDTO;
 import com.github.paicoding.forum.api.model.vo.user.dto.UserStatisticInfoDTO;
 
+import java.util.Collection;
+import java.util.Map;
+
 /**
  * 计数统计相关
  *
@@ -55,6 +58,9 @@ public interface CountService {
      * @return 返回文章的 收藏、点赞、评论、阅读数
      */
     ArticleFootCountDTO queryArticleStatisticInfo(Long articleId);
+
+    /** Pipeline cached counts, retaining per-article database fallback for misses. */
+    Map<Long, ArticleFootCountDTO> queryArticleStatisticInfoBatch(Collection<Long> articleIds);
 
 
     /**

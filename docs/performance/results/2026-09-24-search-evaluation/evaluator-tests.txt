@@ -1,0 +1,27 @@
+✔ perfect ranking and empty answerable result use the same denominator (1.1993ms)
+✔ MRR is bounded by K and weak mentions do not count as an answer (0.2384ms)
+✔ NDCG uses graded gains and an independently sorted ideal ranking (0.1671ms)
+✔ no-answer queries have separate false-positive metrics, not zero NDCG (0.1248ms)
+✔ missing run is rejected rather than counted as a zero-result query (0.5005ms)
+✔ duplicate run queries, judgment queries and result IDs are rejected (0.2007ms)
+✔ unjudged results including beyond K are not silently assigned zero (0.1204ms)
+✔ null, negative, fractional and string grades are rejected (0.8786ms)
+✔ pending and model-only judgments cannot produce human relevance metrics (0.1506ms)
+✔ failed run and mismatched snapshot cannot be scored (0.203ms)
+✔ answerability must agree with grades and actual review (0.1226ms)
+✔ invalid K fails instead of producing NaN metrics (0.1344ms)
+✔ paired confidence intervals resample intent groups deterministically (0.8317ms)
+✔ C changes only heat and decay, while B shares the same retrieval query (0.8558ms)
+✔ query family split has no leakage and all five query types are covered (0.8023ms)
+✔ actual frozen pilot refuses to score while real human labels are pending (6.2656ms)
+✔ frozen real runs cover every query and match saved DSL and source hashes (15.4323ms)
+✔ blind page escapes document HTML and strips popularity and timestamps (0.2913ms)
+✔ complete synthetic review compares all versions and rejects altered artifacts (14.7952ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 48.3895

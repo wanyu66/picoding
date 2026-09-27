@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "count": 100,
+  "seed": 20260924,
+  "batch": "search-smoke-s20260924-v1",
+  "referenceTime": "2026-01-01T00:00:00.000Z",
+  "batchSize": 200,
+  "isolatedTestEnvironment": false,
+  "existingLocalDatabase": "pai_coding",
+  "preserveExistingData": true,
+  "mysql": {
+    "executable": "mysql",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "database": "pai_coding",
+    "user": "root",
+    "passwordEnv": "PAI_BENCH_MYSQL_PASSWORD"
+  },
+  "es": {
+    "url": "http://127.0.0.1:9200",
+    "index": "paicoding_article",
+    "apiKeyEnv": "PAI_BENCH_ES_API_KEY"
+  },
+  "fixtures": {
+    "authorId": null,
+    "actorIds": [],
+    "categories": {
+      "Java": null,
+      "Spring": null,
+      "Redis": null,
+      "MySQL": null,
+      "Elasticsearch": null
+    }
+  },
+  "pollIntervalMs": 2000,
+  "syncTimeoutSeconds": 90
+}

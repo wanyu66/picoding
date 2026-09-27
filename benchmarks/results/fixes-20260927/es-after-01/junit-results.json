@@ -1,0 +1,16 @@
+{
+  "found" : 16,
+  "passed" : 14,
+  "failed" : 2,
+  "skipped" : 0,
+  "durationMs" : 7845,
+  "concurrency" : 1,
+  "scope" : "loopback HTTP stub; mocked DAO and JDBC; transaction rollback not exercised",
+  "failures" : [ {
+    "test" : "createEventFailureReachesConsumeBoundary()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown."
+  }, {
+    "test" : "deleteEventFailureReachesConsumeBoundary()",
+    "exception" : "org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown."
+  } ]
+}

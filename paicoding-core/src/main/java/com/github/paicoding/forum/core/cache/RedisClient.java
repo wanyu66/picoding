@@ -212,6 +212,31 @@ public class RedisClient {
         return result;
     }
 
+    /** One pipeline, still one HGETALL command per key. Uses the registered template serializers. */
+    public static <T> List<Map<String, T>> hGetAllBatch(List<String> keys, Class<T> clz) {
+        if (keys.isEmpty()) return Collections.emptyList();
+        List<Object> rows = executePipelined(connection -> {
+            keys.forEach(key -> connection.hGetAll(keyBytes(key)));
+            return null;
+        });
+        if (rows.size() != keys.size()) throw new IllegalStateException("Incomplete Redis hash pipeline");
+        List<Map<String, T>> result = new ArrayList<>(rows.size());
+        for (Object row : rows) {
+            Map<String, T> values = new java.util.LinkedHashMap<>();
+            if (row != null) {
+                ((Map<?, ?>) row).forEach((field, value) -> {
+                    if (field != null) {
+                        String name = field instanceof byte[] ? new String((byte[]) field, CODE) : field.toString();
+                        byte[] bytes = value instanceof byte[] ? (byte[]) value : valBytes(value);
+                        values.put(name, toObj(bytes, clz));
+                    }
+                });
+            }
+            result.add(values);
+        }
+        return result;
+    }
+
     public static <T> T hGet(String key, String field, Class<T> clz) {
         return execute((RedisCallback<T>) con -> {
             byte[] records = con.hGet(keyBytes(key), valBytes(field));

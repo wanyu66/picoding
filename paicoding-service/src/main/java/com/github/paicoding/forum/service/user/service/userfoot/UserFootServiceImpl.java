@@ -81,34 +81,13 @@ public class UserFootServiceImpl implements UserFootService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void favorArticleComment(DocumentTypeEnum documentType, Long documentId, Long authorId, Long userId, OperateTypeEnum operateTypeEnum) {
-        // fixme 这里没有做并发控制，在大并发场景下，可能出现查询出来的数据，与db中数据不一致的场景
-        // fixme 解决方案：自旋等待的分布式锁 or 事务 + 悲观锁
-        // fixme 考虑到这个足迹的准确性影响并不大，留待有缘人进行修正
-
-        // 查询是否有该足迹；有则更新，没有则插入
-        UserFootDO readUserFootDO = userFootDao.getByDocumentAndUserId(documentId, documentType.getCode(), userId);
-        boolean dbChanged = false;
-        if (readUserFootDO == null) {
-            readUserFootDO = new UserFootDO();
-            readUserFootDO.setUserId(userId);
-            readUserFootDO.setDocumentId(documentId);
-            readUserFootDO.setDocumentType(documentType.getCode());
-            readUserFootDO.setDocumentUserId(authorId);
-            setUserFootStat(readUserFootDO, operateTypeEnum);
-            userFootDao.save(readUserFootDO);
-            dbChanged = true;
-        } else if (setUserFootStat(readUserFootDO, operateTypeEnum)) {
-            readUserFootDO.setUpdateTime(new Date());
-            userFootDao.updateById(readUserFootDO);
-            dbChanged = true;
-        }
-
-        if (!dbChanged) {
-            // 幂等，直接返回
+        // 锁住同一用户/文档的状态；状态变化和 Outbox 在同一事务中提交。
+        UserFootDO readUserFootDO = userFootDao.getOrCreateForUpdate(documentId, documentType.getCode(), userId, authorId);
+        if (!setUserFootStat(readUserFootDO, operateTypeEnum)) {
             return;
         }
-
-
+        readUserFootDO.setUpdateTime(new Date());
+        userFootDao.updateById(readUserFootDO);
         // 点赞、收藏两种操作时，需要发送异步消息，用于生成消息通知、更新文章/评论的相关计数统计、更新用户的活跃积分
         NotifyTypeEnum notifyType = OperateTypeEnum.getNotifyType(operateTypeEnum);
         if (notifyType == null) {

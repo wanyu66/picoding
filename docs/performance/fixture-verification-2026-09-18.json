@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-09-18T14:00:27.0061396+08:00",
+  "before": "fixed-search-fixture-2026-09-17.json",
+  "after": "fixed-search-fixture-2026-09-18-after.json",
+  "documents": 8,
+  "fingerprintDifferences": 0,
+  "queryResultDifferences": 0,
+  "searchStatus": {
+    "state": "ES_NORMAL",
+    "message": "Elasticsearch is serving searches normally",
+    "indexCoverageComplete": true,
+    "rebuildInProgress": false,
+    "circuitOpen": false,
+    "consecutiveFailures": 0,
+    "circuitOpenUntil": null,
+    "lastFailureTime": null,
+    "lastFailure": null
+  },
+  "note": "Post-run verification collected on next-day continuation; not an immediate end-of-run content snapshot."
+}

@@ -72,3 +72,6 @@ paicoding-miniapp/node_modules/
 paicoding-miniapp/miniprogram_npm/
 paicoding-miniapp/dist/
 paicoding-miniapp/docs/superpowers/specs/
+
+# Local resume preview contains personal contact details; keep it out of published snapshots.
+/tmp/pdfs/resume-1.png

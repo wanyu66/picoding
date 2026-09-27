@@ -1,0 +1,21 @@
+{
+  "scenario" : "10-lua_atomic",
+  "concurrency" : 10,
+  "peakInFlight" : 10,
+  "operations" : 400,
+  "durationMs" : 63.0636,
+  "attemptTPS" : 6342.803138418993,
+  "successTPS" : 6342.803138418993,
+  "updateSuccessRate" : 1.0,
+  "p50Ms" : 1.1037,
+  "p95Ms" : 4.2493,
+  "p99Ms" : 5.4363,
+  "expectedScore" : 800,
+  "actualScores" : {
+    "1" : 800
+  },
+  "scoreDifferenceCount" : 0,
+  "duplicateScoreCount" : 0,
+  "passed" : true,
+  "scope" : "Actual Lua invoked concurrently, bypassing JVM rebuildMonitor; includes dedup/day/month metadata"
+}

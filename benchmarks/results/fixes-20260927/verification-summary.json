@@ -1,0 +1,120 @@
+{
+  "generatedAt": "2026-09-27T08:24:36.655Z",
+  "records": [
+    {
+      "phase": "article-offline",
+      "scope": "offline tool tests",
+      "passed": 11,
+      "total": 11,
+      "failed": 0
+    },
+    {
+      "phase": "es-junit",
+      "scope": "service with HTTP/DAO/JDBC stubs",
+      "baselinePassed": 9,
+      "passed": 16,
+      "total": 16,
+      "failed": 0
+    },
+    {
+      "phase": "es-network-fault",
+      "scope": "loopback fault injection, mock DAO",
+      "baselinePassed": 3,
+      "passed": 5,
+      "total": 6,
+      "failed": 1
+    },
+    {
+      "phase": "ranking",
+      "scope": "real isolated MySQL/Redis; includes negative control and direct event boundary",
+      "baselinePassed": 30,
+      "passed": 32,
+      "total": 40,
+      "failed": 8
+    },
+    {
+      "phase": "userfoot",
+      "scope": "real isolated MySQL; favor service/mapper/outbox SQL",
+      "baselinePassed": 1,
+      "passed": 7,
+      "total": 7,
+      "failed": 0
+    },
+    {
+      "phase": "chat-stream",
+      "scope": "real STOMP with mock providers",
+      "baselinePassed": 207,
+      "passed": 211,
+      "total": 211,
+      "failed": 0
+    }
+  ],
+  "cleanup": [
+    {
+      "dir": "ranking-baseline-01",
+      "testExitCode": 2,
+      "cleanupExitCode": 0,
+      "finishedAt": "2026-09-27T08:17:59.538Z"
+    },
+    {
+      "dir": "ranking-fixture-fix-01",
+      "testExitCode": 2,
+      "cleanupExitCode": 0,
+      "finishedAt": "2026-09-27T08:22:49.438Z"
+    },
+    {
+      "dir": "userfoot-baseline-01",
+      "testExitCode": 2,
+      "cleanupExitCode": 0,
+      "finishedAt": "2026-09-27T08:18:00.187Z"
+    },
+    {
+      "dir": "userfoot-fixed-01",
+      "testExitCode": 0,
+      "cleanupExitCode": 0,
+      "finishedAt": "2026-09-27T08:19:12.531Z"
+    },
+    {
+      "dir": "chat-stream-fixed-03",
+      "testExitCode": 0,
+      "serverExitCode": 0,
+      "cleanupExitCode": 0,
+      "finishedAt": "2026-09-27T08:20:37.970Z"
+    }
+  ],
+  "businessSources": {
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/article/service/search/impl/ArticleSearchServiceImpl.java": "0a8d6d006927f6d537735671db70174f2532a40590f4303e9fe9c5d457c6da96",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java": "ee1c5242b045c9e261530e15b554fc4102aa07f60e8553933e864e88cad11afa",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/repository/dao/UserFootDao.java": "4abe5dbc0e75ed9f4eb2e108c88c8f9fc7ed31245f793b7f8baa5be025c3fe35",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/service/userfoot/UserFootServiceImpl.java": "9af275401385c233adfff3b58b3dd0b6efb4f3401ff1a9175fc4a1772cdfac7c",
+    "paicoding-web/src/main/java/com/github/paicoding/forum/web/front/chat/stomp/WsChatConfig.java": "30ea04e53e720b168adbac51db5ea67b90d2dd01c429282ce1f46331b21f4841"
+  },
+  "historicalEvidence": {
+    "files": 503,
+    "unchanged": 503,
+    "failed": 0
+  },
+  "userfootBaselineSourceHashes": {
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/service/userfoot/UserFootServiceImpl.java": "8ac7c2e979100d043411f3d55fdb8179b91dce22cd8cb2ac1e48e02512fd155c",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/repository/dao/UserFootDao.java": "04aa96610f7813143cd440c1b7c33f2b1f1703e7aefe158b15da7639f5f732d1",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/user/repository/mapper/UserFootMapper.java": "12c5522eb7d17c5691fa99f626bd916e94645292e5433c5f2d737f6762ea2426",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventOutboxServiceImpl.java": "46895ffe60ead4802d1067cbb722c6b4b08ce2bcbffee4a08f87191e95a8648d",
+    "benchmarks/java/userfoot/UserFootConcurrencyHarness.java": "1936496dc4d68daaca494816495c5a1c7e9232f75eae82538cbff18efed28882"
+  },
+  "rankingFailures": [
+    "10-repeat_like",
+    "10-client_rmw_baseline",
+    "50-repeat_like",
+    "50-client_rmw_baseline",
+    "100-repeat_like",
+    "100-client_rmw_baseline",
+    "200-repeat_like",
+    "200-client_rmw_baseline"
+  ],
+  "networkFailures": [
+    "connection_refused"
+  ],
+  "realModelCalls": 0,
+  "performanceImprovement": null,
+  "note": "Different scopes and negative controls are not combined into a single business success rate. Old failures preserved."
+}

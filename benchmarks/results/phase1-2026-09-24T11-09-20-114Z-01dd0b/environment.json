@@ -1,0 +1,18 @@
+{
+  "capturedAt": "2026-09-24T11:09:20.114Z",
+  "scope": "static-audit-only",
+  "platform": "win32",
+  "release": "10.0.26100",
+  "architecture": "x64",
+  "cpuModel": "Intel(R) Core(TM) i7-14650HX",
+  "logicalCpuCount": 24,
+  "totalMemoryBytes": 16944848896,
+  "node": "v24.15.0",
+  "timezone": "Asia/Shanghai",
+  "workload": {
+    "dataSize": null,
+    "concurrency": null,
+    "durationSeconds": null,
+    "reason": "NOT_RUN: phase 1 audit only"
+  }
+}

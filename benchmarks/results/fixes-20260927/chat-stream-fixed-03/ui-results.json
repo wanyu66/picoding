@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "browser": "Microsoft Edge / Playwright",
+  "source": "extracted production template functions",
+  "dropAfterChunk": 3,
+  "resumeCursor": 4,
+  "finalAnswer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|",
+  "renderedAnswerElements": 1,
+  "duplicateReplayExtraElements": 0,
+  "duplicateReplaySessions": 10,
+  "checks": [
+    {
+      "user": 10183,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10184,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10185,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10186,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10187,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10188,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10189,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10190,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10191,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    },
+    {
+      "user": 10192,
+      "deliveredEvents": 24,
+      "answerElements": 1,
+      "duplicateDisplayCount": 0,
+      "answer": "chunk01|chunk02|chunk03|chunk04|chunk05|chunk06|"
+    }
+  ],
+  "stopClickCommand": "cancel",
+  "replayRenderMs": 16.9362000000001,
+  "scope": "Actual DOM rendering of captured network events; synthetic STOMP adapter; automatic reconnect timer and login page not exercised"
+}

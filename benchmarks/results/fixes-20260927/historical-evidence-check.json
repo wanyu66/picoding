@@ -1,0 +1,2020 @@
+{
+  "verifiedAt": "2026-09-27T08:24:36.538Z",
+  "files": 503,
+  "passed": 503,
+  "failed": 0,
+  "checks": [
+    {
+      "path": "article-import-metrics.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "article-import-report.md",
+      "status": "PASS"
+    },
+    {
+      "path": "article-import-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "article-selftests-01/stderr.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "article-selftests-01/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "article-selftests-01/tests.tap",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/benchmark-summary.md",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/docker-cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/docker-start.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/java-version.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/provider-final.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/redis-image.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/runner-error.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/runner-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-01/server.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/client-samples.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/client-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/docker-cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/docker-start.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/java-version.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/provider-final.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/redis-image.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/runner-error.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/runner-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/server-ready.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/server.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-02/stomp-frames.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/client-samples.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/client-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/docker-cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/docker-start.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/evidence-check.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/java-version.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/metrics.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/provider-final.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/redis-image.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/replay-events.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/report.md",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/router-results.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/runner-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/server-ready.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/server.log",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/stomp-frames.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/streaming-fallback.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "chat-stream/run-03/ui-results.json",
+      "status": "PASS"
+    },
+    {
+      "path": "cleanup-smoke-01/batches.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "cleanup-smoke-01/consistency.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "cleanup-smoke-01/preflight.json",
+      "status": "PASS"
+    },
+    {
+      "path": "cleanup-smoke-01/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "cleanup-smoke-01/sync-polls.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/alias-rebuild-report.md",
+      "status": "PASS"
+    },
+    {
+      "path": "es/alias-task-window.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/artifact-inventory.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/benchmark-summary.md",
+      "status": "PASS"
+    },
+    {
+      "path": "es/build-compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/build-provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/cell-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/fallback-report.md",
+      "status": "PASS"
+    },
+    {
+      "path": "es/fault-harness-01.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/fault-harness-01.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/fault-harness-02.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/fault-harness-02.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/fault-harness.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/integrity-check.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/phase-close.md",
+      "status": "PASS"
+    },
+    {
+      "path": "es/raw-results.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "es/relevance-report.md",
+      "status": "PASS"
+    },
+    {
+      "path": "es/resource-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/alias/fixture-manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/alias/harness.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/alias/harness.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/alias/load-old.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/alias/queries.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/alias/rebuild-input.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/alias/result.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/alias-suite.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/app-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/cleanup-console.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/cleanup-guard.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/cleanup.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/config.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/contract.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/es-info.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/index-10000.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/index-100000.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/index-50000.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/load-10000.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/load-10000.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/load-100000-suite.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/load-100000.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/load-100000.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/load-50000.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/load-50000.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/nodes-info.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000/aborted.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000/cursor-preparation.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000/raw-results.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/cells.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/cursor-preparation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/cursor-preparation.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/node-stats.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/pagination-equivalence.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/per-query.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/raw-results.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/run-metadata.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-10000-retry1/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/cells.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/cursor-preparation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/cursor-preparation.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/node-stats.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/pagination-equivalence.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/per-query.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/raw-results.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/run-metadata.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-100000-suite.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/cells.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/cursor-preparation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/cursor-preparation.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/node-stats.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/pagination-equivalence.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/per-query.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/raw-results.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/run-metadata.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/performance-50000-console.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000/cells.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000/cursor-preparation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000/node-stats.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000/per-query.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000/raw-results.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000/run-metadata.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000/runner.snapshot.mjs",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-10000-suite.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000/cells.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000/cursor-preparation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000/node-stats.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000/per-query.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000/raw-results.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000/run-metadata.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000/runner.snapshot.mjs",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/ranking-50000-suite.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/recall-probes-10000.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/A.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/B.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/candidates.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/judgments.pending.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/judgments.template.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/requests.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/review.html",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-10000/review.initial.html",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-100000/A.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-100000/B.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-100000/candidates.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-100000/judgments.pending.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-100000/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-100000/requests.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-100000/review.html",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-100000-suite.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-50000/A.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-50000/B.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-50000/candidates.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-50000/judgments.pending.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-50000/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-50000/requests.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-50000/review.html",
+      "status": "PASS"
+    },
+    {
+      "path": "es/run-01/relevance-50000-suite.log",
+      "status": "PASS"
+    },
+    {
+      "path": "es/selftests-final.tap",
+      "status": "PASS"
+    },
+    {
+      "path": "es/selftests.tap",
+      "status": "PASS"
+    },
+    {
+      "path": "es/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "fixtures-10k-01/config.ready.json",
+      "status": "PASS"
+    },
+    {
+      "path": "fixtures-10k-01/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "fixtures-smoke-01/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "fixtures-smoke-02/config.ready.json",
+      "status": "PASS"
+    },
+    {
+      "path": "fixtures-smoke-02/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-10k-01/batches.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "import-10k-01/metrics-early.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-10k-01/outbox-snapshot-early.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-10k-01/preflight.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-10k-01/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-10k-01/sync-polls.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "import-smoke-01/preflight.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-smoke-01/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-smoke-02/batches.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "import-smoke-02/consistency.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "import-smoke-02/preflight.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-smoke-02/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "import-smoke-02/sync-polls.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/attempts.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/benchmark-summary.md",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/events.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/events.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/phase-close.md",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/recoveries.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/containers.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/docker-cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/docker-start.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/failures.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/harness-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/harness.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/java-version.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/meters.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/runner-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-01/snapshot-errors.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/01-normal.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/02-rollback.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/03-send-failure.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/04-rabbit-unavailable.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/05-ack-crash.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/06-duplicate.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/07-before-manual-compensation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/08-final.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/ack-child.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/bench_attempt.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/bench_effect.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/bench_source.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/containers.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/dlq-messages.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/docker-cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/docker-start.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/domain_event_consume.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/domain_event_outbox.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/fault-timeline.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/harness-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/harness.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/java-version.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/meters.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/rabbit-fault.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/recoveries.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/runner-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-02/snapshot-errors.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/01-normal.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/02-rollback.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/03-send-failure.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/04-rabbit-unavailable.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/05-ack-crash.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/06-duplicate.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/07-before-manual-compensation.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/08-final.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/ack-child.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/bench_attempt.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/bench_effect.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/bench_source.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/containers.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/dlq-messages.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/docker-cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/docker-start.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/domain_event_consume.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/domain_event_outbox.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/fault-timeline.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/fixtures.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/harness-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/harness.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/java-version.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/meters.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/rabbit-fault.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/recoveries.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/run-03/runner-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/scenarios.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/setup/initial-compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/setup/maven-offline.log",
+      "status": "PASS"
+    },
+    {
+      "path": "outbox/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "phase1-2026-09-24T11-09-20-114Z-01dd0b/checks.json",
+      "status": "PASS"
+    },
+    {
+      "path": "phase1-2026-09-24T11-09-20-114Z-01dd0b/environment.json",
+      "status": "PASS"
+    },
+    {
+      "path": "phase1-2026-09-24T11-09-20-114Z-01dd0b/git-state.json",
+      "status": "PASS"
+    },
+    {
+      "path": "phase1-2026-09-24T11-09-20-114Z-01dd0b/source-manifest.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "phase1-report.md",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/benchmark-summary.md",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/10-multi_user-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/10-multi_user-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/10-multi_user-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/10-multi_user-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/containers.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/docker-cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/docker-environment.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/docker-start.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/harness.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/image-digests.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/java-version.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/runner-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/server-versions.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-01/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-client_rmw_baseline-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-client_rmw_baseline-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-collect_cancel-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-collect_cancel-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-collect_cancel-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-collect_cancel-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-collect_cancel-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-duplicate_event-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-duplicate_event-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-duplicate_event-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-duplicate_event-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-duplicate_event-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-hot_member-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-hot_member-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-hot_member-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-hot_member-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-hot_member-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-like_cancel-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-like_cancel-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-like_cancel-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-like_cancel-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-like_cancel-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-lua_atomic-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-lua_atomic-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-lua_duplicate-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-lua_duplicate-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-multi_user-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-multi_user-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-multi_user-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-multi_user-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-multi_user-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-redis_outage-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-redis_outage-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-redis_outage-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-redis_outage-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-redis_outage-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-repeat_like-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-repeat_like-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-repeat_like-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-repeat_like-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/10-repeat_like-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-client_rmw_baseline-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-client_rmw_baseline-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-collect_cancel-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-collect_cancel-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-collect_cancel-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-collect_cancel-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-collect_cancel-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-duplicate_event-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-duplicate_event-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-duplicate_event-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-duplicate_event-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-duplicate_event-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-hot_member-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-hot_member-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-hot_member-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-hot_member-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-hot_member-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-like_cancel-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-like_cancel-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-like_cancel-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-like_cancel-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-like_cancel-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-lua_atomic-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-lua_atomic-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-lua_duplicate-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-lua_duplicate-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-multi_user-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-multi_user-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-multi_user-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-multi_user-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-multi_user-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-redis_outage-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-redis_outage-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-redis_outage-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-redis_outage-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-redis_outage-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-repeat_like-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-repeat_like-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-repeat_like-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-repeat_like-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/100-repeat_like-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-client_rmw_baseline-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-client_rmw_baseline-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-collect_cancel-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-collect_cancel-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-collect_cancel-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-collect_cancel-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-collect_cancel-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-duplicate_event-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-duplicate_event-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-duplicate_event-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-duplicate_event-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-duplicate_event-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-hot_member-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-hot_member-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-hot_member-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-hot_member-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-hot_member-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-like_cancel-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-like_cancel-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-like_cancel-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-like_cancel-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-like_cancel-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-lua_atomic-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-lua_atomic-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-lua_duplicate-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-lua_duplicate-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-multi_user-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-multi_user-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-multi_user-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-multi_user-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-multi_user-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-redis_outage-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-redis_outage-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-redis_outage-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-redis_outage-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-redis_outage-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-repeat_like-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-repeat_like-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-repeat_like-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-repeat_like-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/200-repeat_like-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-client_rmw_baseline-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-client_rmw_baseline-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-collect_cancel-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-collect_cancel-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-collect_cancel-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-collect_cancel-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-collect_cancel-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-duplicate_event-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-duplicate_event-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-duplicate_event-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-duplicate_event-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-duplicate_event-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-hot_member-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-hot_member-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-hot_member-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-hot_member-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-hot_member-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-like_cancel-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-like_cancel-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-like_cancel-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-like_cancel-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-like_cancel-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-lua_atomic-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-lua_atomic-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-lua_duplicate-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-lua_duplicate-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-multi_user-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-multi_user-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-multi_user-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-multi_user-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-multi_user-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-redis_outage-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-redis_outage-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-redis_outage-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-redis_outage-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-redis_outage-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-repeat_like-expected.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-repeat_like-fixture.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-repeat_like-latencies.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-repeat_like-mysql-ledger.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/50-repeat_like-summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/compile.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/containers.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/docker-cleanup.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/docker-environment.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/docker-start.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/evidence-check.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/fault-docker.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/harness.log",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/image-digests.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/java-version.txt",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/manifest.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/metrics.csv",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/provenance.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/report.md",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/runner-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/server-versions.json",
+      "status": "PASS"
+    },
+    {
+      "path": "ranking/run-02/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "README.md",
+      "status": "PASS"
+    },
+    {
+      "path": "resume-metrics-audit.json",
+      "status": "PASS"
+    },
+    {
+      "path": "verify-10k-01/consistency.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "verify-10k-01/preflight.json",
+      "status": "PASS"
+    },
+    {
+      "path": "verify-10k-01/search-status.json",
+      "status": "PASS"
+    },
+    {
+      "path": "verify-10k-01/summary.json",
+      "status": "PASS"
+    },
+    {
+      "path": "verify-smoke-01/consistency.jsonl",
+      "status": "PASS"
+    },
+    {
+      "path": "verify-smoke-01/preflight.json",
+      "status": "PASS"
+    },
+    {
+      "path": "verify-smoke-01/summary.json",
+      "status": "PASS"
+    }
+  ]
+}

@@ -9,6 +9,11 @@ import com.github.paicoding.forum.service.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
+
 /**
  * 敏感词处理豁免服务实现
  *
@@ -26,6 +31,24 @@ public class SensitiveBypassServiceImpl implements SensitiveBypassService {
 
     @Autowired
     private UserService userService;
+
+    @Override
+    public Set<Long> bypassAuthors(Map<Long, BaseUserInfoDTO> authors) {
+        Set<Long> bypass = new HashSet<>();
+        Set<Long> candidates = new LinkedHashSet<>();
+        authors.forEach((id, user) -> {
+            if (id != null) {
+                if (aiBots.aiBots(id)) bypass.add(id);
+                else candidates.add(id);
+            }
+        });
+        bypass.addAll(authorWhiteListService.authorsInArticleWhiteList(candidates));
+        candidates.forEach(id -> {
+            BaseUserInfoDTO user = authors.get(id);
+            if (user != null && UserRole.hasAdminPermission(user.getRole())) bypass.add(id);
+        });
+        return bypass;
+    }
 
     @Override
     public boolean shouldBypassByUserId(Long userId) {

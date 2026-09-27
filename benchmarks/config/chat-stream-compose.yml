@@ -1,0 +1,12 @@
+services:
+  redis:
+    image: redis:8.0
+    command: ['redis-server', '--appendonly', 'no', '--save', '']
+    ports: ['127.0.0.1:16419:6379']
+    labels:
+      paicoding.benchmark.run: ${BENCH_RUN:?run id required}
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 2s
+      timeout: 2s
+      retries: 30

@@ -1,0 +1,16 @@
+{
+  "baseCommit": "318e5d08e149f2da80fb51af04890441bc497284",
+  "workingTree": "Contains pre-existing uncommitted changes; hashes identify tested source",
+  "javaHome": "D:\\Downloads\\paicoding\\.runtime\\java8",
+  "sourceSha256": {
+    "paicoding-service/src/test/java/com/github/paicoding/forum/service/rank/OutboxRankFaultTest.java": "8C8137955DD93E1E7E59D81408891EDAE02EED5278AD1305B182444AFA7FB947",
+    "scripts/load-test/outbox-rank-compose.yml": "4A905924E61EF43C8C9A7CCC3A89C8A9CFB76C8BCAD9074258B1A2F722B70AD0",
+    "scripts/load-test/run-outbox-rank-fault.ps1": "A7A498C8FEF299E74258BC70C241C2946212AACA06AB8B32D9A392A2FF9F4D1F",
+    "paicoding-core/src/main/java/com/github/paicoding/forum/core/cache/RedisClient.java": "EDD4C690A079DBA4E5D192E724A2A9676CF58F4E531E69694D6A21E96D1967E4",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/rank/service/impl/UserActivityRankServiceImpl.java": "F8580E537B2F0AFEC76F7B4C1687EEAB8C2FF4A5A86CDF79BEE8A455DC94A508",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/rank/service/listener/ActivityDomainEventConsumer.java": "81281D590B000240382852022EC164A23B9DE009C4B61084B9FAA0E87F8BF4C0",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventConsumeService.java": "42D806F705AD261FE75615027CC44F3070EDEF6B71C6D9916F9DAFECCC95EAE6",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/service/impl/DomainEventOutboxPublisher.java": "B65C5B8FB36C538C8B6BFAEB431EBEEC722DB29341C5E0861F458603AFF4D9BB",
+    "paicoding-service/src/main/java/com/github/paicoding/forum/service/notify/config/RabbitMqAutoConfig.java": "1889F1AC8E4A046BD422450BDA3365B2C4095CD49EB3CE0F3DD06544F923A845"
+  }
+}

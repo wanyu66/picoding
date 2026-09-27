@@ -1,0 +1,62 @@
+[
+  {
+    "file": "benchmarks/scripts/run-userfoot.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/compare-userfoot.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/check-fix-evidence.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/summarize-fixes.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/run-es-fixes.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/prepare-ranking.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/run-ranking.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/ranking-report.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/compare-ranking.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/run-chat-backpressure.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/chat-stream-report.mjs",
+    "exitCode": 0,
+    "error": ""
+  },
+  {
+    "file": "benchmarks/scripts/compare-chat-fix.mjs",
+    "exitCode": 0,
+    "error": ""
+  }
+]

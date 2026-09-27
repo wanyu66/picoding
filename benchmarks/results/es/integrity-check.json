@@ -1,0 +1,93 @@
+{
+  "at": "2026-09-25T07:35:10.149Z",
+  "checks": [
+    {
+      "name": "source contract unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "all requested sizes completed",
+      "status": "PASS"
+    },
+    {
+      "name": "10000 exact index count",
+      "status": "PASS"
+    },
+    {
+      "name": "10000 pagination equivalence",
+      "status": "PASS"
+    },
+    {
+      "name": "10000 every mixed window has exactly balanced queries",
+      "status": "PASS"
+    },
+    {
+      "name": "10000 all cells, repetitions and numeric metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "10000 human judgments remain explicitly pending",
+      "status": "PASS"
+    },
+    {
+      "name": "50000 exact index count",
+      "status": "PASS"
+    },
+    {
+      "name": "50000 pagination equivalence",
+      "status": "PASS"
+    },
+    {
+      "name": "50000 every mixed window has exactly balanced queries",
+      "status": "PASS"
+    },
+    {
+      "name": "50000 all cells, repetitions and numeric metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "50000 human judgments remain explicitly pending",
+      "status": "PASS"
+    },
+    {
+      "name": "100000 exact index count",
+      "status": "PASS"
+    },
+    {
+      "name": "100000 pagination equivalence",
+      "status": "PASS"
+    },
+    {
+      "name": "100000 every mixed window has exactly balanced queries",
+      "status": "PASS"
+    },
+    {
+      "name": "100000 all cells, repetitions and numeric metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "100000 human judgments remain explicitly pending",
+      "status": "PASS"
+    },
+    {
+      "name": "combined raw samples reproduce summary",
+      "status": "PASS"
+    },
+    {
+      "name": "alias task and observed results",
+      "status": "PASS"
+    },
+    {
+      "name": "nonliteral recall probes",
+      "status": "PASS"
+    },
+    {
+      "name": "reported defects were actually injected, not hidden by Redis exceptions",
+      "status": "PASS"
+    }
+  ],
+  "integrityStatus": "PASS",
+  "businessFaultStatus": "FAIL",
+  "businessFaultPasses": 3,
+  "businessFaultCases": 6
+}

@@ -1,0 +1,147 @@
+[
+  {
+    "dataset": 10000,
+    "experiment": "performance-10000-retry1",
+    "nodeId": "1Wh2SjnUSsSWBN7U3n6DJw",
+    "samples": 270,
+    "scope": "entire ES node; selected cells warmup + measurement + resource polling; shared container",
+    "cpuCoreEquivalentPercent": 556.1622940817572,
+    "cpuMs": 1276170,
+    "wallMs": 229460,
+    "sampledProcessCpuPercentMax": 29,
+    "heapMaxBytes": 536870912,
+    "sampledHeapPeakBytes": 462372048,
+    "sampledCgroupMemoryPeakBytes": 2378268672,
+    "residentBytes": null,
+    "gc": {
+      "young": {
+        "count": 2808,
+        "timeMs": 8230
+      },
+      "G1 Concurrent GC": {
+        "count": 1947,
+        "timeMs": 3810
+      },
+      "old": {
+        "count": 0,
+        "timeMs": 0
+      }
+    }
+  },
+  {
+    "dataset": 10000,
+    "experiment": "ranking-10000",
+    "nodeId": "1Wh2SjnUSsSWBN7U3n6DJw",
+    "samples": 249,
+    "scope": "entire ES node; selected cells warmup + measurement + resource polling; shared container",
+    "cpuCoreEquivalentPercent": 407.6089793168241,
+    "cpuMs": 859040,
+    "wallMs": 210751,
+    "sampledProcessCpuPercentMax": 28,
+    "heapMaxBytes": 536870912,
+    "sampledHeapPeakBytes": 459112248,
+    "sampledCgroupMemoryPeakBytes": 3883216896,
+    "residentBytes": null,
+    "gc": {
+      "young": {
+        "count": 3498,
+        "timeMs": 9757
+      },
+      "G1 Concurrent GC": {
+        "count": 2002,
+        "timeMs": 4073
+      },
+      "old": {
+        "count": 0,
+        "timeMs": 0
+      }
+    }
+  },
+  {
+    "dataset": 50000,
+    "experiment": "performance-50000",
+    "nodeId": "1Wh2SjnUSsSWBN7U3n6DJw",
+    "samples": 294,
+    "scope": "entire ES node; selected cells warmup + measurement + resource polling; shared container",
+    "cpuCoreEquivalentPercent": 472.5233102581253,
+    "cpuMs": 1172680,
+    "wallMs": 248174,
+    "sampledProcessCpuPercentMax": 26,
+    "heapMaxBytes": 536870912,
+    "sampledHeapPeakBytes": 461680648,
+    "sampledCgroupMemoryPeakBytes": 3306917888,
+    "residentBytes": null,
+    "gc": {
+      "young": {
+        "count": 1651,
+        "timeMs": 4956
+      },
+      "G1 Concurrent GC": {
+        "count": 1257,
+        "timeMs": 2511
+      },
+      "old": {
+        "count": 0,
+        "timeMs": 0
+      }
+    }
+  },
+  {
+    "dataset": 50000,
+    "experiment": "ranking-50000",
+    "nodeId": "1Wh2SjnUSsSWBN7U3n6DJw",
+    "samples": 262,
+    "scope": "entire ES node; selected cells warmup + measurement + resource polling; shared container",
+    "cpuCoreEquivalentPercent": 386.46489441574613,
+    "cpuMs": 859610,
+    "wallMs": 222429,
+    "sampledProcessCpuPercentMax": 27,
+    "heapMaxBytes": 536870912,
+    "sampledHeapPeakBytes": 460167864,
+    "sampledCgroupMemoryPeakBytes": 3894341632,
+    "residentBytes": null,
+    "gc": {
+      "young": {
+        "count": 3336,
+        "timeMs": 9331
+      },
+      "G1 Concurrent GC": {
+        "count": 1946,
+        "timeMs": 3855
+      },
+      "old": {
+        "count": 0,
+        "timeMs": 0
+      }
+    }
+  },
+  {
+    "dataset": 100000,
+    "experiment": "performance-100000",
+    "nodeId": "1Wh2SjnUSsSWBN7U3n6DJw",
+    "samples": 611,
+    "scope": "entire ES node; selected cells warmup + measurement + resource polling; shared container",
+    "cpuCoreEquivalentPercent": 403.3191759495775,
+    "cpuMs": 2134720,
+    "wallMs": 529288,
+    "sampledProcessCpuPercentMax": 28,
+    "heapMaxBytes": 536870912,
+    "sampledHeapPeakBytes": 463597704,
+    "sampledCgroupMemoryPeakBytes": 4289626112,
+    "residentBytes": null,
+    "gc": {
+      "young": {
+        "count": 4492,
+        "timeMs": 12580
+      },
+      "G1 Concurrent GC": {
+        "count": 2908,
+        "timeMs": 5724
+      },
+      "old": {
+        "count": 0,
+        "timeMs": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "baseline": "benchmarks/results/chat-stream/run-03",
+  "fixed": "benchmarks/results/fixes-20260927/chat-stream-fixed-03",
+  "sourceHashesMatchCurrent": true,
+  "realModelCalls": 0,
+  "rows": [
+    {
+      "metric": "streaming_passed",
+      "baseline": 207,
+      "fixed": 211,
+      "unit": "count"
+    },
+    {
+      "metric": "streaming_failed",
+      "baseline": 4,
+      "fixed": 0,
+      "unit": "count"
+    },
+    {
+      "metric": "normal_100_passed",
+      "baseline": 96,
+      "fixed": 100,
+      "unit": "count"
+    },
+    {
+      "metric": "missing_expected_events",
+      "baseline": 32,
+      "fixed": 0,
+      "unit": "count"
+    },
+    {
+      "metric": "normal_100_ttft_p95",
+      "baseline": 257.3775000000005,
+      "fixed": 422.97090000000026,
+      "unit": "ms"
+    },
+    {
+      "metric": "normal_100_total_p95",
+      "baseline": 576.1125000000011,
+      "fixed": 786.9964999999975,
+      "unit": "ms"
+    },
+    {
+      "metric": "test_exit_code",
+      "baseline": 2,
+      "fixed": 0,
+      "unit": "count"
+    },
+    {
+      "metric": "cleanup_exit_code",
+      "baseline": 0,
+      "fixed": 0,
+      "unit": "count"
+    }
+  ],
+  "caveat": "Reliability comparison only. One short burst per concurrency level; baseline latency excludes four failed sessions. No latency or production capacity improvement claim."
+}

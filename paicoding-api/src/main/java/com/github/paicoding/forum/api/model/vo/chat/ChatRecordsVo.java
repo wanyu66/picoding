@@ -33,6 +33,10 @@ public class ChatRecordsVo implements Serializable, Cloneable {
      */
     private int usedCnt;
 
+    /** Explicit generation failure, independent of the presentation answer type. */
+    private String errorCode;
+    private String errorMessage;
+
     /**
      * 聊天记录，最新的在前面；最多返回50条
      */
@@ -44,6 +48,8 @@ public class ChatRecordsVo implements Serializable, Cloneable {
         vo.source = source;
         vo.maxCnt = maxCnt;
         vo.usedCnt = usedCnt;
+        vo.errorCode = errorCode;
+        vo.errorMessage = errorMessage;
         if (records != null) {
             vo.setRecords(records.stream().map(ChatItemVo::clone).collect(Collectors.toList()));
         }
